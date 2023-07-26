@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Link, Routes } from "react-router-dom";
 import About from "./Controllers/About";
 import Home from "./Controllers/Home";
 import Projects from "./Controllers/Projects";
@@ -30,7 +30,7 @@ const Navigation = () => {
 
 export const App = () => {
   return (
-    <Router>
+    <Router basename="/">
       <div className="App">
         <Navigation />
         <Routes>
