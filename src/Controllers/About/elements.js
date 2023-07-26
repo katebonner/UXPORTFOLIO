@@ -12,6 +12,7 @@ export const WindowContainer = styled.div({
 export const Row = styled.div({
   display: "flex",
   flexDirection: "row",
+  flexWrap: "wrap",
   paddingBottom: 72,
   paddingTop: 72,
   justifyContent: "space-between",

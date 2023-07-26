@@ -65,5 +65,6 @@ export const Text6 = styled.text({
 export const SecondaryText6 = styled.text({
   fontWeight: 400,
   fontSize: 18,
+  lineHeight: "24px",
   color: theme.colors.gris[600],
 });

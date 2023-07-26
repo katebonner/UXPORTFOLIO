@@ -1,5 +1,11 @@
 import React from "react";
-import { WindowContainer, Name, Role, Description } from "./elements";
+import {
+  WindowContainer,
+  Name,
+  Role,
+  Description,
+  JustifyRight,
+} from "./elements";
 import ComplexPlaneAnimation from "../../Components/ComplexPlaneAnimation";
 
 const HomeController = () => {
@@ -11,7 +17,9 @@ const HomeController = () => {
         Intersecting the real with the imaginary, I solve complex design
         problems with simple engineering solutions.
       </Description>
-      <ComplexPlaneAnimation />
+      <JustifyRight>
+        <ComplexPlaneAnimation />
+      </JustifyRight>
     </WindowContainer>
   );
 };
