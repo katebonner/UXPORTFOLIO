@@ -56,6 +56,8 @@ export const Divider = styled.div({
 });
 
 export const Spacer = styled.div({
-  height: 300,
+  height: 200,
   width: "100%",
 });
+
+export const HeadshotComponent = styled.img({ height: "15%", width: "15%" });
