@@ -79,8 +79,7 @@ const AboutController = () => {
             My master's degree in design and technology provided me with an
             education at the nexus of design principles and emerging technology.
             I've acquired skills in 3D Modeling, Animation, Augmented Reality
-            (AR) and Virtual Reality (VR). This education nurtured my vision for
-            shaping the evolving landscape of design in a digital age.
+            (AR) and Virtual Reality (VR).
           </SecondaryText6>
         </SplitGrowColumn>
       </Row>
@@ -122,7 +121,7 @@ const AboutController = () => {
             platform consistency, and overall team productivity. Moreover, I
             took charge of motion design and animation, designing and
             implementing visually compelling experiences that boosted user
-            engagement.
+            engagement. I worked in TypeScript and React Native.
           </SecondaryText6>
         </SplitGrowColumn>
       </Row>
