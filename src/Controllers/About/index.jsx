@@ -38,6 +38,7 @@ const AboutController = () => {
           </Text3>
         </GrowColumn>
       </Row>
+      <Spacer />
       <Row>
         <Heading1>BACKGROUND</Heading1>
       </Row>
@@ -139,15 +140,6 @@ const AboutController = () => {
             I equally excel as the project lead for the development of new
             features.
           </Text4>
-        </GrowColumn>
-      </Row>
-      <Spacer />
-      <Row>
-        <ShrinkColumn>
-          <Text6>(004)</Text6>
-        </ShrinkColumn>
-        <GrowColumn>
-          <Text4>When I am not coding, I am probably painting.</Text4>
         </GrowColumn>
       </Row>
       <Spacer />

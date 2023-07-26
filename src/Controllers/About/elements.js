@@ -4,7 +4,7 @@ import theme from "../../theme";
 export const WindowContainer = styled.div({
   height: "100%",
   textAlign: "left",
-  paddingTop: 60,
+  paddingTop: 88,
   paddingLeft: 72,
   paddingRight: 144,
 });
