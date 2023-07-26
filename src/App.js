@@ -1,25 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
+import About from "./Controllers/About";
+import Home from "./Controllers/Home";
+import Projects from "./Controllers/Projects";
+import { Container } from "react-bootstrap";
+import "./App.css";
 
-function App() {
+const Navigation = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container className="App-header">
+      <Link className="Title" to="/">
+        KA+iE
+      </Link>
+      <div className="Nav-element-container">
+        <Link className={"Nav-element"} to="/projects">
+          Projects,
+        </Link>
+        <Link className={"Nav-element"} to="/about">
+          About
+        </Link>
+      </div>
+
+      <a className="Contact" href="mailto:katebonner277@gmail.com">
+        CONTACT
+      </a>
+    </Container>
   );
-}
+};
+
+export const App = () => {
+  return (
+    <Router>
+      <div className="App">
+        <Navigation />
+        <Routes>
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </div>
+    </Router>
+  );
+};
 
 export default App;
