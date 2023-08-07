@@ -34,3 +34,17 @@ export const Circle = styled.div({
   backgroundColor: theme.colors.violet[200],
   zIndex: -999,
 });
+
+export const Grid = styled.div({
+  position: "fixed",
+  top: 0,
+  left: 0,
+  width: "100%",
+  height: "100%",
+  zIndex: -9999999,
+  backgroundImage: `
+        linear-gradient(to right, rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 1px, transparent 1px)
+    `,
+  backgroundSize: "20px 20px",
+});

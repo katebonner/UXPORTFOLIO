@@ -1,5 +1,5 @@
 import React from "react";
-import { WindowContainer, Name, Description, Circle } from "./elements";
+import { WindowContainer, Name, Description, Circle, Grid } from "./elements";
 import ComplexPlaneAnimation from "../../Components/ComplexPlaneAnimation";
 
 import { useSpring, animated } from "@react-spring/web";
@@ -43,8 +43,9 @@ const HomeController = () => {
   return (
     <WindowContainer>
       <Circle />
+      <Grid />
       <Name>{HeadingTop}</Name>
-      <div style={{ display: "flex", flexDirection: "row", marginTop: 50 }}>
+      <div style={{ display: "flex", flexDirection: "row" }}>
         <svg viewBox="-5 -5 120 140" style={{ width: 150 }}>
           <animated.path
             d={t.to((t) => interpolatorED(t))}

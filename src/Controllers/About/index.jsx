@@ -19,6 +19,7 @@ import {
   Text6,
 } from "../../theme";
 import Fractal from "../../Components/Fractal";
+import ComplexPlaneAnimation from "../../Components/ComplexPlaneAnimation";
 
 const AboutController = () => {
   return (
@@ -54,15 +55,12 @@ const AboutController = () => {
           <SecondaryText6>
             My bachelor's degree in physics provided me with an education that
             encompasses the mathematical disciplines of multivariable calculus,
-            linear algebra, and differential equations — essential tools for
-            describing physical phenomena. I've leveraged programming languages
-            such as C++ and Python to analyze complex data sets and perform
-            intricate simulations. My studies in advanced physical theories like
-            quantum mechanics and space-time relativity have deepened my
-            understanding of the fundamental principles governing the universe.
-            However, most profoundly, my education has instilled in me the
-            principle of scientific skepticism — no theory or idea is is held
-            hostage to current views in Science.
+            linear algebra, and differential equations. I've leveraged
+            programming languages such as C++ and Python to analyze complex data
+            sets and perform intricate simulations. My studies in advanced
+            physical theories like quantum mechanics and space-time relativity
+            have deepened my understanding of the fundamental principles
+            governing the universe.
           </SecondaryText6>
         </SplitGrowColumn>
       </Row>
@@ -77,9 +75,9 @@ const AboutController = () => {
         <SplitGrowColumn>
           <SecondaryText6>
             My master's degree in design and technology provided me with an
-            education at the nexus of design principles and emerging technology.
-            I've acquired skills in 3D Modeling, Animation, Augmented Reality
-            (AR) and Virtual Reality (VR).
+            education at the nexus of design principles and emerging
+            technologies. I've acquired skills in 3D Modeling, Animation,
+            Augmented Reality (AR) and Virtual Reality (VR).
           </SecondaryText6>
         </SplitGrowColumn>
       </Row>
@@ -113,28 +111,13 @@ const AboutController = () => {
           <SecondaryText6>
             As a Front-end Mobile App Developer for a fast-paced, seed-stage
             fintech startup, I liaised between engineering and design teams,
-            ensuring the viability and implementation of design systems. I acted
-            as the engineering lead on various features, orchestrating scoping
-            discussions, creating comprehensive implementation documents, and
-            coordinating engineering resources and timelines. My leadership in
-            developing a custom component library amplified code reusability,
-            platform consistency, and overall team productivity. Moreover, I
-            took charge of motion design and animation, designing and
-            implementing visually compelling experiences that boosted user
-            engagement. I worked in TypeScript and React Native.
+            ensuring the viability and implementation of design systems and UI
+            animations. I worked in TypeScript and React Native.
           </SecondaryText6>
         </SplitGrowColumn>
       </Row>
       <Divider />
-      <Spacer />
-      <Row>
-        <ShrinkColumn>
-          <Text6>(003)</Text6>
-        </ShrinkColumn>
-        <GrowColumn>
-          <Text4></Text4>
-        </GrowColumn>
-      </Row>
+      <ComplexPlaneAnimation />
       <Spacer />
     </WindowContainer>
   );

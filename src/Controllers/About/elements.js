@@ -62,8 +62,9 @@ export const GrowColumn = styled.div({
 });
 
 export const HeadShotImage = styled.img({
-  height: "200px",
-  width: "200px",
+  height: "60vh",
+  width: "60vh",
+  textAlign: "right",
 });
 
 export const Divider = styled.div({
