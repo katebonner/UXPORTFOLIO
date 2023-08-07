@@ -1,10 +1,11 @@
 import React from "react";
-import { WindowContainer, Name, Description } from "./elements";
+import { WindowContainer, Name, Description, Circle } from "./elements";
 import ComplexPlaneAnimation from "../../Components/ComplexPlaneAnimation";
 
 import { useSpring, animated } from "@react-spring/web";
 import { interpolate } from "flubber";
 import { HeadingTop, DescriptionLeft } from "./copy";
+import Blob from "../../Components/Blob";
 
 const HomeController = () => {
   const [toggled, setToggled] = React.useState(false);
@@ -41,6 +42,7 @@ const HomeController = () => {
 
   return (
     <WindowContainer>
+      <Circle />
       <Name>{HeadingTop}</Name>
       <div style={{ display: "flex", flexDirection: "row", marginTop: 50 }}>
         <svg viewBox="-5 -5 120 140" style={{ width: 150 }}>
@@ -129,8 +131,8 @@ const HomeController = () => {
         </svg>
       </div>
       <Description>{DescriptionLeft}</Description>
-
       <ComplexPlaneAnimation />
+      <Blob />
     </WindowContainer>
   );
 };

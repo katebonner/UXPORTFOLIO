@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import theme from "../../theme";
 
 export const WindowContainer = styled.div({
   height: "100%",
@@ -12,12 +13,7 @@ export const Name = styled.text({
   fontWeight: 1000,
   fontSize: 140,
   paddingTop: 36,
-  marginBottom: "-36px",
-});
-
-export const Role = styled.text({
-  fontWeight: 1000,
-  fontSize: 140,
+  marginLeft: -5,
 });
 
 export const Description = styled.text({
@@ -26,4 +22,15 @@ export const Description = styled.text({
   width: "50%",
   paddingTop: 36,
   paddingLeft: 36,
+});
+
+export const Circle = styled.div({
+  position: "fixed",
+  bottom: "-20vh",
+  right: "-20vh",
+  width: "90vh",
+  height: "90vh",
+  borderRadius: "50%",
+  backgroundColor: theme.colors.violet[200],
+  zIndex: -999,
 });
