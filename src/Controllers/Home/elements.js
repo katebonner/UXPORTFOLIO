@@ -27,10 +27,3 @@ export const Description = styled.text({
   paddingTop: 36,
   paddingLeft: 36,
 });
-
-export const JustifyRight = styled.div({
-  display: "flex",
-  flexDirection: "row",
-  justifyContent: "flex-end",
-  paddingRight: "30%",
-});

@@ -30,8 +30,8 @@ const AboutController = () => {
         </ShrinkColumn>
         <GrowColumn>
           <Text3>
-            As a developer and designer, I see beauty in the dance between form
-            and function, and my passion lies in creating digital solutions
+            As an engineer and a designer, I see beauty in the dance between
+            form and function, and my passion lies in creating digital solutions
             where every pixel, every line of code contributes to a product of
             fractal quality — a product where each detail, no matter how minute,
             echoes the cohesive harmony and thoughtful design of the whole.
@@ -132,13 +132,7 @@ const AboutController = () => {
           <Text6>(003)</Text6>
         </ShrinkColumn>
         <GrowColumn>
-          <Text4>
-            I thrive in the details and wholeness of a product. While I enjoy
-            creating animations using react-native libraries, working with SVGs,
-            and building and maintaining design systems and component libraries,
-            I equally excel as the project lead for the development of new
-            features.
-          </Text4>
+          <Text4></Text4>
         </GrowColumn>
       </Row>
       <Spacer />

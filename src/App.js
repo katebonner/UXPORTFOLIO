@@ -3,16 +3,23 @@ import { HashRouter as Router, Route, Link, Routes } from "react-router-dom";
 import About from "./Controllers/About";
 import Home from "./Controllers/Home";
 import Projects from "./Controllers/Projects";
-import { Container } from "react-bootstrap";
 import "./App.css";
 
 const Navigation = () => {
   return (
-    <Container className="App-header">
+    <div className="App-header">
       <Link className="Title" to="/">
         KA+iE
       </Link>
-      <div className="Nav-element-container">
+      <a
+        className="Nav-element bold"
+        href="https://github.com/katebonner/UXPORTFOLIO"
+        target="_blank"
+        rel="noreferrer"
+      >
+        View my website's code on GitHub
+      </a>
+      <div>
         <Link className={"Nav-element"} to="/projects">
           Projects,
         </Link>
@@ -24,7 +31,7 @@ const Navigation = () => {
       <a className="Contact" href="mailto:katebonner277@gmail.com">
         CONTACT
       </a>
-    </Container>
+    </div>
   );
 };
 

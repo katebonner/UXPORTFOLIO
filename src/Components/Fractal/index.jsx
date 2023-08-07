@@ -28,7 +28,7 @@ const SierpinskiTriangle = ({ x, y, size, level }) => {
   return (
     <Line
       points={points.flat()}
-      fill={theme.colors.vert[200]}
+      fill={theme.colors.violet[200]}
       closed
       tension={0}
     />

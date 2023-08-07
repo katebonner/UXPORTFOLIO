@@ -1,8 +1,20 @@
 import React from "react";
 import { useSpring, animated, easings } from "@react-spring/web";
 import theme from "../../theme";
-import { ARROW, POINT } from "./constants";
 import { CenterContainer } from "./elements";
+
+const POINT = {
+  RADIUS: 20,
+  get BORDER_RADIUS() {
+    return this.RADIUS / 2;
+  },
+};
+
+const ARROW = {
+  INITIAL_WIDTH: 0,
+  FINAL_WIDTH: 300,
+  HEIGHT: 1,
+};
 
 const ComplexPlaneAnimation = () => {
   const point = useSpring({
@@ -86,14 +98,6 @@ const ComplexPlaneAnimation = () => {
       <animated.div
         style={{
           background: theme.black,
-          position: "absolute",
-          ...point,
-          ...pointTranslate,
-        }}
-      ></animated.div>
-      <animated.div
-        style={{
-          background: theme.black,
           height: ARROW.HEIGHT,
           position: "absolute",
           ...arrow,
@@ -107,17 +111,6 @@ const ComplexPlaneAnimation = () => {
           transform: "rotate(90deg)",
           position: "absolute",
           ...arrow,
-        }}
-      />
-      <animated.div
-        style={{
-          borderWidth: 0.5,
-          borderStyle: "dashed",
-          marginLeft: 100,
-          marginBottom: 100,
-          borderColor: theme.black,
-          position: "absolute",
-          ...boxExpand,
         }}
       />
       <animated.div
@@ -158,6 +151,18 @@ const ComplexPlaneAnimation = () => {
           transform: xy.to(
             (x, y) => `rotate(270deg) translate(${x}px, ${y}px)`
           ),
+        }}
+      />
+
+      <animated.div
+        style={{
+          borderWidth: 0.5,
+          borderStyle: "dashed",
+          marginLeft: 100,
+          marginBottom: 100,
+          borderColor: theme.black,
+          position: "absolute",
+          ...boxExpand,
         }}
       />
       <animated.div
@@ -234,6 +239,14 @@ const ComplexPlaneAnimation = () => {
       >
         Re
       </animated.div>
+      <animated.div
+        style={{
+          background: theme.black,
+          position: "absolute",
+          ...point,
+          ...pointTranslate,
+        }}
+      ></animated.div>
     </CenterContainer>
   );
 };
