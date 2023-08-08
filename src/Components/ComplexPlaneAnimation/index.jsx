@@ -16,6 +16,8 @@ const ARROW = {
   HEIGHT: 1,
 };
 
+const color = theme.colors.violet[200];
+
 const ComplexPlaneAnimation = () => {
   const point = useSpring({
     from: {
@@ -97,7 +99,7 @@ const ComplexPlaneAnimation = () => {
     <CenterContainer>
       <animated.div
         style={{
-          background: theme.colors.violet[200],
+          background: color,
           height: ARROW.HEIGHT,
           position: "absolute",
           ...arrow,
@@ -106,7 +108,7 @@ const ComplexPlaneAnimation = () => {
 
       <animated.div
         style={{
-          background: theme.colors.violet[200],
+          background: color,
           height: ARROW.HEIGHT,
           transform: "rotate(90deg)",
           position: "absolute",
@@ -117,7 +119,7 @@ const ComplexPlaneAnimation = () => {
         style={{
           borderLeft: "4px solid transparent",
           borderRight: "4px solid transparent",
-          borderTop: `8px solid ${theme.colors.violet[200]}`,
+          borderTop: `8px solid ${color}`,
           position: "absolute",
           transform: xy.to((x, y) => `translate(${x}px, ${y}px)`),
         }}
@@ -126,7 +128,7 @@ const ComplexPlaneAnimation = () => {
         style={{
           borderLeft: "4px solid transparent",
           borderRight: "4px solid transparent",
-          borderTop: `8px solid ${theme.colors.violet[200]}`,
+          borderTop: `8px solid ${color}`,
           position: "absolute",
           transform: xy.to((x, y) => `rotate(90deg) translate(${x}px, ${y}px)`),
         }}
@@ -135,7 +137,7 @@ const ComplexPlaneAnimation = () => {
         style={{
           borderLeft: "4px solid transparent",
           borderRight: "4px solid transparent",
-          borderTop: `8px solid ${theme.colors.violet[200]}`,
+          borderTop: `8px solid ${color}`,
           position: "absolute",
           transform: xy.to(
             (x, y) => `rotate(180deg) translate(${x}px, ${y}px)`
@@ -146,7 +148,7 @@ const ComplexPlaneAnimation = () => {
         style={{
           borderLeft: "4px solid transparent",
           borderRight: "4px solid transparent",
-          borderTop: `8px solid ${theme.colors.violet[200]}`,
+          borderTop: `8px solid ${color}`,
           position: "absolute",
           transform: xy.to(
             (x, y) => `rotate(270deg) translate(${x}px, ${y}px)`
@@ -160,14 +162,14 @@ const ComplexPlaneAnimation = () => {
           borderStyle: "dashed",
           marginLeft: 100,
           marginBottom: 100,
-          borderColor: theme.colors.violet[200],
+          borderColor: color,
           position: "absolute",
           ...boxExpand,
         }}
       />
       <animated.div
         style={{
-          color: theme.colors.violet[200],
+          color: color,
           fontFamily: "REM, sans-serif",
           fontSize: 20,
           fontWeight: 1000,
@@ -182,7 +184,7 @@ const ComplexPlaneAnimation = () => {
       </animated.div>
       <animated.div
         style={{
-          color: theme.colors.violet[200],
+          color: color,
           fontFamily: "REM, sans-serif",
           fontSize: 20,
           fontWeight: 1000,
@@ -197,7 +199,7 @@ const ComplexPlaneAnimation = () => {
       </animated.div>
       <animated.div
         style={{
-          color: theme.colors.violet[200],
+          color: color,
           fontFamily: "REM, sans-serif",
           fontSize: 20,
           fontWeight: 1000,
@@ -212,7 +214,7 @@ const ComplexPlaneAnimation = () => {
       </animated.div>
       <animated.div
         style={{
-          color: theme.colors.violet[200],
+          color: color,
           fontFamily: "REM, sans-serif",
           fontSize: 20,
           fontWeight: 1000,
@@ -227,7 +229,7 @@ const ComplexPlaneAnimation = () => {
       </animated.div>
       <animated.div
         style={{
-          color: theme.colors.violet[200],
+          color: color,
           fontFamily: "REM, sans-serif",
           fontSize: 20,
           fontWeight: 1000,
@@ -241,7 +243,7 @@ const ComplexPlaneAnimation = () => {
       </animated.div>
       <animated.div
         style={{
-          background: theme.colors.violet[200],
+          background: color,
           position: "absolute",
           ...point,
           ...pointTranslate,

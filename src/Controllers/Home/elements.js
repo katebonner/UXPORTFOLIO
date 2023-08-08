@@ -6,7 +6,7 @@ export const WindowContainer = styled.div({
   textAlign: "left",
   display: "flex",
   flexDirection: "column",
-  paddingLeft: 36,
+  paddingLeft: 28,
 });
 
 export const Name = styled.text({
@@ -28,13 +28,14 @@ export const Description = styled.text({
 
 export const Circle = styled.div({
   position: "fixed",
-  bottom: "-20vh",
-  right: "-20vh",
-  width: "90vh",
-  height: "90vh",
+  bottom: "-50vh",
+  right: "-50vh",
+  width: "100vw",
+  height: "130vh",
   borderRadius: "50%",
   backgroundColor: theme.colors.violet[500],
   zIndex: -999,
+  filter: "blur(200px)",
 });
 
 export const Grid = styled.div({

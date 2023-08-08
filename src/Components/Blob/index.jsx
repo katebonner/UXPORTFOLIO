@@ -138,6 +138,7 @@ export default function MyComponent() {
         right: 0,
         width: "100vw",
         height: "100vh",
+        filter: "blur(7px)",
       }}
     >
       <ambientLight intensity={1} />

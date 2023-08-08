@@ -84,6 +84,18 @@ export const Background = styled.div({
   right: 0,
   width: "100vw",
   height: "100vh",
+  backgroundColor: theme.colors.violet[800],
+  zIndex: -999,
+});
+
+export const Circle = styled.div({
+  position: "fixed",
+  bottom: "-50vh",
+  right: "-50vh",
+  width: "120vw",
+  height: "130vh",
+  borderRadius: "50%",
   backgroundColor: theme.colors.violet[1000],
   zIndex: -999,
+  filter: "blur(200px)",
 });

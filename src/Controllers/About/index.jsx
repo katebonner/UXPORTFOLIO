@@ -10,6 +10,7 @@ import {
   Spacer,
   TextContainer,
   Background,
+  Circle,
 } from "./elements";
 import {
   Heading1,
@@ -20,12 +21,12 @@ import {
   Text6,
 } from "../../theme";
 import Fractal from "../../Components/Fractal";
-import ComplexPlaneAnimation from "../../Components/ComplexPlaneAnimation";
 
 const AboutController = () => {
   return (
     <WindowContainer>
       <Background />
+      <Circle />
       <Row>
         <ShrinkColumn>
           <Text6>(001)</Text6>
@@ -61,8 +62,7 @@ const AboutController = () => {
             programming languages such as C++ and Python to analyze complex data
             sets and perform intricate simulations. My studies in advanced
             physical theories like quantum mechanics and space-time relativity
-            have deepened my understanding of the fundamental principles
-            governing the universe.
+            fostered my scientific skepticism.
           </SecondaryText6>
         </SplitGrowColumn>
       </Row>

@@ -133,7 +133,9 @@ const HomeController = () => {
         </svg>
       </div>
       <Description>{DescriptionLeft}</Description>
+
       <ComplexPlaneAnimation />
+
       <Blob />
     </WindowContainer>
   );
