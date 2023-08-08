@@ -18,6 +18,9 @@ const theme = {
       200: "#D6D6D6",
       600: "#666666",
     },
+    orange: {
+      400: "#ff7c24",
+    },
   },
   get white() {
     return this.colors.gris[50];
