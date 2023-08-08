@@ -1,46 +1,106 @@
-import React, { useState, useEffect, useRef } from "react";
-import { Stage, Layer, Line } from "react-konva";
+import React, { useState, useEffect } from "react";
+import { Canvas } from "@react-three/fiber";
+import * as THREE from "three";
+import { useRef } from "react";
+import { useFrame } from "@react-three/fiber";
 import theme from "../../theme";
 
-const drawSierpinski = (x, y, size, level, points) => {
+const drawSierpinski3D = (x, y, z, size, level, positions) => {
   if (level <= 0) {
-    const p1 = [x, y];
-    const p2 = [x + size / 2, y + (Math.sqrt(3) * size) / 2];
-    const p3 = [x + size, y];
-    points.push(p1, p2, p3);
+    const vertices = [
+      new THREE.Vector3(x, y, z),
+      new THREE.Vector3(x + size, y, z),
+      new THREE.Vector3(x + size / 2, y + size, z),
+      new THREE.Vector3(
+        x + size / 2,
+        y + size / 2,
+        z + (Math.sqrt(2) * size) / 2
+      ),
+    ];
+
+    const faces = [
+      [0, 1, 2],
+      [0, 2, 3],
+      [0, 3, 1],
+      [1, 2, 3],
+    ];
+
+    for (let face of faces) {
+      for (let vertexIndex of face) {
+        positions.push(
+          vertices[vertexIndex].x,
+          vertices[vertexIndex].y,
+          vertices[vertexIndex].z
+        );
+      }
+    }
   } else {
-    drawSierpinski(x, y, size / 2, level - 1, points);
-    drawSierpinski(x + size / 2, y, size / 2, level - 1, points);
-    drawSierpinski(
-      x + size / 4,
-      y + (Math.sqrt(3) * size) / 4,
-      size / 2,
+    const halfSize = size / 2;
+    drawSierpinski3D(x, y, z, halfSize, level - 1, positions);
+    drawSierpinski3D(x + halfSize, y, z, halfSize, level - 1, positions);
+    drawSierpinski3D(
+      x + halfSize / 2,
+      y + halfSize,
+      z,
+      halfSize,
       level - 1,
-      points
+      positions
+    );
+    drawSierpinski3D(
+      x + halfSize / 2,
+      y + halfSize / 2,
+      z + (Math.sqrt(2) * halfSize) / 2,
+      halfSize,
+      level - 1,
+      positions
     );
   }
 };
 
-const SierpinskiTriangle = ({ x, y, size, level }) => {
-  const points = [];
-  drawSierpinski(x, y, size, level, points);
+const SierpinskiTetrahedron = ({ position, size, level }) => {
+  const positions = [];
+  drawSierpinski3D(
+    position[0],
+    position[1],
+    position[2],
+    size,
+    level,
+    positions
+  );
+
+  const geometry = new THREE.BufferGeometry();
+  geometry.setAttribute(
+    "position",
+    new THREE.Float32BufferAttribute(positions, 3)
+  );
+
+  const meshRef = useRef();
+
+  useFrame(() => {
+    if (meshRef.current) {
+      meshRef.current.rotation.x += 0.006;
+      meshRef.current.rotation.y += 0.001;
+    }
+  });
 
   return (
-    <Line
-      points={points.flat()}
-      fill={theme.colors.violet[200]}
-      closed
-      tension={0}
+    <mesh
+      ref={meshRef}
+      geometry={geometry}
+      material={
+        new THREE.MeshBasicMaterial({
+          color: theme.colors.violet[200],
+          wireframe: true,
+        })
+      }
     />
   );
 };
 
-const Fractal = () => {
+const Fractal3D = () => {
   const [level, setLevel] = useState(0);
   const [isIncreasing, setIsIncreasing] = useState(true);
-  const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
-  const containerRef = useRef(null);
-  const maxLevel = 10;
+  const maxLevel = 4;
 
   useEffect(() => {
     const changeLevel = () => {
@@ -57,48 +117,19 @@ const Fractal = () => {
       });
     };
 
-    const intervalId = setInterval(changeLevel, 100);
+    const intervalId = setInterval(changeLevel, 2000);
 
     return () => {
       clearInterval(intervalId);
     };
   }, [isIncreasing]);
 
-  useEffect(() => {
-    if (containerRef.current) {
-      const updateSize = () => {
-        setDimensions({
-          width: containerRef.current.offsetWidth,
-          height: containerRef.current.offsetHeight,
-        });
-      };
-      window.addEventListener("resize", updateSize);
-      updateSize();
-      return () => window.removeEventListener("resize", updateSize);
-    }
-  }, []);
-
-  const centerX = dimensions.width / 2;
-  const centerY = dimensions.height / 2;
-  const size = Math.min(dimensions.width, dimensions.height) / 2;
-
   return (
-    <div
-      ref={containerRef}
-      style={{ width: "100%", height: "100%", transform: "rotate(180deg)" }}
-    >
-      <Stage width={dimensions.width} height={dimensions.height}>
-        <Layer>
-          <SierpinskiTriangle
-            x={centerX - size / 2}
-            y={centerY - (Math.sqrt(3) * size) / 4}
-            size={size}
-            level={level}
-          />
-        </Layer>
-      </Stage>
-    </div>
+    <Canvas style={{ position: "fixed", top: 0, left: "-25vw", zIndex: -999 }}>
+      <ambientLight intensity={4} />
+      <SierpinskiTetrahedron position={[0, 0, 0]} size={2} level={level} />
+    </Canvas>
   );
 };
 
-export default Fractal;
+export default Fractal3D;

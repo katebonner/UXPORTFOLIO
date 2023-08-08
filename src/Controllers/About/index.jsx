@@ -27,10 +27,10 @@ const AboutController = () => {
     <WindowContainer>
       <Background />
       <Circle />
+      <Fractal />
       <Row>
         <ShrinkColumn>
           <Text6>(001)</Text6>
-          <Fractal />
         </ShrinkColumn>
         <GrowColumn>
           <Text3>
