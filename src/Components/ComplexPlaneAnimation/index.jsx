@@ -97,7 +97,7 @@ const ComplexPlaneAnimation = () => {
     <CenterContainer>
       <animated.div
         style={{
-          background: theme.black,
+          background: theme.colors.violet[200],
           height: ARROW.HEIGHT,
           position: "absolute",
           ...arrow,
@@ -106,7 +106,7 @@ const ComplexPlaneAnimation = () => {
 
       <animated.div
         style={{
-          background: theme.black,
+          background: theme.colors.violet[200],
           height: ARROW.HEIGHT,
           transform: "rotate(90deg)",
           position: "absolute",
@@ -117,7 +117,7 @@ const ComplexPlaneAnimation = () => {
         style={{
           borderLeft: "4px solid transparent",
           borderRight: "4px solid transparent",
-          borderTop: `8px solid ${theme.black}`,
+          borderTop: `8px solid ${theme.colors.violet[200]}`,
           position: "absolute",
           transform: xy.to((x, y) => `translate(${x}px, ${y}px)`),
         }}
@@ -126,7 +126,7 @@ const ComplexPlaneAnimation = () => {
         style={{
           borderLeft: "4px solid transparent",
           borderRight: "4px solid transparent",
-          borderTop: `8px solid ${theme.black}`,
+          borderTop: `8px solid ${theme.colors.violet[200]}`,
           position: "absolute",
           transform: xy.to((x, y) => `rotate(90deg) translate(${x}px, ${y}px)`),
         }}
@@ -135,7 +135,7 @@ const ComplexPlaneAnimation = () => {
         style={{
           borderLeft: "4px solid transparent",
           borderRight: "4px solid transparent",
-          borderTop: `8px solid ${theme.black}`,
+          borderTop: `8px solid ${theme.colors.violet[200]}`,
           position: "absolute",
           transform: xy.to(
             (x, y) => `rotate(180deg) translate(${x}px, ${y}px)`
@@ -146,7 +146,7 @@ const ComplexPlaneAnimation = () => {
         style={{
           borderLeft: "4px solid transparent",
           borderRight: "4px solid transparent",
-          borderTop: `8px solid ${theme.black}`,
+          borderTop: `8px solid ${theme.colors.violet[200]}`,
           position: "absolute",
           transform: xy.to(
             (x, y) => `rotate(270deg) translate(${x}px, ${y}px)`
@@ -160,14 +160,14 @@ const ComplexPlaneAnimation = () => {
           borderStyle: "dashed",
           marginLeft: 100,
           marginBottom: 100,
-          borderColor: theme.black,
+          borderColor: theme.colors.violet[200],
           position: "absolute",
           ...boxExpand,
         }}
       />
       <animated.div
         style={{
-          color: theme.black,
+          color: theme.colors.violet[200],
           fontFamily: "REM, sans-serif",
           fontSize: 20,
           fontWeight: 1000,
@@ -182,7 +182,7 @@ const ComplexPlaneAnimation = () => {
       </animated.div>
       <animated.div
         style={{
-          color: theme.black,
+          color: theme.colors.violet[200],
           fontFamily: "REM, sans-serif",
           fontSize: 20,
           fontWeight: 1000,
@@ -197,7 +197,7 @@ const ComplexPlaneAnimation = () => {
       </animated.div>
       <animated.div
         style={{
-          color: theme.black,
+          color: theme.colors.violet[200],
           fontFamily: "REM, sans-serif",
           fontSize: 20,
           fontWeight: 1000,
@@ -212,7 +212,7 @@ const ComplexPlaneAnimation = () => {
       </animated.div>
       <animated.div
         style={{
-          color: theme.black,
+          color: theme.colors.violet[200],
           fontFamily: "REM, sans-serif",
           fontSize: 20,
           fontWeight: 1000,
@@ -227,7 +227,7 @@ const ComplexPlaneAnimation = () => {
       </animated.div>
       <animated.div
         style={{
-          color: theme.black,
+          color: theme.colors.violet[200],
           fontFamily: "REM, sans-serif",
           fontSize: 20,
           fontWeight: 1000,
@@ -241,7 +241,7 @@ const ComplexPlaneAnimation = () => {
       </animated.div>
       <animated.div
         style={{
-          background: theme.black,
+          background: theme.colors.violet[200],
           position: "absolute",
           ...point,
           ...pointTranslate,

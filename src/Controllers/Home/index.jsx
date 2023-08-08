@@ -6,6 +6,7 @@ import { useSpring, animated } from "@react-spring/web";
 import { interpolate } from "flubber";
 import { HeadingTop, DescriptionLeft } from "./copy";
 import Blob from "../../Components/Blob";
+import theme from "../../theme";
 
 const HomeController = () => {
   const [toggled, setToggled] = React.useState(false);
@@ -49,7 +50,7 @@ const HomeController = () => {
         <svg viewBox="-5 -5 120 140" style={{ width: 150 }}>
           <animated.path
             d={t.to((t) => interpolatorED(t))}
-            stroke="black"
+            stroke={theme.colors.violet[200]}
             strokeWidth={1}
             fill="none"
           />
@@ -62,7 +63,7 @@ const HomeController = () => {
           <svg viewBox="-5 -5 120 140" style={{ width: 150 }}>
             <animated.path
               d={t.to((t) => interpolatorNS(t))}
-              stroke="black"
+              stroke={theme.colors.violet[200]}
               strokeWidth={1}
               fill="none"
             />
@@ -74,7 +75,7 @@ const HomeController = () => {
               width: 150,
               transform: g.to((g) => `translateX(${g}px)`),
             }}
-            stroke="black"
+            stroke={theme.colors.violet[200]}
             strokeWidth={1}
             fill="none"
           >
@@ -83,7 +84,7 @@ const HomeController = () => {
           <animated.svg
             viewBox="-5 -5 60 140"
             style={{ width: 75, transform: i.to((i) => `translateX(${i}px)`) }}
-            stroke="black"
+            stroke={theme.colors.violet[200]}
             strokeWidth={1}
             fill="none"
           >
@@ -92,7 +93,7 @@ const HomeController = () => {
           <svg
             viewBox="-5 -5 120 140"
             style={{ width: 150 }}
-            stroke="black"
+            stroke={theme.colors.violet[200]}
             strokeWidth={1}
             fill="none"
           >
@@ -105,7 +106,7 @@ const HomeController = () => {
             width: 150,
             transform: e.to((e) => `translateX(${e}px)`),
           }}
-          stroke="black"
+          stroke={theme.colors.violet[200]}
           strokeWidth={1}
           fill="none"
         >
@@ -114,7 +115,7 @@ const HomeController = () => {
         <svg
           viewBox="-5 -5 120 140"
           style={{ width: 150 }}
-          stroke="black"
+          stroke={theme.colors.violet[200]}
           strokeWidth={1}
           fill="none"
         >
@@ -123,7 +124,7 @@ const HomeController = () => {
         <svg
           viewBox="-5 -5 120 140"
           style={{ width: 150 }}
-          stroke="black"
+          stroke={theme.colors.violet[200]}
           strokeWidth={1}
           fill="none"
           transform="translate(-20, 0)"

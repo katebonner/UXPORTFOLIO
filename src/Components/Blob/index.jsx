@@ -140,7 +140,7 @@ export default function MyComponent() {
         height: "100vh",
       }}
     >
-      <ambientLight intensity={3} />
+      <ambientLight intensity={1} />
       <pointLight intensity={16} position={[0, 6, 0]} />
       <MyScene ref={blobApi} />
     </Canvas>

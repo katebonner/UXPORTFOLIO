@@ -16,7 +16,7 @@
 
 .Nav-element {
   text-decoration: none;
-  color: #2e2834;
+  color: #ce98e7;
   padding-bottom: 8px;
   font-size: 18px;
   margin-right: 8px;
@@ -28,12 +28,12 @@
 }
 
 .Nav-element:hover {
-  border-bottom: 1px solid #2e2834;
+  border-bottom: 1px solid #ce98e7;
   border-top: 1px solid transparent;
 }
 
 .Title {
-  color: #2e2834;
+  color: #ce98e7;
   text-decoration: none;
   font-weight: 1000;
   font-size: 24px;
@@ -41,11 +41,11 @@
 }
 
 .Contact {
-  border-bottom: 1px solid #2e2834;
+  border-bottom: 1px solid #ce98e7;
   border-top: 1px solid transparent;
   text-decoration: none;
   font-weight: 800;
-  color: #2e2834;
+  color: #ce98e7;
   padding-bottom: 8px;
   font-size: 18px;
   margin-right: 8px;

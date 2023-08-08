@@ -70,10 +70,20 @@ export const HeadShotImage = styled.img({
 export const Divider = styled.div({
   height: 1,
   width: "100%",
-  backgroundColor: theme.colors.gris[200],
+  backgroundColor: theme.colors.violet[800],
 });
 
 export const Spacer = styled.div({
   height: 88,
   width: "100%",
+});
+
+export const Background = styled.div({
+  position: "fixed",
+  bottom: 0,
+  right: 0,
+  width: "100vw",
+  height: "100vh",
+  backgroundColor: theme.colors.violet[1000],
+  zIndex: -999,
 });

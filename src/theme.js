@@ -3,6 +3,10 @@ const theme = {
   colors: {
     violet: {
       200: "#ce98e7",
+      400: "#BC55EC",
+      500: "#955fb7",
+      600: "#532669",
+      800: "#3a3144",
       1000: "#2e2834",
     },
     vert: {
@@ -40,34 +44,40 @@ export default theme;
 export const Heading1 = styled.text({
   fontWeight: 1000,
   fontSize: 140,
+  color: theme.colors.violet[200],
 });
 
 export const Heading2 = styled.text({
   fontWeight: 1000,
   fontSize: 72,
+  color: theme.colors.violet[200],
 });
 
 export const Text3 = styled.text({
   fontWeight: 400,
   fontSize: 48,
+  color: theme.colors.violet[200],
 });
 
 export const Text4 = styled.text({
   fontWeight: 400,
   fontSize: 36,
+  color: theme.colors.violet[200],
 });
 
 export const Text5 = styled.text({
   fontWeight: 400,
   fontSize: 24,
+  color: theme.colors.violet[200],
 });
 export const Text6 = styled.text({
   fontWeight: 400,
   fontSize: 18,
+  color: theme.colors.violet[200],
 });
 export const SecondaryText6 = styled.text({
   fontWeight: 400,
   fontSize: 18,
   lineHeight: "24px",
-  color: theme.colors.gris[600],
+  color: theme.colors.violet[200],
 });

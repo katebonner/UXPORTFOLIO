@@ -14,6 +14,7 @@ export const Name = styled.text({
   fontSize: 140,
   paddingTop: 36,
   marginLeft: -5,
+  color: theme.colors.violet[200],
 });
 
 export const Description = styled.text({
@@ -22,6 +23,7 @@ export const Description = styled.text({
   width: "50%",
   paddingTop: 36,
   paddingLeft: 36,
+  color: theme.colors.violet[200],
 });
 
 export const Circle = styled.div({
@@ -31,7 +33,7 @@ export const Circle = styled.div({
   width: "90vh",
   height: "90vh",
   borderRadius: "50%",
-  backgroundColor: theme.colors.violet[200],
+  backgroundColor: theme.colors.violet[500],
   zIndex: -999,
 });
 
@@ -42,9 +44,10 @@ export const Grid = styled.div({
   width: "100%",
   height: "100%",
   zIndex: -9999999,
+  backgroundColor: theme.black,
   backgroundImage: `
-        linear-gradient(to right, rgba(0, 0, 0, 0.1) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 1px, transparent 1px)
+        linear-gradient(to right, #3a3144 1px, transparent 1px),
+        linear-gradient(to bottom, #3a3144 1px, transparent 1px)
     `,
   backgroundSize: "20px 20px",
 });

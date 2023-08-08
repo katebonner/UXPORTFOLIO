@@ -9,6 +9,7 @@ import {
   Divider,
   Spacer,
   TextContainer,
+  Background,
 } from "./elements";
 import {
   Heading1,
@@ -24,6 +25,7 @@ import ComplexPlaneAnimation from "../../Components/ComplexPlaneAnimation";
 const AboutController = () => {
   return (
     <WindowContainer>
+      <Background />
       <Row>
         <ShrinkColumn>
           <Text6>(001)</Text6>
@@ -117,7 +119,6 @@ const AboutController = () => {
         </SplitGrowColumn>
       </Row>
       <Divider />
-      <ComplexPlaneAnimation />
       <Spacer />
     </WindowContainer>
   );
