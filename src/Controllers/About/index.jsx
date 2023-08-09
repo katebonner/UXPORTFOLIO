@@ -88,7 +88,7 @@ const AboutController = () => {
         <SplitShrinkColumn>
           <Text5>03.</Text5>
           <TextContainer>
-            <Text4>Full Stack Web Development</Text4>
+            <Text4>Full-Stack Web Development</Text4>
           </TextContainer>
         </SplitShrinkColumn>
         <SplitGrowColumn>

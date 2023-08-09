@@ -1,7 +1,12 @@
 import React from "react";
+import { Background } from "./elements";
 
 const ProjectsController = () => {
-  return <></>;
+  return (
+    <>
+      <Background />
+    </>
+  );
 };
 
 export default ProjectsController;
