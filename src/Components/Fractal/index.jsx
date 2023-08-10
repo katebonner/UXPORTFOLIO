@@ -125,7 +125,7 @@ const Fractal3D = () => {
   }, [isIncreasing]);
 
   return (
-    <Canvas style={{ position: "fixed", top: 0, left: "-30vw", zIndex: -999 }}>
+    <Canvas style={{ position: "fixed", top: 0, left: "-30%", zIndex: -999 }}>
       <ambientLight intensity={4} />
       <SierpinskiTetrahedron position={[0, 0, 0]} size={2} level={level} />
     </Canvas>
