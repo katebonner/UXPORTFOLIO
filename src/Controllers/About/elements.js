@@ -77,6 +77,9 @@ export const Divider = styled.div({
   height: 1,
   width: "100%",
   backgroundColor: theme.colors.violet[800],
+  "@media(max-width: 768px)": {
+    backgroundColor: "transparent",
+  },
 });
 
 export const Spacer = styled.div({
