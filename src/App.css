@@ -25,6 +25,7 @@
 .bold {
   font-weight: 1000;
   padding-bottom: 0;
+  text-align: left;
 }
 
 .Nav-element:hover {
@@ -54,22 +55,25 @@
 @media (max-width: 768px) {
   .App-header {
     flex-direction: column;
-    height: 20vh;
+    height: 20%;
     justify-content: space-between;
     align-items: flex-start;
     margin-left: 24px;
     margin-right: 24px;
   }
   .Title {
-    font-size: 48px;
+    font-size: 36px;
   }
   .Nav-element {
-    font-size: 24px;
+    font-size: 60px;
     padding-top: 16px;
     padding-bottom: 16px;
   }
   .Contact {
-    font-size: 28px;
+    font-size: 24px;
     padding-top: 16px;
+  }
+  .bold {
+    font-size: 18px;
   }
 }

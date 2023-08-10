@@ -19,7 +19,7 @@ const Navigation = () => {
       >
         View my website's code on GitHub
       </a>
-      <div>
+      <div style={{ display: "flex", flexWrap: "wrap" }}>
         <Link className={"Nav-element"} to="/projects">
           Projects,
         </Link>

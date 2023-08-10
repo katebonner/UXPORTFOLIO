@@ -19,6 +19,10 @@ export const Name = styled.text({
     marginTop: 36,
     fontSize: 80,
   },
+  "@media(max-width: 768px)": {
+    marginTop: 24,
+    fontSize: 48,
+  },
 });
 
 export const Description = styled.text({
@@ -29,7 +33,8 @@ export const Description = styled.text({
   paddingLeft: 36,
   color: theme.colors.violet[200],
   "@media(max-width: 1280px)": {
-    width: "90%",
+    width: "80%",
+    fontSize: 24,
   },
 });
 

@@ -9,7 +9,7 @@ export const SplitShrinkColumn = styled.div({
   "@media(max-width: 1280px)": {
     flexDirection: "column",
     width: "100%",
-    marginBottom: "16px", // or any value you see fit
+    marginBottom: "16px",
   },
 });
 
@@ -33,9 +33,9 @@ export const TextContainer = styled.div({
 export const WindowContainer = styled.div({
   height: "100%",
   textAlign: "left",
-  paddingTop: 88,
-  paddingLeft: 72,
-  paddingRight: 144,
+  paddingTop: "5%",
+  paddingLeft: "10%",
+  paddingRight: "15%",
 });
 
 export const Row = styled.div({
@@ -55,10 +55,16 @@ export const Row = styled.div({
 
 export const ShrinkColumn = styled.div({
   width: "40%",
+  "@media(max-width: 1280px)": {
+    width: "100%",
+  },
 });
 
 export const GrowColumn = styled.div({
   width: "60%",
+  "@media(max-width: 1280px)": {
+    width: "100%",
+  },
 });
 
 export const HeadShotImage = styled.img({

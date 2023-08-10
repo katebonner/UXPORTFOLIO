@@ -7,15 +7,17 @@ import Identity from "../../Components/Identity";
 
 const HomeController = () => {
   return (
-    <WindowContainer>
+    <>
       <Circle />
       <Grid />
-      <Name>{HeadingTop}</Name>
-      <Identity />
-      <Description>{DescriptionLeft}</Description>
-      <ComplexPlaneAnimation />
       <Blob />
-    </WindowContainer>
+      <WindowContainer>
+        <Name>{HeadingTop}</Name>
+        <Identity />
+        <Description>{DescriptionLeft}</Description>
+      </WindowContainer>
+      <ComplexPlaneAnimation />
+    </>
   );
 };
 
