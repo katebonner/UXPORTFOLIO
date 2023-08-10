@@ -15,6 +15,10 @@ export const Name = styled.text({
   paddingTop: 36,
   marginLeft: -5,
   color: theme.colors.violet[200],
+  "@media(max-width: 1280px)": {
+    marginTop: 36,
+    fontSize: 80,
+  },
 });
 
 export const Description = styled.text({
@@ -24,6 +28,9 @@ export const Description = styled.text({
   paddingTop: 36,
   paddingLeft: 36,
   color: theme.colors.violet[200],
+  "@media(max-width: 1280px)": {
+    width: "90%",
+  },
 });
 
 export const Circle = styled.div({
