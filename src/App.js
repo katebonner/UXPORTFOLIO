@@ -3,6 +3,7 @@ import { HashRouter as Router, Route, Link, Routes } from "react-router-dom";
 import About from "./Controllers/About";
 import Home from "./Controllers/Home";
 import Projects from "./Controllers/Projects";
+import MobileMenuIcon from "./Components/MobileMenuIcon";
 import "./App.css";
 
 const Navigation = () => {
@@ -17,7 +18,7 @@ const Navigation = () => {
         target="_blank"
         rel="noreferrer"
       >
-        View Source Code on GitHub
+        View &lt;Source Code/&gt; on GitHub
       </a>
 
       <Link className={"Nav-element"} to="/projects">
@@ -47,7 +48,7 @@ const MobileNavBar = () => {
         className={isOpen ? "menu-icon visible" : "menu-icon"}
         onClick={toggleMenu}
       >
-        ☰
+        <MobileMenuIcon toggled={isOpen} />
       </button>
       <ul className={isOpen ? "menu visible" : "menu"}>
         <Link className={"Nav-element"} to="/" onClick={toggleMenu}>
@@ -74,7 +75,7 @@ const MobileNavBar = () => {
           rel="noreferrer"
           onClick={toggleMenu}
         >
-          Source Code
+          &lt;Source Code/&gt;
         </a>
       </ul>
     </nav>
