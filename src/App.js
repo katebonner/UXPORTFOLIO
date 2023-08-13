@@ -12,7 +12,7 @@ const Navigation = () => {
         KA+iE
       </Link>
       <a
-        className="Nav-element bold"
+        className="Nav-element"
         href="https://github.com/katebonner/UXPORTFOLIO"
         target="_blank"
         rel="noreferrer"
