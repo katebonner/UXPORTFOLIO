@@ -17,7 +17,7 @@ const Navigation = () => {
         target="_blank"
         rel="noreferrer"
       >
-        View my website's code on GitHub
+        View Source Code on GitHub
       </a>
 
       <Link className={"Nav-element"} to="/projects">
@@ -47,15 +47,7 @@ const MobileNavBar = () => {
         className={isOpen ? "menu-icon visible" : "menu-icon"}
         onClick={toggleMenu}
       >
-        <div
-          className={"menu-icon"}
-          style={{
-            height: 25,
-            width: 25,
-            borderRadius: 25,
-            backgroundColor: "#fff",
-          }}
-        ></div>
+        ☰
       </button>
       <ul className={isOpen ? "menu visible" : "menu"}>
         <Link className={"Nav-element"} to="/" onClick={toggleMenu}>
@@ -82,7 +74,7 @@ const MobileNavBar = () => {
           rel="noreferrer"
           onClick={toggleMenu}
         >
-          View my website's code on GitHub
+          Source Code
         </a>
       </ul>
     </nav>

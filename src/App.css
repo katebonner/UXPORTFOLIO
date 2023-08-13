@@ -58,14 +58,6 @@
 }
 
 @media (max-width: 768px) {
-  .App-header {
-    flex-direction: column;
-    height: 20%;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-left: 24px;
-    margin-right: 24px;
-  }
   .Title {
     font-size: 24px;
     font-weight: 800;
@@ -84,25 +76,24 @@
 
 nav {
   padding: 5%;
-  background-color: "red";
 }
 
 .menu {
-  transform: translateX(120%);
+  transform: translateX(150%);
   transition: transform 0.3s ease;
   overflow: hidden;
 }
 
 .menu.visible {
-  transform: translateX(-10%);
+  transform: translateX(-50%);
 }
 
 .menu-icon {
   border: none;
   background: none;
-  height: "10vw";
-  width: "10vw";
+  font-size: 4vw;
   border-radius: "20vw";
+  color: #ce98e7;
   cursor: pointer;
   position: fixed;
   margin-right: 5%;
