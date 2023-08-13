@@ -88,11 +88,10 @@ nav {
 .menu-icon {
   border: none;
   background: none;
-  font-size: 4vw;
-  border-radius: "20vw";
-  color: #ce98e7;
+
   cursor: pointer;
   position: fixed;
+  margin-top: 2%;
   margin-right: 5%;
   transform: scale(150%);
   transition: transform 0.3s ease;
