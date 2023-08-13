@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { HashRouter as Router, Route, Link, Routes } from "react-router-dom";
 import About from "./Controllers/About";
 import Home from "./Controllers/Home";
@@ -7,7 +7,7 @@ import "./App.css";
 
 const Navigation = () => {
   return (
-    <div className="App-header">
+    <div className="App-header web">
       <Link className="Title" to="/">
         KA+iE
       </Link>
@@ -19,14 +19,13 @@ const Navigation = () => {
       >
         View my website's code on GitHub
       </a>
-      <div style={{ display: "flex", flexWrap: "wrap" }}>
-        <Link className={"Nav-element"} to="/projects">
-          Projects,
-        </Link>
-        <Link className={"Nav-element"} to="/about">
-          About
-        </Link>
-      </div>
+
+      <Link className={"Nav-element"} to="/projects">
+        Projects
+      </Link>
+      <Link className={"Nav-element"} to="/about">
+        About
+      </Link>
 
       <a className="Contact" href="mailto:katebonner277@gmail.com">
         CONTACT
@@ -35,11 +34,67 @@ const Navigation = () => {
   );
 };
 
+const MobileNavBar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <nav className="navbar mobile">
+      <button
+        className={isOpen ? "menu-icon visible" : "menu-icon"}
+        onClick={toggleMenu}
+      >
+        <div
+          className={"menu-icon"}
+          style={{
+            height: 25,
+            width: 25,
+            borderRadius: 25,
+            backgroundColor: "#fff",
+          }}
+        ></div>
+      </button>
+      <ul className={isOpen ? "menu visible" : "menu"}>
+        <Link className={"Nav-element"} to="/" onClick={toggleMenu}>
+          Home
+        </Link>
+        <Link className={"Nav-element"} to="/projects" onClick={toggleMenu}>
+          Projects
+        </Link>
+        <Link className={"Nav-element"} to="/about" onClick={toggleMenu}>
+          About
+        </Link>
+
+        <a
+          className={"Nav-element"}
+          href="mailto:katebonner277@gmail.com"
+          onClick={toggleMenu}
+        >
+          Contact
+        </a>
+        <a
+          className={"Nav-element"}
+          href="https://github.com/katebonner/UXPORTFOLIO"
+          target="_blank"
+          rel="noreferrer"
+          onClick={toggleMenu}
+        >
+          View my website's code on GitHub
+        </a>
+      </ul>
+    </nav>
+  );
+};
+
 export const App = () => {
   return (
     <Router basename="/">
       <div className="App">
         <Navigation />
+        <MobileNavBar />
         <Routes>
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />

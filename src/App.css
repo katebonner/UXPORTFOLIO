@@ -17,7 +17,6 @@
 .Nav-element {
   text-decoration: none;
   color: #ce98e7;
-  padding-bottom: 8px;
   font-size: 18px;
   margin-right: 8px;
 }
@@ -31,6 +30,8 @@
 .Nav-element:hover {
   border-bottom: 1px solid #ce98e7;
   border-top: 1px solid transparent;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .Title {
@@ -52,6 +53,10 @@
   margin-right: 8px;
 }
 
+.mobile {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .App-header {
     flex-direction: column;
@@ -65,16 +70,67 @@
     font-size: 24px;
     font-weight: 800;
   }
+  .web {
+    display: none;
+  }
+  .mobile {
+    display: flex;
+    justify-content: flex-end;
+  }
   .Nav-element {
-    font-size: 60px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    text-align: right;
   }
-  .Contact {
-    font-size: 24px;
-    padding-top: 16px;
-  }
-  .bold {
-    font-size: 18px;
-  }
+}
+
+nav {
+  padding: 5%;
+  background-color: "red";
+}
+
+.menu {
+  transform: translateX(120%);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.menu.visible {
+  transform: translateX(-10%);
+}
+
+.menu-icon {
+  border: none;
+  background: none;
+  height: "10vw";
+  width: "10vw";
+  border-radius: "20vw";
+  cursor: pointer;
+  position: fixed;
+  margin-right: 5%;
+  transform: scale(150%);
+  transition: transform 0.3s ease;
+}
+
+.menu-icon.visible {
+  transform: scale(100%);
+}
+
+.hidden {
+  display: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 10px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  display: block;
 }
