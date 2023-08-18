@@ -10,3 +10,9 @@ export const Background = styled.div({
   backgroundColor: theme.colors.violet[800],
   zIndex: -999,
 });
+
+export const ProjectImage = styled.img({
+  height: "45vw",
+  borderRadius: 20,
+  margin: "5%",
+});
