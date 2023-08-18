@@ -28,8 +28,18 @@
   padding-bottom: 8px;
 }
 
+.Nav-element-mobile {
+  text-decoration: none;
+  font-weight: 600;
+  color: #ce98e7;
+  font-size: 5vh;
+  margin-right: 8px;
+  text-align: right;
+}
+
 .Title {
   color: #ce98e7;
+  font-weight: 600;
   text-decoration: none;
   font-weight: 1000;
   font-size: 24px;
@@ -72,23 +82,9 @@ nav {
   padding: 5%;
 }
 
-.menu {
-  transform: translateX(150%);
-  transition: transform 0.3s ease;
-  overflow: hidden;
-  display: none;
-}
-
-.menu.visible {
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: column;
-}
-
 .menu-icon {
   border: none;
   background: none;
-
   cursor: pointer;
   position: fixed;
   margin-top: 2%;

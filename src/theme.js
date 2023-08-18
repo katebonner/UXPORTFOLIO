@@ -43,7 +43,7 @@ export default theme;
 
 export const Heading1 = styled.text({
   fontWeight: 1000,
-  fontSize: 140,
+  fontSize: "9vw",
   color: theme.colors.violet[200],
   "@media(max-width: 768px)": {
     fontSize: 36,

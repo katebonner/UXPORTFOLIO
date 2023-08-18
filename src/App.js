@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { HashRouter as Router, Route, Link, Routes } from "react-router-dom";
 import About from "./Controllers/About";
 import Home from "./Controllers/Home";
 import Projects from "./Controllers/Projects";
-import MobileMenuIcon from "./Components/MobileMenuIcon";
 import "./App.css";
 
 const Navigation = () => {
@@ -36,44 +35,29 @@ const Navigation = () => {
 };
 
 const MobileNavBar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
   return (
-    <nav className="navbar mobile">
-      <button
-        className={isOpen ? "menu-icon visible" : "menu-icon"}
-        onClick={toggleMenu}
-      >
-        <MobileMenuIcon toggled={isOpen} />
-      </button>
-      <ul className={isOpen ? "menu visible" : "menu"}>
-        <Link className={"Nav-element"} to="/" onClick={toggleMenu}>
-          Home
+    <nav className="mobile">
+      <ul>
+        <Link className={"Nav-element-mobile"} to="/">
+          KA+iE
         </Link>
-        <Link className={"Nav-element"} to="/projects" onClick={toggleMenu}>
+        <Link className={"Nav-element-mobile"} to="/projects">
           Projects
         </Link>
-        <Link className={"Nav-element"} to="/about" onClick={toggleMenu}>
+        <Link className={"Nav-element-mobile"} to="/about">
           About
         </Link>
-
         <a
-          className={"Nav-element"}
+          className={"Nav-element-mobile"}
           href="mailto:katebonner277@gmail.com"
-          onClick={toggleMenu}
         >
           Contact
         </a>
         <a
-          className={"Nav-element"}
+          className={"Nav-element-mobile"}
           href="https://github.com/katebonner/UXPORTFOLIO"
           target="_blank"
           rel="noreferrer"
-          onClick={toggleMenu}
         >
           &lt;Source Code/&gt;
         </a>

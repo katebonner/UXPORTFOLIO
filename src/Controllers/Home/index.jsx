@@ -11,12 +11,14 @@ const HomeController = () => {
       <Circle />
       <Grid />
       <Blob />
-      <WindowContainer>
-        <Name>{HeadingTop}</Name>
-        <Identity />
-        <Description>{DescriptionLeft}</Description>
-      </WindowContainer>
-      <ComplexPlaneAnimation />
+      <div className="web">
+        <WindowContainer>
+          <Name>{HeadingTop}</Name>
+          <Identity />
+          <Description>{DescriptionLeft}</Description>
+        </WindowContainer>
+        <ComplexPlaneAnimation />
+      </div>
     </>
   );
 };
