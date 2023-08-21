@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/UXPORTFOLIO/static/css/main.0af9daf5.css",
-    "main.js": "/UXPORTFOLIO/static/js/main.216e52ea.js",
+    "main.css": "/UXPORTFOLIO/static/css/main.f8daf5ce.css",
+    "main.js": "/UXPORTFOLIO/static/js/main.6bf9668e.js",
     "static/js/787.7efd31bd.chunk.js": "/UXPORTFOLIO/static/js/787.7efd31bd.chunk.js",
-    "static/media/level-01.png": "/UXPORTFOLIO/static/media/level-01.145c40ed92483aecd756.png",
+    "static/media/level-01.png": "/UXPORTFOLIO/static/media/level-01.722152b8ee2771b4d2f1.png",
     "index.html": "/UXPORTFOLIO/index.html",
-    "main.0af9daf5.css.map": "/UXPORTFOLIO/static/css/main.0af9daf5.css.map",
-    "main.216e52ea.js.map": "/UXPORTFOLIO/static/js/main.216e52ea.js.map",
+    "main.f8daf5ce.css.map": "/UXPORTFOLIO/static/css/main.f8daf5ce.css.map",
+    "main.6bf9668e.js.map": "/UXPORTFOLIO/static/js/main.6bf9668e.js.map",
     "787.7efd31bd.chunk.js.map": "/UXPORTFOLIO/static/js/787.7efd31bd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0af9daf5.css",
-    "static/js/main.216e52ea.js"
+    "static/css/main.f8daf5ce.css",
+    "static/js/main.6bf9668e.js"
   ]
 }
