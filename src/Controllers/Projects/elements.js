@@ -51,3 +51,9 @@ export const ProjectDescriptionContainer = styled.div({
   width: "80%",
   marginLeft: "5%",
 });
+
+export const Heading = styled.div({
+  fontWeight: 600,
+  fontSize: "10vw",
+  color: theme.colors.violet[200],
+});
