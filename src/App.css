@@ -19,11 +19,12 @@
   color: #ce98e7;
   font-size: 18px;
   margin-right: 8px;
+  font-weight: 600;
 }
 
 .Nav-element:hover {
-  border-bottom: 1px solid #ce98e7;
-  border-top: 1px solid transparent;
+  border-bottom: 2px solid #ce98e7;
+  border-top: 2px solid transparent;
   padding-top: 8px;
   padding-bottom: 8px;
 }
@@ -41,20 +42,8 @@
   color: #ce98e7;
   font-weight: 600;
   text-decoration: none;
-  font-weight: 1000;
   font-size: 24px;
   text-align: left;
-}
-
-.Contact {
-  border-bottom: 1px solid #ce98e7;
-  padding-top: 12px;
-  text-decoration: none;
-  font-weight: 800;
-  color: #ce98e7;
-  padding-bottom: 8px;
-  font-size: 18px;
-  margin-right: 8px;
 }
 
 .mobile {
@@ -116,4 +105,19 @@ a {
   color: #fff;
   padding: 10px 20px;
   display: block;
+}
+
+.color-default {
+  color: #ce98e7;
+}
+
+.color-level {
+  color: #2a6444;
+}
+
+.color-level:hover {
+  border-bottom: 2px solid #2a6444;
+  border-top: 2px solid transparent;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
