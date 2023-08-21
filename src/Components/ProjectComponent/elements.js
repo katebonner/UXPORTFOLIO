@@ -9,7 +9,7 @@ export const ProjectContainer = styled.div({
 
 export const ProjectImage = styled.img({
   width: "80vw",
-  borderRadius: 20,
+  borderRadius: 10,
   filter: "sepia(2) hue-rotate(240deg) saturate(2)",
   "&:hover": {
     filter: "none",
