@@ -9,7 +9,6 @@ import {
   Derivation,
 } from "./elements";
 import DerivationImage from "../../assets/derivation.png";
-import WaveFunction from "../../Components/WaveFunctionComponent";
 
 const WaveFunctionController = () => {
   return (
