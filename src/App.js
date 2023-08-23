@@ -13,6 +13,8 @@ const Navigation = () => {
     switch (pathname) {
       case "/level":
         return "color-level";
+      case "/wavefunction":
+        return "color-wavefunction";
       default:
         return "color-default";
     }

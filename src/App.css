@@ -121,3 +121,14 @@ a {
   padding-top: 8px;
   padding-bottom: 8px;
 }
+
+.color-wavefunction {
+  color: #fff;
+}
+
+.color-wavefunction:hover {
+  border-bottom: 2px solid #fff;
+  border-top: 2px solid transparent;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
