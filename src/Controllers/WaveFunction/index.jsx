@@ -33,14 +33,12 @@ const WaveFunctionController = () => {
           This undertaking deepened my appreciation for the often elusive
           imaginary component of wave functions. Through visualizing the
           time-dependent Schrödinger equation for a free particle, I met a
-          profound elegance nestled within the mathematical framework of our
-          universe. The project illuminated how the interplay between real and
-          imaginary components manifests as the intricate screw-like shape of a
-          wave function. This perspective not only enriched my understanding of
-          quantum mechanics but also underscored the beauty and complexity that
-          underlie even the most abstract mathematical concepts.
+          profound screw-shaped elegance nestled within the mathematical
+          framework of our universe. This perspective not only enriched my
+          understanding of quantum mechanics but also underscored the beauty and
+          complexity that underlie even the most abstract mathematical concepts.
         </Text1>
-        <Text2>(002)</Text2>
+        {/* <Text2>(002)</Text2>
         <Heading1>Derivation</Heading1>
         <Derivation src={DerivationImage} />
         <Text1></Text1>
@@ -49,7 +47,7 @@ const WaveFunctionController = () => {
         <Text1></Text1>
         <Text2>(004)</Text2>
         <Heading1>The Development Process</Heading1>
-        <Text1></Text1>
+        <Text1></Text1> */}
       </CaseContainer>
     </>
   );
