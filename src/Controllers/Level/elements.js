@@ -54,10 +54,9 @@ export const Overlay = styled.div({
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: "300px",
-  height: "300px",
-  borderRadius: "50%",
-  background: "rgba(222, 73, 162, 0.9)", // semi-transparent black
+  width: "90%",
+  height: "100%",
+  background: "rgba(42, 100, 68, 0.7)", // semi-transparent black
   display: "flex",
   alignItems: "center",
   justifyContent: "center",

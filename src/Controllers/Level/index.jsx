@@ -11,8 +11,128 @@ import {
   Overlay,
 } from "./elements";
 import LevelImage from "../../assets/level-01.png";
+import { Radar } from "react-chartjs-2";
+import {
+  Chart,
+  RadialLinearScale,
+  PointElement,
+  LineElement,
+  Filler,
+} from "chart.js";
+
+const labelToEmojiMap = {
+  ACOUSTICNESS: "🎸",
+  DANCEABILITY: "🕺",
+  ENERGY: "⚡",
+  INSTRUMENTALNESS: "🎻",
+  LIVENESS: "🔥",
+  SPEECHINESS: "🎤",
+  HAPPINESS: "😊",
+};
+
+const emojiPlugin = {
+  id: "emojiPlugin",
+  afterDraw: function (chart) {
+    const ctx = chart.ctx;
+
+    chart.data.datasets.forEach((dataset, index) => {
+      const meta = chart.getDatasetMeta(index);
+      meta.data.forEach((point, pointIndex) => {
+        const label = chart.data.labels[pointIndex];
+        const emoji = labelToEmojiMap[label];
+        if (emoji) {
+          ctx.font = "40px Arial";
+          ctx.textAlign = "center";
+          ctx.textBaseline = "middle";
+          ctx.fillText(emoji, point.x, point.y);
+        }
+      });
+    });
+  },
+};
+
+Chart.register(
+  RadialLinearScale,
+  PointElement,
+  LineElement,
+  Filler,
+  emojiPlugin
+);
 
 const Level = () => {
+  const audioFeatures = {
+    labels: [
+      "ACOUSTICNESS",
+      "DANCEABILITY",
+      "ENERGY",
+      "INSTRUMENTALNESS",
+      "LIVENESS",
+      "SPEECHINESS",
+      "HAPPINESS",
+    ],
+    datasets: [
+      {
+        data: [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5],
+        fill: true,
+        responsive: true,
+        backgroundColor: "rgba(42, 100, 68, 0.5)",
+        borderColor: "rgb(42, 100, 68)",
+        pointBackgroundColor: "rgb(42, 100, 68)",
+        pointBorderColor: "rgb(42, 100, 68)",
+        pointHoverBackgroundColor: "#2a6444",
+        pointHoverBorderColor: "#2a6444",
+      },
+    ],
+  };
+
+  const getFontSize = () => {
+    const width = window.innerWidth;
+    if (width <= 768) {
+      return 10;
+    } else if (width <= 1024) {
+      return 18;
+    } else {
+      return 20;
+    }
+  };
+
+  const chartOptions = {
+    scales: {
+      r: {
+        angleLines: {
+          color: "rgba(42, 100, 68, 0.5)",
+        },
+        ticks: {
+          color: "#2a6444",
+          showLabelBackdrop: false,
+          font: {
+            size: getFontSize(),
+            weight: 600,
+          },
+        },
+        pointLabels: {
+          color: "#2a6444",
+          font: {
+            size: getFontSize(),
+            weight: 600,
+          },
+        },
+        grid: {
+          color: "rgba(42, 100, 68, 0.5)",
+        },
+      },
+    },
+    animations: {
+      tension: {
+        duration: 1000,
+        easing: "easeInBounce",
+        from: 0.6,
+        to: 0.3,
+        loop: true,
+      },
+    },
+  };
+
   return (
     <>
       <Background />
@@ -45,6 +165,7 @@ const Level = () => {
           accounts and access a visual representation of the audio features of
           their most recent top 50 tracks.
         </Text1>
+
         <Text2>(002)</Text2>
         <Heading1>Problem Outline</Heading1>
         <Text1>
@@ -54,6 +175,9 @@ const Level = () => {
           intuitive and visually striking interface that would allow users to
           easily access and interpret the audio features of their top tracks.
         </Text1>
+
+        <Radar data={audioFeatures} key={4} options={chartOptions} />
+
         <Text2>(003)</Text2>
         <Heading1>The Design Process</Heading1>
         <Text1>
