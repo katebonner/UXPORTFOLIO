@@ -38,10 +38,10 @@ const WaveFunctionController = () => {
           understanding of quantum mechanics but also underscored the beauty and
           complexity that underlie even the most abstract mathematical concepts.
         </Text1>
-        {/* <Text2>(002)</Text2>
+        <Text2>(002)</Text2>
         <Heading1>Derivation</Heading1>
         <Derivation src={DerivationImage} />
-        <Text1></Text1>
+        {/* <Text1></Text1>
         <Text2>(003)</Text2>
         <Heading1>The Design Process</Heading1>
         <Text1></Text1>
