@@ -5,6 +5,7 @@ import Home from "./Controllers/Home";
 import Projects from "./Controllers/Projects";
 import Level from "./Controllers/Level";
 import WaveFunction from "./Controllers/WaveFunction";
+import Wine from "./Controllers/Wine";
 import "./App.css";
 import { useLocation } from "react-router-dom";
 
@@ -106,6 +107,7 @@ export const App = () => {
           <Route path="/projects" element={<Projects />} />
           <Route path="/level" element={<Level />} />
           <Route path="/wavefunction" element={<WaveFunction />} />
+          <Route path="/wine" element={<Wine />} />
           <Route path="/" element={<Home />} />
         </Routes>
       </div>

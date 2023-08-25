@@ -24,6 +24,13 @@ const ProjectsController = () => {
         description="Visualizing the one-dimensional, time-depending shrödinger equation for a free particle"
         year="2019"
       />
+      <Project
+        link="/wine"
+        image={WaveFunctionImage}
+        title="Wine: An Animated Music Video"
+        description="A Short Character Animation"
+        year="2021"
+      />
     </>
   );
 };
