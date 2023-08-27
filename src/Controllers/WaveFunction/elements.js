@@ -115,6 +115,6 @@ export const Code = styled.div({
   fontFamily: "monospace",
   color: "rgba(255,255,255,.4)",
   textAlign: "left",
-  margin: "2% 0 25% 20%",
+  margin: "2% 0 10% 25%",
   fontSize: "1vw",
 });
