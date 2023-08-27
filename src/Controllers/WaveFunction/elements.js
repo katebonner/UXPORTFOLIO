@@ -37,7 +37,8 @@ export const Derivation = styled.img({
 export const ProjectImage = styled.img({
   display: "block",
   width: "100%", // To take the full width of the parent (ImageWrapper)
-  borderRadius: 20,
+  borderRadius: 5,
+  margin: "5% 0 5% 0",
 });
 
 export const ProjectDescriptionContainer = styled.div({
@@ -108,4 +109,12 @@ export const Text2 = styled.div({
   color: "#fff",
   textAlign: "left",
   margin: "2% 0 0 0",
+});
+
+export const Code = styled.div({
+  fontFamily: "monospace",
+  color: "rgba(255,255,255,.4)",
+  textAlign: "left",
+  margin: "2% 0 25% 20%",
+  fontSize: "1vw",
 });
