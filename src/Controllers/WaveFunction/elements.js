@@ -111,6 +111,14 @@ export const Text2 = styled.div({
   margin: "2% 0 0 0",
 });
 
+export const Text3 = styled.div({
+  fontSize: "1vw",
+  lineHeight: "3vw",
+  color: "#fff",
+  textAlign: "right",
+  margin: "2% 0 0 0",
+});
+
 export const Code = styled.div({
   fontFamily: "monospace",
   color: "rgba(255,255,255,.4)",
