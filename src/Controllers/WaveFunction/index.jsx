@@ -79,11 +79,11 @@ const WaveFunctionController = () => {
           and complexity that underlies abstract mathematical concepts.
         </Text1>
         <Text2>(002)</Text2>
-        <Heading1>The Derivation</Heading1>
+        <Heading1>Derivation</Heading1>
         <Derivation src={DerivationImage} />
         <Text1></Text1>
         <Text2>(003)</Text2>
-        <Heading1>The Development Process</Heading1>
+        <Heading1>Development</Heading1>
         <Text1>
           I derived the equation and then automated the computation of the wave
           function's vertices over different time steps, plotting them in two
@@ -107,7 +107,7 @@ const WaveFunctionController = () => {
         <ProjectImage src={Blender4}></ProjectImage>
         <ProjectImage src={SideWave}></ProjectImage>
         <Text2>(004)</Text2>
-        <Heading1>The Animation Process</Heading1>
+        <Heading1>Animation</Heading1>
         <Text1>
           Each time step corresponds to one frame. I rendered the .mp4 files at
           24 frames per second (fps). Given that each time step represents 0.1
@@ -118,7 +118,7 @@ const WaveFunctionController = () => {
 
         <ProjectImage src={ShadeWave}></ProjectImage>
         <Text2>(005)</Text2>
-        <Heading1>The Final Product</Heading1>
+        <Heading1>Final Product</Heading1>
         <Text3>angled</Text3>
         <ReactPlayer
           url="https://player.vimeo.com/video/858681236?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
