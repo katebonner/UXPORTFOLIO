@@ -1,14 +1,14 @@
 import React from "react";
-import { Background, Heading } from "./elements";
-import LevelImage from "../../assets/level-01.png";
+import { Background } from "./elements";
 import WaveFunctionImage from "../../assets/wavefunction.png";
 import Project from "../../Components/ProjectComponent";
-import Wine from "../../assets/henry-01 copy.png";
+import FadeOverlay from "../../Components/FadeOverlay";
 
 const ProjectsController = () => {
   return (
     <>
       <Background />
+      <FadeOverlay />
       <Project
         link="/wavefunction"
         image={WaveFunctionImage}

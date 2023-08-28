@@ -101,7 +101,7 @@ export const Title = styled.div({
   alignItems: "left",
   fontSize: "16vw",
   fontWeight: 600,
-  "@media(max-width: 900px)": {
+  "@media(max-width: 600px)": {
     bottom: 60,
     left: 30,
   },

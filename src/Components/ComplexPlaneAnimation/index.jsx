@@ -1,6 +1,5 @@
 import React from "react";
 import { useSpring, animated, easings } from "@react-spring/web";
-import theme from "../../theme";
 import { CenterContainer } from "./elements";
 
 const POINT = {
@@ -16,7 +15,7 @@ const ARROW = {
   HEIGHT: 1,
 };
 
-const color = theme.colors.violet[200];
+const color = "#fff";
 
 const ComplexPlaneAnimation = () => {
   const point = useSpring({

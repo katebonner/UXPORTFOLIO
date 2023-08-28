@@ -6,7 +6,5 @@ export const CenterContainer = styled.div({
   justifyContent: "center",
   alignItems: "center",
   height: "450px",
-  "@media(max-width: 768px)": {
-    transform: "translateX(-35%)",
-  },
+  transform: "translateY(50%)",
 });

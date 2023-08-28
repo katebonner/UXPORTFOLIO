@@ -1,8 +1,5 @@
 import React from "react";
 import {
-  WindowContainer,
-  Name,
-  Description,
   PurpleCircle,
   Grid,
   Background,
@@ -10,15 +7,14 @@ import {
   SourceCode,
   Title,
 } from "./elements";
-import ComplexPlaneAnimation from "../../Components/ComplexPlaneAnimation";
-import { HeadingTop, DescriptionLeft } from "./copy";
 import Blob from "../../Components/Blob";
-import Identity from "../../Components/Identity";
+import FadeOverlay from "../../Components/FadeOverlay";
 
 const HomeController = () => {
   return (
     <>
       <Background />
+      <FadeOverlay />
       <PurpleCircle />
       <YellowCircle />
       <Grid />

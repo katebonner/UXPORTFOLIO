@@ -8,16 +8,9 @@ import WaveFunction from "./Controllers/WaveFunction";
 import Wine from "./Controllers/Wine";
 import "./App.css";
 import { useLocation } from "react-router-dom";
+import RefreshAnimation from "./Components/RefreshAnimation";
 
 const Navigation = () => {
-  const getVisibility = (pathname) => {
-    switch (pathname) {
-      case "/projects":
-        return "show";
-      default:
-        return "show";
-    }
-  };
   const getNavColor = (pathname) => {
     switch (pathname) {
       case "/":
@@ -106,42 +99,91 @@ const MobileNavBar = () => {
   const getNavColor = (pathname) => {
     switch (pathname) {
       case "/":
-        return "color-black";
+        return "color-black-mobile";
       default:
-        return "color-white";
+        return "color-white-mobile";
     }
   };
   let location = useLocation();
   let navColor = getNavColor(location.pathname);
-  return (
-    <nav className="mobile">
-      <ul>
-        <Link className={`Nav-element-mobile ${navColor}`} to="/">
-          KA+iE
-        </Link>
-        <Link className={`Nav-element-mobile ${navColor}`} to="/projects">
-          PROJECTS
-        </Link>
-        <Link className={`Nav-element-mobile ${navColor}`} to="/about">
-          ABOUT
-        </Link>
-        <a
-          className={`Nav-element-mobile ${navColor}`}
-          href="mailto:katebonner277@gmail.com"
-        >
-          CONTACT
-        </a>
-      </ul>
-    </nav>
-  );
+  const renderContent = () => {
+    switch (location.pathname) {
+      case "/":
+        return (
+          <div className="Nav-element-mobile">
+            <Link className={`Nav-element-mobile ${navColor}`} to="/projects">
+              PROJECTS
+            </Link>
+            <Link className={`Nav-element-mobile ${navColor}`} to="/about">
+              ABOUT
+            </Link>
+            <a
+              className={`Nav-element-mobile ${navColor}`}
+              href="mailto:katebonner277@gmail.com"
+            >
+              CONTACT
+            </a>
+          </div>
+        );
+
+      case "/projects":
+        return (
+          <div className="Nav-element-mobile">
+            <Link className={`Nav-element-mobile ${navColor}`} to="/">
+              KA+iE /
+            </Link>
+            <Link className={`Nav-element-mobile ${navColor}`} to="/projects">
+              PROJECTS
+            </Link>
+          </div>
+        );
+
+      case "/wavefunction":
+        return (
+          <div className="Nav-element-mobile">
+            <Link className={`Nav-element-mobile ${navColor}`} to="/">
+              KA+iE /
+            </Link>
+            <Link className={`Nav-element-mobile ${navColor}`} to="/projects">
+              PROJECTS /
+            </Link>
+            <Link
+              className={`Nav-element-mobile ${navColor}`}
+              to="/wavefunction"
+            >
+              SCHRÖDINGER
+            </Link>
+          </div>
+        );
+
+      case "/about":
+        return (
+          <div className="Nav-element-mobile">
+            <Link className={`Nav-element-mobile ${navColor}`} to="/">
+              KA+iE /
+            </Link>
+            <Link className={`Nav-element-mobile ${navColor}`} to="/about">
+              ABOUT
+            </Link>
+          </div>
+        );
+
+      default:
+        return null;
+    }
+  };
+
+  return <div className="mobile">{renderContent()}</div>;
 };
 
 export const App = () => {
   return (
     <Router basename="/">
       <div className="App">
+        <RefreshAnimation />
         <Navigation />
         <MobileNavBar />
+
         <Routes>
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />

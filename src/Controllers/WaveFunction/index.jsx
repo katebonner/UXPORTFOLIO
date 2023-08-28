@@ -19,6 +19,7 @@ import SideWave from "../../assets/sideWave.png";
 import ShadeWave from "../../assets/WaveShading.png";
 import { derivationCodeString } from "./schrodinger";
 import ReactPlayer from "react-player";
+import FadeOverlay from "../../Components/FadeOverlay";
 
 const WaveFunctionController = () => {
   const formatCode = (codeString) =>
@@ -31,6 +32,7 @@ const WaveFunctionController = () => {
   return (
     <>
       <Background />
+      <FadeOverlay />
       {/* <ProjectImage src={WaveFunctionImage}></ProjectImage> */}
       <PlayerWrapper>
         <ReactPlayer

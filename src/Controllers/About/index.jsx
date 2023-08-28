@@ -10,7 +10,6 @@ import {
   Spacer,
   TextContainer,
   Background,
-  Circle,
 } from "./elements";
 import {
   Heading1,
@@ -21,12 +20,13 @@ import {
   Text6,
 } from "../../theme";
 import Fractal from "../../Components/Fractal";
+import FadeOverlay from "../../Components/FadeOverlay";
 
 const AboutController = () => {
   return (
     <WindowContainer>
       <Background />
-
+      <FadeOverlay />
       <Fractal />
       <Row>
         <ShrinkColumn>
