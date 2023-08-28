@@ -95,6 +95,7 @@ const WaveFunctionController = () => {
           muted
           loop
           width="100%"
+          playsInline
         />
         <Code>{formatCode(derivationCodeString)}</Code>
         <Text1>
@@ -130,6 +131,7 @@ const WaveFunctionController = () => {
             muted
             loop
             width="100%"
+            playsInline
           />
         </PlayerWrapper>
       </CaseContainer>
