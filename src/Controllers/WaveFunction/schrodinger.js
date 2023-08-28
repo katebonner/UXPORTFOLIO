@@ -24,8 +24,8 @@ def wavefunction(x, t, p):
 
 # Variables
 x_values = np.arange(-50. * sigma, 50. * sigma, 0.01 * sigma)
-deltat = .05
-tf = deltat * 500
+deltat = .1
+tf = deltat * 50
 
 plt.ion()
 with open('gaussianpsi.txt', 'w') as f:
@@ -36,8 +36,8 @@ with open('gaussianpsi.txt', 'w') as f:
             plt.cla()
             y_values = wavefunction(x_values, t, p)
         
-            plt.plot(x_values, y_values.real, label='Real Part', color='blue')
-            plt.plot(x_values, y_values.imag, label='Imaginary Part', color='red')
+            plt.plot(x_values, y_values.real, label='Real Part', color='#fff', linestyle='-')
+            plt.plot(x_values, y_values.imag, label='Imaginary Part', color='#fff', linestyle='--')
             plt.ylim(ymin=-10., ymax=10.)
             plt.legend()  # Show legend indicating the colors
             
@@ -46,5 +46,6 @@ with open('gaussianpsi.txt', 'w') as f:
                 f.write(s)
 
             t += deltat
+
 
   `;

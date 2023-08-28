@@ -118,3 +118,8 @@ export const Code = styled.div({
   margin: "2% 0 10% 25%",
   fontSize: "1vw",
 });
+
+export const PlayerWrapper = styled.div({
+  padding: "5% 0 5% 0",
+  position: "relative",
+});
