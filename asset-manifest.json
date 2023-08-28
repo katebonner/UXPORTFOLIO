@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/UXPORTFOLIO/static/css/main.8aa59301.css",
-    "main.js": "/UXPORTFOLIO/static/js/main.6a833c10.js",
+    "main.js": "/UXPORTFOLIO/static/js/main.2e752a00.js",
     "static/js/787.7efd31bd.chunk.js": "/UXPORTFOLIO/static/js/787.7efd31bd.chunk.js",
     "static/media/WaveShading.png": "/UXPORTFOLIO/static/media/WaveShading.8e87e9f185eea27e1403.png",
     "static/media/isolatedWave1.png": "/UXPORTFOLIO/static/media/isolatedWave1.6cec1d6226640343ad52.png",
@@ -13,11 +13,11 @@
     "static/media/henry-01 copy.png": "/UXPORTFOLIO/static/media/henry-01 copy.be5e513a761a70479c9c.png",
     "index.html": "/UXPORTFOLIO/index.html",
     "main.8aa59301.css.map": "/UXPORTFOLIO/static/css/main.8aa59301.css.map",
-    "main.6a833c10.js.map": "/UXPORTFOLIO/static/js/main.6a833c10.js.map",
+    "main.2e752a00.js.map": "/UXPORTFOLIO/static/js/main.2e752a00.js.map",
     "787.7efd31bd.chunk.js.map": "/UXPORTFOLIO/static/js/787.7efd31bd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8aa59301.css",
-    "static/js/main.6a833c10.js"
+    "static/js/main.2e752a00.js"
   ]
 }
