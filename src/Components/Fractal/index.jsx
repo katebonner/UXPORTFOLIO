@@ -89,7 +89,7 @@ const SierpinskiTetrahedron = ({ position, size, level }) => {
       geometry={geometry}
       material={
         new THREE.MeshBasicMaterial({
-          color: theme.colors.violet[200],
+          color: "#fff",
           wireframe: true,
         })
       }

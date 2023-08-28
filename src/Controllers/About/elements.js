@@ -27,6 +27,8 @@ export const TextContainer = styled.div({
   "@media(max-width: 1280px)": {
     textAlign: "left",
     width: "100%",
+
+    margin: "2% 0 0 0",
   },
 });
 
@@ -64,6 +66,7 @@ export const GrowColumn = styled.div({
   width: "60%",
   "@media(max-width: 1280px)": {
     width: "100%",
+    margin: "5% 0 0 0",
   },
 });
 
@@ -76,7 +79,7 @@ export const HeadShotImage = styled.img({
 export const Divider = styled.div({
   height: 1,
   width: "100%",
-  backgroundColor: theme.colors.violet[800],
+  backgroundColor: "rgba(255,255,255,0.3)",
   "@media(max-width: 768px)": {
     backgroundColor: "transparent",
   },
@@ -93,7 +96,8 @@ export const Background = styled.div({
   right: 0,
   width: "100vw",
   height: "100vh",
-  backgroundColor: theme.colors.violet[800],
+  // backgroundColor: theme.colors.violet[800],
+  backgroundColor: "#191919",
   zIndex: -999,
 });
 
@@ -104,7 +108,8 @@ export const Circle = styled.div({
   width: "120vw",
   height: "130vh",
   borderRadius: "50%",
-  backgroundColor: theme.colors.violet[1000],
+  backgroundColor: "#191919",
+  // backgroundColor: theme.colors.violet[1000],
   zIndex: -999,
   filter: "blur(200px)",
 });

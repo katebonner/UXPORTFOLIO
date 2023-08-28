@@ -13,7 +13,7 @@ const ProjectsController = () => {
         link="/wavefunction"
         image={WaveFunctionImage}
         title="schrödinger"
-        description="Visualizing the one-dimensional, time-depending shrödinger equation for a free particle"
+        description="visualizing the one-dimensional, time-depending shrödinger equation for a free particle"
         year="2019"
       />
       {/* <Project

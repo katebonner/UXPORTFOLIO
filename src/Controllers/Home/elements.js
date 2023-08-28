@@ -25,6 +25,16 @@ export const Name = styled.text({
   },
 });
 
+export const Background = styled.div({
+  position: "fixed",
+  bottom: 0,
+  right: 0,
+  width: "100vw",
+  height: "100vh",
+  backgroundColor: "#ff7e0b",
+  zIndex: -999,
+});
+
 export const Description = styled.text({
   fontWeight: 400,
   fontSize: 36,
@@ -38,7 +48,7 @@ export const Description = styled.text({
   },
 });
 
-export const Circle = styled.div({
+export const PurpleCircle = styled.div({
   position: "fixed",
   bottom: "-50vh",
   right: "-50vh",
@@ -46,6 +56,18 @@ export const Circle = styled.div({
   height: "130vh",
   borderRadius: "50%",
   backgroundColor: theme.colors.violet[500],
+  zIndex: -999,
+  filter: "blur(200px)",
+});
+
+export const YellowCircle = styled.div({
+  position: "fixed",
+  top: "-75vh",
+  left: "-75vh",
+  width: "100vw",
+  height: "130vh",
+  borderRadius: "50%",
+  backgroundColor: "#ffa619",
   zIndex: -999,
   filter: "blur(200px)",
 });
@@ -63,4 +85,24 @@ export const Grid = styled.div({
         linear-gradient(to bottom, #3a3144 1px, transparent 1px)
     `,
   backgroundSize: "20px 20px",
+});
+
+export const SourceCode = styled.div({
+  position: "fixed",
+  bottom: 0,
+  right: 0,
+  alignItems: "right",
+});
+
+export const Title = styled.div({
+  position: "fixed",
+  bottom: 0,
+  left: 20,
+  alignItems: "left",
+  fontSize: "16vw",
+  fontWeight: 600,
+  "@media(max-width: 900px)": {
+    bottom: 60,
+    left: 30,
+  },
 });

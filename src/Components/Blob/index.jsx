@@ -108,8 +108,8 @@ const MyScene = forwardRef(({}, ref) => {
     >
       <sphereGeometry args={[1.5, 64, 32]} />
       <AnimatedMeshDistortMaterial
-        speed={5}
-        distort={0.5}
+        speed={4}
+        distort={0.6}
         color={theme.colors.violet[200]}
       />
     </animated.mesh>
@@ -132,7 +132,7 @@ export default function MyComponent() {
   return (
     <Canvas
       style={{
-        zIndex: -9999,
+        zIndex: -3,
         position: "fixed",
         bottom: 0,
         right: 0,
@@ -142,7 +142,7 @@ export default function MyComponent() {
       }}
     >
       <ambientLight intensity={1} />
-      <pointLight intensity={16} position={[0, 6, 0]} />
+      <pointLight intensity={50} color="#ffa619" position={[-3, 4, 4]} />
       <MyScene ref={blobApi} />
     </Canvas>
   );

@@ -8,25 +8,34 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   margin-top: 24px;
   margin-left: 48px;
   margin-right: 48px;
+}
+
+.Nav-grouping {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .Nav-element {
   text-decoration: none;
   color: #ce98e7;
   font-size: 18px;
-  margin-right: 8px;
   font-weight: 600;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-right: 16px;
 }
 
 .Nav-element:hover {
-  border-bottom: 2px solid #ce98e7;
-  border-top: 2px solid transparent;
   padding-top: 8px;
   padding-bottom: 8px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .Nav-element-mobile {
@@ -44,27 +53,14 @@
   text-decoration: none;
   font-size: 24px;
   text-align: left;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .mobile {
   display: none;
-}
-
-@media (max-width: 768px) {
-  .Title {
-    font-size: 24px;
-    font-weight: 800;
-  }
-  .web {
-    display: none;
-  }
-  .mobile {
-    display: flex;
-    justify-content: flex-end;
-  }
-  .Nav-element {
-    text-align: right;
-  }
 }
 
 nav {
@@ -102,24 +98,41 @@ li {
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: #191919;
   padding: 10px 20px;
   display: block;
 }
 
-.color-default {
-  color: #ce98e7;
+a:hover {
+  color: #fff;
 }
 
-.color-level {
-  color: #2a6444;
+.color-black {
+  color: #191919;
 }
 
-.color-level:hover {
-  border-bottom: 2px solid #2a6444;
-  border-top: 2px solid transparent;
+.color-white {
+  color: #fff;
+}
+
+.color-black:hover {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid transparent;
   padding-top: 8px;
   padding-bottom: 8px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.color-white:hover {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid transparent;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .color-wavefunction {
@@ -131,4 +144,21 @@ a {
   border-top: 2px solid transparent;
   padding-top: 8px;
   padding-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .Title {
+    font-size: 24px;
+    font-weight: 800;
+  }
+  .web {
+    display: none;
+  }
+  .mobile {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .Nav-element {
+    text-align: right;
+  }
 }

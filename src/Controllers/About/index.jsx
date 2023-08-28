@@ -26,7 +26,7 @@ const AboutController = () => {
   return (
     <WindowContainer>
       <Background />
-      <Circle />
+
       <Fractal />
       <Row>
         <ShrinkColumn>

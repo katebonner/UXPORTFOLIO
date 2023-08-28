@@ -44,7 +44,7 @@ export default theme;
 export const Heading1 = styled.text({
   fontWeight: 1000,
   fontSize: "9vw",
-  color: theme.colors.violet[200],
+  color: "#fff",
   "@media(max-width: 768px)": {
     fontSize: 36,
   },
@@ -53,13 +53,13 @@ export const Heading1 = styled.text({
 export const Heading2 = styled.text({
   fontWeight: 1000,
   fontSize: 72,
-  color: theme.colors.violet[200],
+  color: "#fff",
 });
 
 export const Text3 = styled.text({
   fontWeight: 400,
   fontSize: 48,
-  color: theme.colors.violet[200],
+  color: "#fff",
   "@media(max-width: 768px)": {
     fontSize: 24,
   },
@@ -68,22 +68,22 @@ export const Text3 = styled.text({
 export const Text4 = styled.text({
   fontWeight: 400,
   fontSize: 36,
-  color: theme.colors.violet[200],
+  color: "#fff",
 });
 
 export const Text5 = styled.text({
   fontWeight: 400,
   fontSize: 24,
-  color: theme.colors.violet[200],
+  color: "#fff",
 });
 export const Text6 = styled.text({
   fontWeight: 400,
   fontSize: 18,
-  color: theme.colors.violet[200],
+  color: "#fff",
 });
 export const SecondaryText6 = styled.text({
   fontWeight: 400,
   fontSize: 18,
   lineHeight: "24px",
-  color: theme.colors.violet[200],
+  color: "#fff",
 });

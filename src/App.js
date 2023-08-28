@@ -10,57 +10,105 @@ import "./App.css";
 import { useLocation } from "react-router-dom";
 
 const Navigation = () => {
+  const getVisibility = (pathname) => {
+    switch (pathname) {
+      case "/projects":
+        return "show";
+      default:
+        return "show";
+    }
+  };
   const getNavColor = (pathname) => {
     switch (pathname) {
-      case "/level":
-        return "color-level";
-      case "/wavefunction":
-        return "color-wavefunction";
+      case "/":
+        return "color-black";
       default:
-        return "color-default";
+        return "color-white";
     }
   };
   let location = useLocation();
   let navColor = getNavColor(location.pathname);
 
-  return (
-    <div className="App-header web">
-      <Link className={`Title ${navColor}`} to="/">
-        KA+iE
-      </Link>
-      <a
-        className={`Nav-element ${navColor}`}
-        href="https://github.com/katebonner/UXPORTFOLIO"
-        target="_blank"
-        rel="noreferrer"
-      >
-        View &lt;Source Code/&gt; on GitHub
-      </a>
+  const renderContent = () => {
+    switch (location.pathname) {
+      case "/":
+        return (
+          <>
+            <div className="Nav-grouping">
+              <Link className={`Nav-element ${navColor}`} to="/projects">
+                PROJECTS
+              </Link>
+              <Link className={`Nav-element ${navColor}`} to="/about">
+                ABOUT
+              </Link>
+              <a
+                className={`Nav-element ${navColor}`}
+                href="mailto:katebonner277@gmail.com"
+              >
+                CONTACT
+              </a>
+            </div>
+          </>
+        );
 
-      <Link className={`Nav-element ${navColor}`} to="/projects">
-        Projects
-      </Link>
-      <Link className={`Nav-element ${navColor}`} to="/about">
-        About
-      </Link>
+      case "/projects":
+        return (
+          <div className="Nav-grouping">
+            <Link className={`Nav-element ${navColor}`} to="/">
+              KA+iE
+            </Link>
+            <div className={`Nav-element ${navColor}`}>/</div>
+            <Link className={`Nav-element ${navColor}`} to="/projects">
+              PROJECTS
+            </Link>
+          </div>
+        );
 
-      <a
-        className={`Nav-element ${navColor}`}
-        href="mailto:katebonner277@gmail.com"
-      >
-        CONTACT
-      </a>
-    </div>
-  );
+      case "/wavefunction":
+        return (
+          <div className="Nav-grouping">
+            <Link className={`Nav-element ${navColor}`} to="/">
+              KA+iE
+            </Link>
+            <div className={`Nav-element ${navColor}`}>/</div>
+            <Link className={`Nav-element ${navColor}`} to="/projects">
+              PROJECTS
+            </Link>
+            <div className={`Nav-element ${navColor}`}>/</div>
+            <Link className={`Nav-element ${navColor}`} to="/wavefunction">
+              SCHRÖDINGER
+            </Link>
+          </div>
+        );
+
+      case "/about":
+        return (
+          <div className="Nav-grouping">
+            <Link className={`Nav-element ${navColor}`} to="/">
+              KA+iE
+            </Link>
+            <div className={`Nav-element ${navColor}`}>/</div>
+            <Link className={`Nav-element ${navColor}`} to="/about">
+              ABOUT
+            </Link>
+          </div>
+        );
+
+      default:
+        return null;
+    }
+  };
+
+  return <div className="App-header web">{renderContent()}</div>;
 };
 
 const MobileNavBar = () => {
   const getNavColor = (pathname) => {
     switch (pathname) {
-      case "/level":
-        return "color-level";
+      case "/":
+        return "color-black";
       default:
-        return "color-default";
+        return "color-white";
     }
   };
   let location = useLocation();
@@ -72,24 +120,16 @@ const MobileNavBar = () => {
           KA+iE
         </Link>
         <Link className={`Nav-element-mobile ${navColor}`} to="/projects">
-          Projects
+          PROJECTS
         </Link>
         <Link className={`Nav-element-mobile ${navColor}`} to="/about">
-          About
+          ABOUT
         </Link>
         <a
           className={`Nav-element-mobile ${navColor}`}
           href="mailto:katebonner277@gmail.com"
         >
-          Contact
-        </a>
-        <a
-          className={`Nav-element-mobile ${navColor}`}
-          href="https://github.com/katebonner/UXPORTFOLIO"
-          target="_blank"
-          rel="noreferrer"
-        >
-          &lt;Source Code/&gt;
+          CONTACT
         </a>
       </ul>
     </nav>

@@ -20,14 +20,14 @@ export const ProjectImage = styled.img({
 export const ProjectText = styled.text({
   fontSize: "2vw",
   fontWeight: 600,
-  color: "#ce98e7",
+  color: "#fff",
   width: "30%",
   textAlign: "left",
 });
 
 export const ProjectDescription = styled.text({
   fontSize: "1.6vw",
-  color: "#ce98e7",
+  color: "#fff",
   width: "30%",
   textAlign: "left",
   marginLeft: "-20%",
