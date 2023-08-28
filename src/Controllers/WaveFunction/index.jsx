@@ -9,13 +9,11 @@ import {
   Derivation,
   ProjectImage,
   Code,
-  StyledPlayer,
   PlayerWrapper,
 } from "./elements";
 import DerivationImage from "../../assets/derivation.png";
 import Blender from "../../assets/waveCode.png";
 import Blender4 from "../../assets/isolatedWave1.png";
-import WaveFunctionImage from "../../assets/wavefunction.png";
 import SideWave from "../../assets/sideWave.png";
 import ShadeWave from "../../assets/WaveShading.png";
 import { derivationCodeString } from "./schrodinger";
@@ -87,7 +85,8 @@ const WaveFunctionController = () => {
         <Heading1>The Development Process</Heading1>
         <Text1>
           I derived the equation and then automated the computation of the wave
-          function's vertices over different time steps, plotting them in 2D.
+          function's vertices over different time steps, plotting them in two
+          dimensions.
         </Text1>
         <ReactPlayer
           url="https://player.vimeo.com/video/858680382?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
@@ -99,9 +98,9 @@ const WaveFunctionController = () => {
         />
         <Code>{formatCode(derivationCodeString)}</Code>
         <Text1>
-          While a 2D animation of the wave function is elegant, its 3D
-          counterpart would be even more so. With these vertices and a 3D
-          modeling software, I generated a mesh for each time step.
+          To properly render the elegance of the helical curvature from the wave
+          function's imaginary component, we need to work in three dimensions.
+          So, I generated a 3D mesh for each time step.
         </Text1>
         <ProjectImage src={Blender}></ProjectImage>
         <ProjectImage src={Blender4}></ProjectImage>
@@ -119,21 +118,32 @@ const WaveFunctionController = () => {
         <ProjectImage src={ShadeWave}></ProjectImage>
         <Text2>(005)</Text2>
         <Heading1>The Final Product</Heading1>
-        <Text1>
-          The helical curvature arises from the wave function's imaginary
-          component; to capture it properly required working in three
-          dimensions.
-        </Text1>
-        <PlayerWrapper>
-          <ReactPlayer
-            url="https://player.vimeo.com/video/858681236?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-            playing
-            muted
-            loop
-            width="100%"
-            playsInline
-          />
-        </PlayerWrapper>
+        <ReactPlayer
+          url="https://player.vimeo.com/video/858681236?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          playing
+          muted
+          loop
+          width="100%"
+          playsInline
+        />
+
+        <ReactPlayer
+          url="https://player.vimeo.com/video/858727921?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          playing
+          muted
+          loop
+          width="100%"
+          playsInline
+        />
+
+        <ReactPlayer
+          url="https://player.vimeo.com/video/858726202?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          playing
+          muted
+          loop
+          width="100%"
+          playsInline
+        />
       </CaseContainer>
     </>
   );
