@@ -15,6 +15,7 @@ import Blender from "../../assets/waveCode.png";
 import Blender4 from "../../assets/isolatedWave1.png";
 import WaveFunctionImage from "../../assets/wavefunction.png";
 import SideWave from "../../assets/sideWave.png";
+import ShadeWave from "../../assets/WaveShading.png";
 import { derivationCodeString } from "./schrodinger";
 import ReactPlayer from "react-player";
 
@@ -93,6 +94,23 @@ const WaveFunctionController = () => {
         <ProjectImage src={Blender}></ProjectImage>
         <ProjectImage src={Blender4}></ProjectImage>
         <ProjectImage src={SideWave}></ProjectImage>
+        <ProjectImage src={ShadeWave}></ProjectImage>
+        <ReactPlayer
+          className="react-player"
+          url="https://player.vimeo.com/video/858483463?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          playing
+          muted
+          loop
+          width="100%"
+        />
+        <ReactPlayer
+          className="react-player"
+          url="https://player.vimeo.com/video/858483500?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          playing
+          muted
+          loop
+          width="100%"
+        />
       </CaseContainer>
     </>
   );
