@@ -80,7 +80,7 @@ const WaveFunctionController = () => {
           and complexity that underlies abstract mathematical concepts.
         </Text1>
         <Text2>(002)</Text2>
-        <Heading1>Derivation</Heading1>
+        <Heading1>The Derivation</Heading1>
         <Derivation src={DerivationImage} />
         <Text1></Text1>
         <Text2>(003)</Text2>
@@ -99,18 +99,25 @@ const WaveFunctionController = () => {
         <Code>{formatCode(derivationCodeString)}</Code>
         <Text1>
           While a 2D animation of the wave function is elegant, its 3D
-          counterpart would be even more so. Using these vertices, I generated a
-          mesh for each time step using a 3D modeling and animation software.
+          counterpart would be even more so. With these vertices and a 3D
+          modeling software, I generated a mesh for each time step.
         </Text1>
         <ProjectImage src={Blender}></ProjectImage>
         <ProjectImage src={Blender4}></ProjectImage>
         <ProjectImage src={SideWave}></ProjectImage>
+        <Text2>(004)</Text2>
+        <Heading1>The Animation Process</Heading1>
         <Text1>
-          Each time step corresponds to one frame. The animations were rendered
-          at 24 frames per second (fps). Given that each time step represents
-          0.1 seconds, the animation plays at 2.4x the real speed.
+          Each time step corresponds to one frame. I rendered the .mp4 files at
+          24 frames per second (fps). Given that each time step represents 0.1
+          seconds, the final animation plays at 2.4x the real speed. Moreover, I
+          assigned the mesh volume and material texture, and added lighting to
+          the environment.
         </Text1>
+
         <ProjectImage src={ShadeWave}></ProjectImage>
+        <Text2>(005)</Text2>
+        <Heading1>The Final Product</Heading1>
         <Text1>
           The helical curvature arises from the wave function's imaginary
           component; to capture it properly required working in three
