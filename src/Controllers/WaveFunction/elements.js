@@ -47,7 +47,7 @@ export const ProjectDescriptionContainer = styled.div({
   justifyContent: "space-between",
   marginLeft: "5%",
   marginRight: "5%",
-  marginTop: "-5%",
+  marginTop: 0,
   marginBottom: "5%",
   borderTop: "1px solid #fff",
   paddingTop: "1%",
