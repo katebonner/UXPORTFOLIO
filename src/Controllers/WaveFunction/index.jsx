@@ -20,6 +20,7 @@ import ShadeWave from "../../assets/WaveShading.png";
 import { derivationCodeString } from "./schrodinger";
 import ReactPlayer from "react-player";
 import FadeOverlay from "../../Components/FadeOverlay";
+import Vimeo from "@u-wave/react-vimeo";
 
 const WaveFunctionController = () => {
   const formatCode = (codeString) =>
@@ -33,18 +34,15 @@ const WaveFunctionController = () => {
     <>
       <Background />
       <FadeOverlay />
-      {/* <ProjectImage src={WaveFunctionImage}></ProjectImage> */}
-      <PlayerWrapper>
-        <ReactPlayer
-          className="react-player"
-          url="https://player.vimeo.com/video/858681236?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-          playing
-          muted
-          loop
-          width="100%"
-          playsInline
-        />
-      </PlayerWrapper>
+      <Vimeo
+        video="858681236"
+        autoplay
+        playsInline
+        loop
+        muted
+        controls={false}
+        responsive
+      />
       <ProjectDescriptionContainer>
         <Description>
           Visualizing the one-dimensional, time-depending shrödinger equation
@@ -91,13 +89,14 @@ const WaveFunctionController = () => {
           function's vertices over different time steps, plotting them in two
           dimensions.
         </Text1>
-        <ReactPlayer
-          url="https://player.vimeo.com/video/858680382?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-          playing
-          muted
-          loop
-          width="100%"
+        <Vimeo
+          video="858680382"
+          autoplay
           playsInline
+          loop
+          muted
+          controls={false}
+          responsive
         />
         <Code>{formatCode(derivationCodeString)}</Code>
         <Text1>
@@ -122,31 +121,36 @@ const WaveFunctionController = () => {
         <Text2>(005)</Text2>
         <Heading1>Final Product</Heading1>
         <Text3>angled</Text3>
-        <ReactPlayer
-          url="https://player.vimeo.com/video/858681236?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-          playing
-          muted
-          loop
-          width="100%"
+        <Vimeo
+          video="858681236"
+          autoplay
           playsInline
+          loop
+          muted
+          controls={false}
+          responsive
         />
+
         <Text3>y axis</Text3>
-        <ReactPlayer
-          url="https://player.vimeo.com/video/858727921?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-          playing
-          muted
-          loop
-          width="100%"
+        <Vimeo
+          video="858727921"
+          autoplay
           playsInline
+          loop
+          muted
+          controls={false}
+          responsive
         />
+
         <Text3>x axis</Text3>
-        <ReactPlayer
-          url="https://player.vimeo.com/video/858726202?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-          playing
-          muted
-          loop
-          width="100%"
+        <Vimeo
+          video="858726202"
+          autoplay
           playsInline
+          loop
+          muted
+          controls={false}
+          responsive
         />
       </CaseContainer>
     </>

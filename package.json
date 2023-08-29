@@ -9,6 +9,7 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "@u-wave/react-vimeo": "^0.9.10",
     "bootstrap": "^5.3.0",
     "chart.js": "^4.3.3",
     "flubber": "^0.4.2",
@@ -25,6 +26,7 @@
     "react-spring": "9.0.0-rc.3",
     "react-three": "^0.9.7",
     "react-three-fiber": "^6.0.13",
+    "react-vimeo": "^2.0.0",
     "spring": "^0.0.0",
     "three": "^0.155.0",
     "web-vitals": "^2.1.4"

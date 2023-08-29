@@ -82,7 +82,7 @@ export const Description = styled.div({
 });
 
 export const CaseContainer = styled.div({
-  margin: "0 5% 0 5%",
+  padding: "0 5% 0 5%",
 });
 
 export const Heading1 = styled.div({
