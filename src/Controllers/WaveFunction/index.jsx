@@ -11,6 +11,7 @@ import {
   Code,
   Text3,
   Spacer,
+  PlayerWrapper,
 } from "./elements";
 import DerivationImage from "../../assets/derivation.png";
 import Blender from "../../assets/waveCode.png";
@@ -19,7 +20,7 @@ import SideWave from "../../assets/sideWave.png";
 import ShadeWave from "../../assets/WaveShading.png";
 import { derivationCodeString } from "./schrodinger";
 import FadeOverlay from "../../Components/FadeOverlay";
-import Vimeo from "@u-wave/react-vimeo";
+import ReactPlayer from "react-player";
 
 const WaveFunctionController = () => {
   const formatCode = (codeString) =>
@@ -33,15 +34,17 @@ const WaveFunctionController = () => {
     <>
       <Background />
       <FadeOverlay />
-      <Vimeo
-        video="858681236"
-        autoplay
-        playsInline
-        loop
-        muted
-        controls={false}
-        responsive
-      />
+      <PlayerWrapper>
+        <ReactPlayer
+          className="react-player"
+          url="https://player.vimeo.com/video/858681236?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          playing
+          muted
+          loop
+          width="100%"
+          playsInline
+        />
+      </PlayerWrapper>
       <ProjectDescriptionContainer>
         <Description>
           Visualizing the one-dimensional, time-depending shrödinger equation
@@ -88,14 +91,13 @@ const WaveFunctionController = () => {
           function's vertices over different time steps, plotting them in two
           dimensions.
         </Text1>
-        <Vimeo
-          video="858680382"
-          autoplay
-          playsInline
-          loop
+        <ReactPlayer
+          url="https://player.vimeo.com/video/858680382?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          playing
           muted
-          controls={false}
-          responsive
+          loop
+          width="100%"
+          playsInline
         />
         <Code>{formatCode(derivationCodeString)}</Code>
         <Text1>
@@ -119,46 +121,35 @@ const WaveFunctionController = () => {
         <ProjectImage src={ShadeWave}></ProjectImage>
         <Text2>(005)</Text2>
         <Heading1>Final Product</Heading1>
-      </CaseContainer>
-      <CaseContainer>
+
         <Text3>angled</Text3>
-      </CaseContainer>
-
-      <Vimeo
-        video="858681236"
-        autoplay
-        playsInline
-        loop
-        muted
-        controls={false}
-        responsive
-      />
-
-      <CaseContainer>
+        <ReactPlayer
+          url="https://player.vimeo.com/video/858681236?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          playing
+          muted
+          loop
+          width="100%"
+          playsInline
+        />
         <Text3>y axis</Text3>
-      </CaseContainer>
-      <Vimeo
-        video="858857514"
-        autoplay
-        playsInline
-        loop
-        muted
-        controls={false}
-        responsive
-      />
-      <CaseContainer>
+        <ReactPlayer
+          url="https://player.vimeo.com/video/858727921?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          playing
+          muted
+          loop
+          width="100%"
+          playsInline
+        />
         <Text3>x axis</Text3>
+        <ReactPlayer
+          url="https://player.vimeo.com/video/858726202?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          playing
+          muted
+          loop
+          width="100%"
+          playsInline
+        />
       </CaseContainer>
-
-      <Vimeo
-        video="858726202"
-        autoplay
-        playsInline
-        loop
-        muted
-        controls={false}
-        responsive
-      />
       <Spacer />
     </>
   );
