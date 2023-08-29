@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/UXPORTFOLIO/static/css/main.b0ec5f61.css",
-    "main.js": "/UXPORTFOLIO/static/js/main.03e55394.js",
+    "main.css": "/UXPORTFOLIO/static/css/main.75a331d9.css",
+    "main.js": "/UXPORTFOLIO/static/js/main.80d1584e.js",
     "static/js/787.7efd31bd.chunk.js": "/UXPORTFOLIO/static/js/787.7efd31bd.chunk.js",
     "static/media/WaveShading.png": "/UXPORTFOLIO/static/media/WaveShading.8e87e9f185eea27e1403.png",
     "static/media/isolatedWave1.png": "/UXPORTFOLIO/static/media/isolatedWave1.6cec1d6226640343ad52.png",
@@ -11,13 +11,15 @@
     "static/media/derivation.png": "/UXPORTFOLIO/static/media/derivation.e17aa54fd0dea030fc0b.png",
     "static/media/level-01.png": "/UXPORTFOLIO/static/media/level-01.722152b8ee2771b4d2f1.png",
     "static/media/henry-01 copy.png": "/UXPORTFOLIO/static/media/henry-01 copy.be5e513a761a70479c9c.png",
+    "static/media/Poppins-Light.ttf": "/UXPORTFOLIO/static/media/Poppins-Light.7641a0f76ca9ef6c252c.ttf",
+    "static/media/Poppins-SemiBold.ttf": "/UXPORTFOLIO/static/media/Poppins-SemiBold.ac8d04b620e54be9b0f0.ttf",
     "index.html": "/UXPORTFOLIO/index.html",
-    "main.b0ec5f61.css.map": "/UXPORTFOLIO/static/css/main.b0ec5f61.css.map",
-    "main.03e55394.js.map": "/UXPORTFOLIO/static/js/main.03e55394.js.map",
+    "main.75a331d9.css.map": "/UXPORTFOLIO/static/css/main.75a331d9.css.map",
+    "main.80d1584e.js.map": "/UXPORTFOLIO/static/js/main.80d1584e.js.map",
     "787.7efd31bd.chunk.js.map": "/UXPORTFOLIO/static/js/787.7efd31bd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b0ec5f61.css",
-    "static/js/main.03e55394.js"
+    "static/css/main.75a331d9.css",
+    "static/js/main.80d1584e.js"
   ]
 }
