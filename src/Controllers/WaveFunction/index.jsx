@@ -42,7 +42,7 @@ const WaveFunctionController = () => {
           muted
           loop
           width="100%"
-          playsInline
+          playsinline
         />
       </PlayerWrapper>
       <ProjectDescriptionContainer>
@@ -97,7 +97,7 @@ const WaveFunctionController = () => {
           muted
           loop
           width="100%"
-          playsInline
+          playsinline
         />
         <Code>{formatCode(derivationCodeString)}</Code>
         <Text1>
@@ -129,7 +129,7 @@ const WaveFunctionController = () => {
           muted
           loop
           width="100%"
-          playsInline
+          playsinline
         />
         <Text3>y axis</Text3>
         <ReactPlayer
@@ -138,7 +138,7 @@ const WaveFunctionController = () => {
           muted
           loop
           width="100%"
-          playsInline
+          playsinline
         />
         <Text3>x axis</Text3>
         <ReactPlayer
@@ -147,7 +147,7 @@ const WaveFunctionController = () => {
           muted
           loop
           width="100%"
-          playsInline
+          playsinline
         />
       </CaseContainer>
       <Spacer />
