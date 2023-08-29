@@ -27,7 +27,7 @@ const AboutController = () => {
     <WindowContainer>
       <Background />
       <FadeOverlay />
-      <Fractal />
+      {/* <Fractal /> */}
       <Row>
         <ShrinkColumn>
           <Text6>(001)</Text6>

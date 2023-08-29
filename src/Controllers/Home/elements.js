@@ -9,11 +9,12 @@ export const WindowContainer = styled.div({
   paddingLeft: 28,
 });
 
-export const Name = styled.text({
-  fontWeight: 1000,
+export const Name = styled.div({
+  // fontWeight: 1000,
   fontSize: 140,
   paddingTop: 36,
   marginLeft: -5,
+  fontFamily: "Poppins-SemiBold",
   color: theme.colors.violet[200],
   "@media(max-width: 1280px)": {
     marginTop: 36,
