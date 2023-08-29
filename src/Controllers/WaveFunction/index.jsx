@@ -9,8 +9,8 @@ import {
   Derivation,
   ProjectImage,
   Code,
-  PlayerWrapper,
   Text3,
+  Spacer,
 } from "./elements";
 import DerivationImage from "../../assets/derivation.png";
 import Blender from "../../assets/waveCode.png";
@@ -18,7 +18,6 @@ import Blender4 from "../../assets/isolatedWave1.png";
 import SideWave from "../../assets/sideWave.png";
 import ShadeWave from "../../assets/WaveShading.png";
 import { derivationCodeString } from "./schrodinger";
-import ReactPlayer from "react-player";
 import FadeOverlay from "../../Components/FadeOverlay";
 import Vimeo from "@u-wave/react-vimeo";
 
@@ -120,39 +119,47 @@ const WaveFunctionController = () => {
         <ProjectImage src={ShadeWave}></ProjectImage>
         <Text2>(005)</Text2>
         <Heading1>Final Product</Heading1>
-        <Text3>angled</Text3>
-        <Vimeo
-          video="858681236"
-          autoplay
-          playsInline
-          loop
-          muted
-          controls={false}
-          responsive
-        />
-
-        <Text3>y axis</Text3>
-        <Vimeo
-          video="858727921"
-          autoplay
-          playsInline
-          loop
-          muted
-          controls={false}
-          responsive
-        />
-
-        <Text3>x axis</Text3>
-        <Vimeo
-          video="858726202"
-          autoplay
-          playsInline
-          loop
-          muted
-          controls={false}
-          responsive
-        />
       </CaseContainer>
+      <CaseContainer>
+        <Text3>angled</Text3>
+      </CaseContainer>
+
+      <Vimeo
+        video="858681236"
+        autoplay
+        playsInline
+        loop
+        muted
+        controls={false}
+        responsive
+      />
+
+      <CaseContainer>
+        <Text3>y axis</Text3>
+      </CaseContainer>
+      <Vimeo
+        video="858857514"
+        autoplay
+        playsInline
+        loop
+        muted
+        controls={false}
+        responsive
+      />
+      <CaseContainer>
+        <Text3>x axis</Text3>
+      </CaseContainer>
+
+      <Vimeo
+        video="858726202"
+        autoplay
+        playsInline
+        loop
+        muted
+        controls={false}
+        responsive
+      />
+      <Spacer />
     </>
   );
 };

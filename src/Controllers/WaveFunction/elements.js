@@ -131,3 +131,7 @@ export const PlayerWrapper = styled.div({
   padding: "5% 0 5% 0",
   position: "relative",
 });
+
+export const Spacer = styled.div({
+  margin: "20% 0 0 0",
+});
