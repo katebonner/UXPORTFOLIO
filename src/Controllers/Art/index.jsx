@@ -8,6 +8,7 @@ import {
   Year,
   SectionHeader,
   ProjectLoadingImageWrapper,
+  ProjectLoadingImage,
 } from "./elements";
 import Capi from "../../assets/capi.png";
 import Sara from "../../assets/sara.jpeg";
@@ -50,14 +51,14 @@ const Art = () => {
         </DescriptionContainer>
         <SectionHeader>WORKS IN PROGRESS</SectionHeader>
         <ProjectLoadingImageWrapper>
-          <ProjectImage src={Danny} width="40vw" />
+          <ProjectLoadingImage src={Danny} width="40vw" />
         </ProjectLoadingImageWrapper>
         <DescriptionContainer width="40vw">
           <Description>danny | charcoal</Description>
           <Year>[2023]</Year>
         </DescriptionContainer>
         <ProjectLoadingImageWrapper>
-          <ProjectImage src={Gabi} width="40vw" />
+          <ProjectLoadingImage src={Gabi} width="40vw" />
         </ProjectLoadingImageWrapper>
         <DescriptionContainer width="40vw">
           <Description>gabi | oil paint</Description>

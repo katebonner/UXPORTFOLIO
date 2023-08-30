@@ -27,9 +27,12 @@ export const ProjectImage = styled.img((props) => ({
   "&:hover": {
     filter: "none",
   },
-  // "@media(max-width: 1100px)": {
-  //   filter: "none",
-  // },
+}));
+
+export const ProjectLoadingImage = styled.img((props) => ({
+  width: props.width || "60vw",
+  margin: "10% 0 0 0",
+  filter: "grayscale(100%)",
 }));
 
 const loaderAnimation = keyframes({
@@ -46,18 +49,15 @@ export const ProjectLoadingImageWrapper = styled.div((props) => ({
   width: props.width || "60vw",
   margin: "5% 0 0 0",
   img: {
-    filter: "grayscale(100%) brightness(30%)",
-    "&:hover": {
-      filter: "none",
-    },
+    filter: "grayscale(100%) brightness(25%)",
   },
   "&::after": {
     content: '""',
     position: "absolute",
     top: "50%",
     left: "50%",
-    width: "75px",
-    height: "75px",
+    width: "50px",
+    height: "50px",
     marginTop: "-25px",
     marginLeft: "-25px",
     borderRadius: "50%",
