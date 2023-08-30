@@ -46,7 +46,7 @@ const styles = {
   linkText: {
     fontSize: "1.2vw",
     color: "rgba(255,255,255,0.5)",
-    margin: "0 1%",
+    margin: "0 3%",
     textDecoration: "none",
   },
 };

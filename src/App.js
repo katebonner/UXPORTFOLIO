@@ -5,7 +5,7 @@ import Home from "./Controllers/Home";
 import Projects from "./Controllers/Projects";
 import Level from "./Controllers/Level";
 import WaveFunction from "./Controllers/WaveFunction";
-import Wine from "./Controllers/Wine";
+import Art from "./Controllers/Art";
 import "./App.css";
 import { useLocation } from "react-router-dom";
 import RefreshAnimation from "./Components/RefreshAnimation";
@@ -28,6 +28,9 @@ const Navigation = () => {
         return (
           <>
             <div className="Nav-grouping">
+              <Link className={`Nav-element ${navColor}`} to="/art">
+                ART
+              </Link>
               <Link className={`Nav-element ${navColor}`} to="/projects">
                 PROJECTS
               </Link>
@@ -87,6 +90,19 @@ const Navigation = () => {
           </div>
         );
 
+      case "/art":
+        return (
+          <div className="Nav-grouping">
+            <Link className={`Nav-element ${navColor}`} to="/">
+              KA+iE
+            </Link>
+            <div className={`Nav-element ${navColor}`}>/</div>
+            <Link className={`Nav-element ${navColor}`} to="/art">
+              ART
+            </Link>
+          </div>
+        );
+
       default:
         return null;
     }
@@ -111,6 +127,9 @@ const MobileNavBar = () => {
       case "/":
         return (
           <div className="Nav-element-mobile">
+            <Link className={`Nav-element-mobile ${navColor}`} to="/art">
+              ART
+            </Link>
             <Link className={`Nav-element-mobile ${navColor}`} to="/projects">
               PROJECTS
             </Link>
@@ -168,6 +187,18 @@ const MobileNavBar = () => {
           </div>
         );
 
+      case "/art":
+        return (
+          <div className="Nav-element-mobile">
+            <Link className={`Nav-element-mobile ${navColor}`} to="/">
+              KA+iE /
+            </Link>
+            <Link className={`Nav-element-mobile ${navColor}`} to="/art">
+              ART
+            </Link>
+          </div>
+        );
+
       default:
         return null;
     }
@@ -183,13 +214,12 @@ export const App = () => {
         <RefreshAnimation />
         <Navigation />
         <MobileNavBar />
-
         <Routes>
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/art" element={<Art />} />
           <Route path="/level" element={<Level />} />
           <Route path="/wavefunction" element={<WaveFunction />} />
-          <Route path="/wine" element={<Wine />} />
           <Route path="/" element={<Home />} />
         </Routes>
       </div>
