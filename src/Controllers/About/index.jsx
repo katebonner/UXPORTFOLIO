@@ -21,6 +21,7 @@ import {
 } from "../../theme";
 import Fractal from "../../Components/Fractal";
 import FadeOverlay from "../../Components/FadeOverlay";
+import { Heading } from "../Projects/elements";
 
 const AboutController = () => {
   return (
@@ -44,9 +45,8 @@ const AboutController = () => {
       </Row>
       <Spacer />
       <Row>
-        <Heading1>BACKGROUND</Heading1>
+        <Heading1>ODYSSEY</Heading1>
       </Row>
-      <Divider />
       <Row>
         <SplitShrinkColumn>
           <Text5>01.</Text5>
@@ -60,9 +60,7 @@ const AboutController = () => {
             encompasses the mathematical disciplines of multivariable calculus,
             linear algebra, and differential equations. I've leveraged
             programming languages such as C++ and Python to analyze complex data
-            sets and perform intricate simulations. My studies in advanced
-            physical theories like quantum mechanics and space-time relativity
-            fostered my scientific skepticism.
+            sets and perform intricate simulations.
           </SecondaryText6>
         </SplitGrowColumn>
       </Row>
@@ -71,12 +69,28 @@ const AboutController = () => {
         <SplitShrinkColumn>
           <Text5>02.</Text5>
           <TextContainer>
-            <Text4>Design and Technology</Text4>
+            <Text4>Design</Text4>
           </TextContainer>
         </SplitShrinkColumn>
         <SplitGrowColumn>
           <SecondaryText6>
-            My master's degree in design and technology provided me with an
+            As Creative Director of The Corp, the world's largest student-run
+            corporation, I refined my graphic and motion design skills. I worked
+            in Adobe Illustrator, Adobe After Effects, and Cinema4D.
+          </SecondaryText6>
+        </SplitGrowColumn>
+      </Row>
+      <Divider />
+      <Row>
+        <SplitShrinkColumn>
+          <Text5>03.</Text5>
+          <TextContainer>
+            <Text4>Creative Technology</Text4>
+          </TextContainer>
+        </SplitShrinkColumn>
+        <SplitGrowColumn>
+          <SecondaryText6>
+            My master's degree in Trasdisciplinary New Media provided me with an
             education at the nexus of design principles and emerging
             technologies. I've acquired skills in 3D Modeling, Animation,
             Augmented Reality (AR) and Virtual Reality (VR).
@@ -86,7 +100,7 @@ const AboutController = () => {
       <Divider />
       <Row>
         <SplitShrinkColumn>
-          <Text5>03.</Text5>
+          <Text5>04.</Text5>
           <TextContainer>
             <Text4>Full-Stack Web Development</Text4>
           </TextContainer>
@@ -104,7 +118,7 @@ const AboutController = () => {
       <Divider />
       <Row>
         <SplitShrinkColumn>
-          <Text5>04.</Text5>
+          <Text5>05.</Text5>
           <TextContainer>
             <Text4>Front-End Mobile Development</Text4>
           </TextContainer>
@@ -118,7 +132,6 @@ const AboutController = () => {
           </SecondaryText6>
         </SplitGrowColumn>
       </Row>
-      <Divider />
       <Spacer />
     </WindowContainer>
   );

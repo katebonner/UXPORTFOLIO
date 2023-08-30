@@ -12,6 +12,7 @@ import {
   Text3,
   Spacer,
   PlayerWrapper,
+  Row,
 } from "./elements";
 import DerivationImage from "../../assets/derivation.png";
 import Blender from "../../assets/waveCode.png";
@@ -34,30 +35,29 @@ const WaveFunctionController = () => {
     <>
       <Background />
       <FadeOverlay />
-      <PlayerWrapper>
-        <ReactPlayer
-          className="react-player"
-          url="https://player.vimeo.com/video/858681236?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-          playing
-          muted
-          loop
-          width="100%"
-          playsinline
-        />
-      </PlayerWrapper>
+      <ReactPlayer
+        className="react-player"
+        url="https://player.vimeo.com/video/858681236?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+        playing
+        muted
+        loop
+        width="100%"
+        playsinline
+      />
       <ProjectDescriptionContainer>
         <Description>
-          Visualizing the one-dimensional, time-depending shrödinger equation
-          for a free particle
+          3d visualization of the one-dimensional, time-depending shrödinger
+          equation for a free particle
         </Description>
 
         <Description>Role: Designer, Developer, Mathematician</Description>
         <Description>(2019)</Description>
       </ProjectDescriptionContainer>
       <CaseContainer>
-        <Text2>(001)</Text2>
-        <Heading1>Introduction</Heading1>
-
+        <Row>
+          <Text2>(001)</Text2>
+          <Heading1>Introduction</Heading1>
+        </Row>
         <Text1>
           The time-dependent Schrödinger equation for a free particle connects
           the dynamics of the particle's wave function with its kinetic energy
@@ -80,12 +80,16 @@ const WaveFunctionController = () => {
           understanding of quantum mechanics, but also underscored the beauty
           and complexity that underlies abstract mathematical concepts.
         </Text1>
-        <Text2>(002)</Text2>
-        <Heading1>Derivation</Heading1>
+        <Row>
+          <Text2>(002)</Text2>
+          <Heading1>Derivation</Heading1>
+        </Row>
         <Derivation src={DerivationImage} />
         <Text1></Text1>
-        <Text2>(003)</Text2>
-        <Heading1>Development</Heading1>
+        <Row>
+          <Text2>(003)</Text2>
+          <Heading1>Development</Heading1>
+        </Row>
         <Text1>
           I derived the equation and then automated the computation of the wave
           function's vertices over different time steps, plotting them in two
@@ -108,8 +112,10 @@ const WaveFunctionController = () => {
         <ProjectImage src={Blender}></ProjectImage>
         <ProjectImage src={Blender4}></ProjectImage>
         <ProjectImage src={SideWave}></ProjectImage>
-        <Text2>(004)</Text2>
-        <Heading1>Animation</Heading1>
+        <Row>
+          <Text2>(004)</Text2>
+          <Heading1>Animation</Heading1>
+        </Row>
         <Text1>
           Each time step corresponds to one frame. I rendered the .mp4 files at
           24 frames per second (fps). Given that each time step represents 0.1
@@ -119,9 +125,10 @@ const WaveFunctionController = () => {
         </Text1>
 
         <ProjectImage src={ShadeWave}></ProjectImage>
-        <Text2>(005)</Text2>
-        <Heading1>Final Product</Heading1>
-
+        <Row>
+          <Text2>(005)</Text2>
+          <Heading1>Final Product</Heading1>
+        </Row>
         <Text3>angled</Text3>
         <ReactPlayer
           url="https://player.vimeo.com/video/858681236?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"

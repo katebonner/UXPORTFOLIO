@@ -13,17 +13,17 @@ code {
 }
 
 @font-face {
-  font-family: "Poppins-SemiBold";
+  font-family: "Poppins";
   src: local("Poppins-SemiBold"),
     url("./fonts/Poppins-SemiBold.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 600; /* SemiBold weight */
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Poppins-Light";
+  font-family: "Poppins";
   src: local("Poppins-Light"),
     url("./fonts/Poppins-Light.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 300; /* Light weight */
   font-style: normal;
 }

@@ -1,5 +1,6 @@
 #root {
-  font-family: "Poppins-Light", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
 }
 
 .App {
@@ -13,8 +14,8 @@
   align-items: center;
   justify-content: flex-end;
   margin-top: 24px;
-  margin-left: 48px;
-  margin-right: 48px;
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
 .Nav-grouping {
@@ -43,10 +44,12 @@
 
 .Nav-element-mobile {
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 400;
   color: #ce98e7;
   font-size: 5vh;
+  line-height: 5vh;
   text-align: right;
+  padding: 2% 0 0 0;
 }
 
 .Title {
@@ -63,6 +66,8 @@
 
 .mobile {
   display: none;
+  padding-top: 5%;
+  padding-right: 60px;
 }
 
 nav {
@@ -156,6 +161,12 @@ a:hover {
   padding-bottom: 8px;
 }
 
+@media (max-width: 900px) {
+  .App-header {
+    padding-right: 32px;
+  }
+}
+
 @media (max-width: 768px) {
   .Title {
     font-size: 24px;
@@ -167,6 +178,7 @@ a:hover {
   .mobile {
     display: flex;
     justify-content: flex-end;
+    padding-right: 60px;
   }
   .Nav-element {
     text-align: right;

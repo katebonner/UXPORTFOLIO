@@ -45,9 +45,7 @@ export const Heading1 = styled.text({
   fontWeight: 1000,
   fontSize: "9vw",
   color: "#fff",
-  "@media(max-width: 768px)": {
-    fontSize: 36,
-  },
+  marginBottom: "-8%",
 });
 
 export const Heading2 = styled.text({

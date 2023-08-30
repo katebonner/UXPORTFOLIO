@@ -11,11 +11,12 @@ export const WindowContainer = styled.div({
 
 export const Name = styled.div({
   // fontWeight: 1000,
-  fontSize: 140,
+  fontSize: "25vw",
   paddingTop: 36,
-  marginLeft: -5,
-  fontFamily: "Poppins-SemiBold",
+  fontFamily: "Poppins",
+  fontWeight: 600,
   color: theme.colors.violet[200],
+  margin: "0 0 0 5%",
   "@media(max-width: 1280px)": {
     marginTop: 36,
     fontSize: 80,
@@ -90,20 +91,25 @@ export const Grid = styled.div({
 
 export const SourceCode = styled.div({
   position: "fixed",
-  bottom: 0,
-  right: 0,
+  bottom: 10,
+  right: 32,
   alignItems: "right",
+  "@media(max-width: 900px)": {
+    right: 60,
+  },
 });
 
 export const Title = styled.div({
   position: "fixed",
   bottom: 0,
-  left: 20,
+  left: 32,
   alignItems: "left",
-  fontSize: "16vw",
+  fontSize: "18vw",
   fontWeight: 600,
-  "@media(max-width: 600px)": {
+  lineHeight: "18vw",
+  "@media(max-width: 900px)": {
+    fontSize: "25vw",
     bottom: 60,
-    left: 30,
+    left: 60,
   },
 });

@@ -12,11 +12,8 @@ export const Background = styled.div({
   zIndex: -999,
 });
 
-export const ProjectContainer = styled.div({
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "center",
-  alignItems: "center",
+export const ProjectsContainer = styled.div({
+  margin: "10% 0 0 0",
 });
 
 export const ProjectImage = styled.img({
@@ -26,22 +23,6 @@ export const ProjectImage = styled.img({
   "&:hover": {
     filter: "none",
   },
-});
-
-export const ProjectText = styled.text({
-  fontSize: "2vw",
-  fontWeight: 600,
-  color: "#ce98e7",
-  width: "30%",
-  textAlign: "left",
-});
-
-export const ProjectDescription = styled.text({
-  fontSize: "1.6vw",
-  color: "#ce98e7",
-  width: "30%",
-  textAlign: "left",
-  marginLeft: "-20%",
 });
 
 export const ProjectDescriptionContainer = styled.div({

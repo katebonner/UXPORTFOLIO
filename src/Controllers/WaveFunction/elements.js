@@ -54,6 +54,12 @@ export const ProjectDescriptionContainer = styled.div({
   zIndex: 5,
 });
 
+export const Row = styled.div({
+  display: "flex",
+  flexDirection: "row",
+  justifyContent: "flex-start",
+});
+
 export const Overlay = styled.div({
   position: "absolute",
   top: "50%",
@@ -128,7 +134,8 @@ export const Code = styled.div({
 });
 
 export const PlayerWrapper = styled.div({
-  padding: "5% 0 5% 0",
+  padding: "56.25% 0 5% 0",
+
   position: "relative",
 });
 
