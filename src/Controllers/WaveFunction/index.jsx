@@ -51,7 +51,7 @@ const WaveFunctionController = () => {
         </Description>
 
         <Description>Role: Designer, Developer, Mathematician</Description>
-        <Description>(2019)</Description>
+        <Description>[2019]</Description>
       </ProjectDescriptionContainer>
       <CaseContainer>
         <Row>
@@ -129,7 +129,7 @@ const WaveFunctionController = () => {
           <Text2>(005)</Text2>
           <Heading1>Final Product</Heading1>
         </Row>
-        <Text3>angled</Text3>
+        <Text3>[ angled ]</Text3>
         <ReactPlayer
           url="https://player.vimeo.com/video/858681236?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
           playing
@@ -138,7 +138,7 @@ const WaveFunctionController = () => {
           width="100%"
           playsinline
         />
-        <Text3>y axis</Text3>
+        <Text3>[ y axis ]</Text3>
         <ReactPlayer
           url="https://player.vimeo.com/video/858727921?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
           playing
@@ -147,7 +147,7 @@ const WaveFunctionController = () => {
           width="100%"
           playsinline
         />
-        <Text3>x axis</Text3>
+        <Text3>[ x axis ]</Text3>
         <ReactPlayer
           url="https://player.vimeo.com/video/858726202?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
           playing

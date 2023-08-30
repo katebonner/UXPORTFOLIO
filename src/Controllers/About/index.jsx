@@ -19,7 +19,7 @@ import {
   Text5,
   Text6,
 } from "../../theme";
-import Fractal from "../../Components/Fractal";
+import FooterComponent from "../../Components/Footer";
 import FadeOverlay from "../../Components/FadeOverlay";
 import { Heading } from "../Projects/elements";
 
@@ -45,8 +45,9 @@ const AboutController = () => {
       </Row>
       <Spacer />
       <Row>
-        <Heading1>ODYSSEY</Heading1>
+        <Heading1>BACKGROUND</Heading1>
       </Row>
+
       <Row>
         <SplitShrinkColumn>
           <Text5>01.</Text5>
@@ -133,6 +134,11 @@ const AboutController = () => {
         </SplitGrowColumn>
       </Row>
       <Spacer />
+      <FooterComponent
+        linkedInURL="https://www.linkedin.com/in/kate-bonner/"
+        emailAddress="katebonner277@gmail.com"
+        githubURL="https://github.com/katebonner"
+      />
     </WindowContainer>
   );
 };

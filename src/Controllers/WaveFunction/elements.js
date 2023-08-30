@@ -118,7 +118,7 @@ export const Text2 = styled.div({
 });
 
 export const Text3 = styled.div({
-  fontSize: "1vw",
+  fontSize: "1.2vw",
   lineHeight: "3vw",
   color: "#fff",
   textAlign: "right",

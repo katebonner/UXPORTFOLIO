@@ -37,7 +37,7 @@ export const WindowContainer = styled.div({
   textAlign: "left",
   paddingTop: "5%",
   paddingLeft: "10%",
-  paddingRight: "15%",
+  paddingRight: "10%",
 });
 
 export const Row = styled.div({
@@ -56,14 +56,14 @@ export const Row = styled.div({
 });
 
 export const ShrinkColumn = styled.div({
-  width: "40%",
+  width: "30%",
   "@media(max-width: 1280px)": {
     width: "100%",
   },
 });
 
 export const GrowColumn = styled.div({
-  width: "60%",
+  width: "70%",
   "@media(max-width: 1280px)": {
     width: "100%",
     margin: "5% 0 0 0",
