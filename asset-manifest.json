@@ -1,8 +1,12 @@
 {
   "files": {
     "main.css": "/UXPORTFOLIO/static/css/main.20a5c714.css",
-    "main.js": "/UXPORTFOLIO/static/js/main.fdcf2b67.js",
+    "main.js": "/UXPORTFOLIO/static/js/main.c048ed72.js",
     "static/js/787.7efd31bd.chunk.js": "/UXPORTFOLIO/static/js/787.7efd31bd.chunk.js",
+    "static/media/Arduino_Test2.png": "/UXPORTFOLIO/static/media/Arduino_Test2.d13213883e22c3205aa6.png",
+    "static/media/Arduino_Test3.png": "/UXPORTFOLIO/static/media/Arduino_Test3.a7fcfdfa901f469f8a6d.png",
+    "static/media/Arduino_Test1.png": "/UXPORTFOLIO/static/media/Arduino_Test1.11dd29261367a9133e30.png",
+    "static/media/Arduino_Circuit.png": "/UXPORTFOLIO/static/media/Arduino_Circuit.3b805f4fdb57e543f32b.png",
     "static/media/WaveShading.png": "/UXPORTFOLIO/static/media/WaveShading.8e87e9f185eea27e1403.png",
     "static/media/capi.png": "/UXPORTFOLIO/static/media/capi.a38f06dc0b7629b94b22.png",
     "static/media/kate.png": "/UXPORTFOLIO/static/media/kate.6b24bec3067fac3da8ea.png",
@@ -12,6 +16,7 @@
     "static/media/transparentWave3.png": "/UXPORTFOLIO/static/media/transparentWave3.3c70fe31ef3e28c6f756.png",
     "static/media/sideWave.png": "/UXPORTFOLIO/static/media/sideWave.426f0b7577742121c1d5.png",
     "static/media/danny.png": "/UXPORTFOLIO/static/media/danny.12e83e12aff96a5e21f3.png",
+    "static/media/Kate_Bonner_CV_2023.png": "/UXPORTFOLIO/static/media/Kate_Bonner_CV_2023.cec78351a43aa87beb78.png",
     "static/media/gabi.png": "/UXPORTFOLIO/static/media/gabi.6c3fa7b97235423588d0.png",
     "static/media/kyle.png": "/UXPORTFOLIO/static/media/kyle.6d3e83de3993e213037c.png",
     "static/media/derivation.png": "/UXPORTFOLIO/static/media/derivation.e17aa54fd0dea030fc0b.png",
@@ -21,11 +26,11 @@
     "static/media/sara.jpeg": "/UXPORTFOLIO/static/media/sara.16b5c1ffad71c181da01.jpeg",
     "index.html": "/UXPORTFOLIO/index.html",
     "main.20a5c714.css.map": "/UXPORTFOLIO/static/css/main.20a5c714.css.map",
-    "main.fdcf2b67.js.map": "/UXPORTFOLIO/static/js/main.fdcf2b67.js.map",
+    "main.c048ed72.js.map": "/UXPORTFOLIO/static/js/main.c048ed72.js.map",
     "787.7efd31bd.chunk.js.map": "/UXPORTFOLIO/static/js/787.7efd31bd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.20a5c714.css",
-    "static/js/main.fdcf2b67.js"
+    "static/js/main.c048ed72.js"
   ]
 }
