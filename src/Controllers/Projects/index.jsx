@@ -18,19 +18,18 @@ const ProjectsController = () => {
         year="2023"
       /> */}
         <Project
+          link="/electronicportrait"
+          title="portrait of an electric pulse"
+          description="electronics & fine art"
+          year="2023"
+        />
+        <Project
           link="/wavefunction"
           image={WaveFunctionImage}
           title="schrödinger's dance"
           description="computational physics & 3D animation"
           year="2019"
         />
-        {/* <Project
-        link="/wine"
-        image={Wine}
-        title="Wine: An Animated Music Video"
-        description="A Short Character Animation"
-        year="2021"
-      /> */}
       </ProjectsContainer>
     </>
   );

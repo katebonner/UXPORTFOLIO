@@ -21,6 +21,7 @@ import {
 } from "../../theme";
 import FooterComponent from "../../Components/Footer";
 import FadeOverlay from "../../Components/FadeOverlay";
+import CV from "../../assets/Kate_Bonner_CV_2023.png";
 
 const AboutController = () => {
   return (
@@ -137,6 +138,7 @@ const AboutController = () => {
         linkedInURL="https://www.linkedin.com/in/kate-bonner/"
         emailAddress="katebonner277@gmail.com"
         githubURL="https://github.com/katebonner"
+        CV={CV}
       />
     </WindowContainer>
   );

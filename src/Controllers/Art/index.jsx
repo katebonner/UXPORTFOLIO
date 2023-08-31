@@ -19,6 +19,7 @@ import Kate from "../../assets/kate.png";
 import Kyle from "../../assets/kyle.png";
 import FooterComponent from "../../Components/Footer";
 import FadeOverlay from "../../Components/FadeOverlay";
+import CV from "../../assets/Kate_Bonner_CV_2023.png";
 
 const Art = () => {
   return (
@@ -71,6 +72,7 @@ const Art = () => {
         linkedInURL="https://www.linkedin.com/in/kate-bonner/"
         emailAddress="katebonner277@gmail.com"
         githubURL="https://github.com/katebonner"
+        CV={CV}
       />
     </>
   );

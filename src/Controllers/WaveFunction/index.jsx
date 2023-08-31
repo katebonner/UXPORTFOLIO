@@ -46,8 +46,8 @@ const WaveFunctionController = () => {
       />
       <ProjectDescriptionContainer>
         <Description>
-          3d visualization of the one-dimensional, time-depending shrödinger
-          equation for a free particle
+          3D Visualization of the One-Dimensional, Time-Dependent Shrödinger
+          Equation for a Free Particle
         </Description>
 
         <Description>Role: Designer, Developer, Mathematician</Description>

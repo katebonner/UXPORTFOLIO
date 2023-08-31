@@ -3,14 +3,14 @@ import React from "react";
 const FooterComponent = ({ linkedInURL, emailAddress, githubURL, CV }) => {
   return (
     <div style={styles.footer}>
-      {/* <a
+      <a
         href={CV}
         style={styles.linkText}
         target="_blank"
         rel="noopener noreferrer"
       >
         CV
-      </a> */}
+      </a>
       <a
         href={linkedInURL}
         style={styles.linkText}

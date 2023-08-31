@@ -9,6 +9,7 @@ import Art from "./Controllers/Art";
 import "./App.css";
 import { useLocation } from "react-router-dom";
 import RefreshAnimation from "./Components/RefreshAnimation";
+import ElectronicPortrait from "./Controllers/ElectricPortrait";
 
 const Navigation = () => {
   const getNavColor = (pathname) => {
@@ -99,6 +100,26 @@ const Navigation = () => {
             <div className={`Nav-element ${navColor}`}>/</div>
             <Link className={`Nav-element ${navColor}`} to="/art">
               ART
+            </Link>
+          </div>
+        );
+
+      case "/electronicportrait":
+        return (
+          <div className="Nav-grouping">
+            <Link className={`Nav-element ${navColor}`} to="/">
+              KA+iE
+            </Link>
+            <div className={`Nav-element ${navColor}`}>/</div>
+            <Link className={`Nav-element ${navColor}`} to="/projects">
+              PROJECTS
+            </Link>
+            <div className={`Nav-element ${navColor}`}>/</div>
+            <Link
+              className={`Nav-element ${navColor}`}
+              to="/electronicportrait"
+            >
+              PORTRAIT OF AN ELECTRIC PULSE
             </Link>
           </div>
         );
@@ -199,6 +220,24 @@ const MobileNavBar = () => {
           </div>
         );
 
+      case "/electronicportrait":
+        return (
+          <div className="Nav-element-mobile">
+            <Link className={`Nav-element-mobile ${navColor}`} to="/">
+              KA+iE /
+            </Link>
+            <Link className={`Nav-element-mobile ${navColor}`} to="/projects">
+              PROJECTS /
+            </Link>
+            <Link
+              className={`Nav-element-mobile ${navColor}`}
+              to="/electronicportrait"
+            >
+              PORTRAIT OF AN ELECTRIC PULSE
+            </Link>
+          </div>
+        );
+
       default:
         return null;
     }
@@ -220,6 +259,7 @@ export const App = () => {
           <Route path="/art" element={<Art />} />
           <Route path="/level" element={<Level />} />
           <Route path="/wavefunction" element={<WaveFunction />} />
+          <Route path="/electronicportrait" element={<ElectronicPortrait />} />
           <Route path="/" element={<Home />} />
         </Routes>
       </div>
