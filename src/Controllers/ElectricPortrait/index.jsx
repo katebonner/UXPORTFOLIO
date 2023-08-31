@@ -53,7 +53,10 @@ const ElectricPortraitController = () => {
           potential via copper tape:
         </Text1>
         <ProjectImage src={ArduinoTest1} />
-        <Text1>I then exchanged the copper tape for conductive paint:</Text1>
+        <Text1>
+          I then exchanged the copper tape for SKU-0209 - Bare Conductive
+          Electric Paint:
+        </Text1>
         <ProjectImage src={ArduinoTest2} />
         <Row>
           <Text2>(002)</Text2>
