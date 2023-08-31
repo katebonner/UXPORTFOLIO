@@ -36,9 +36,9 @@ export const Derivation = styled.img({
 
 export const ProjectImage = styled.img({
   display: "block",
-  width: "100%", // To take the full width of the parent (ImageWrapper)
-  borderRadius: 5,
-  margin: "5% 0 5% 0",
+  width: "75%", // To take the full width of the parent (ImageWrapper)
+  filter: "brightness(90%)",
+  margin: "0 0 0 25%",
 });
 
 export const ProjectDescriptionContainer = styled.div({

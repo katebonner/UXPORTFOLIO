@@ -7,15 +7,20 @@ import {
   Text1,
   Text2,
   Row,
+  ProjectImage,
 } from "./elements";
 import FadeOverlay from "../../Components/FadeOverlay";
+import ArduinoCircuit from "../../assets/Arduino_Circuit.png";
+import ArduinoTest1 from "../../assets/Arduino_Test1.png";
+import ArduinoTest2 from "../../assets/Arduino_Test2.png";
+import ArduinoTest3 from "../../assets/Arduino_Test3.png";
 
 const ElectricPortraitController = () => {
   return (
     <>
       <Background />
       <FadeOverlay />
-      <Heading1>[WORK IN PROGRESS]</Heading1>
+      <ProjectImage src={ArduinoCircuit} />
       <ProjectDescriptionContainer>
         <Description>Portrait of an Electric Pulse</Description>
         <Description>Role: Artist, Electronics Technician </Description>
@@ -41,6 +46,15 @@ const ElectricPortraitController = () => {
           responsible for collecting the change in electric potential from human
           touch as input to generate sound.
         </Text1>
+        <Text1>I began by building the base circuit:</Text1>
+        <ProjectImage src={ArduinoCircuit} />
+        <Text1>
+          I tested its functionality by collecting the change in electric
+          potential via copper tape:
+        </Text1>
+        <ProjectImage src={ArduinoTest1} />
+        <Text1>I then exchanged the copper tape for conductive paint:</Text1>
+        <ProjectImage src={ArduinoTest2} />
         <Row>
           <Text2>(002)</Text2>
           <Heading1>The Insulating Mask</Heading1>
@@ -48,6 +62,14 @@ const ElectricPortraitController = () => {
         <Text1>
           This layer insulates and masks selective conductive pathways, ensuring
           precision in interactions.
+        </Text1>
+        <Text1>
+          I continued testing by investigating different insulating materials:
+        </Text1>
+        <ProjectImage src={ArduinoTest3} />
+        <Text1>
+          I found acrylic paint acts as a sufficient conductor and acrylic
+          polymer varnish acts as a sufficient insulator.
         </Text1>
         <Row>
           <Text2>(003)</Text2>
