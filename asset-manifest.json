@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/UXPORTFOLIO/static/css/main.20a5c714.css",
-    "main.js": "/UXPORTFOLIO/static/js/main.45c1a6f8.js",
+    "main.js": "/UXPORTFOLIO/static/js/main.ffb78ab7.js",
     "static/js/787.7efd31bd.chunk.js": "/UXPORTFOLIO/static/js/787.7efd31bd.chunk.js",
     "static/media/WaveShading.png": "/UXPORTFOLIO/static/media/WaveShading.8e87e9f185eea27e1403.png",
     "static/media/capi.png": "/UXPORTFOLIO/static/media/capi.a38f06dc0b7629b94b22.png",
@@ -21,11 +21,11 @@
     "static/media/sara.jpeg": "/UXPORTFOLIO/static/media/sara.16b5c1ffad71c181da01.jpeg",
     "index.html": "/UXPORTFOLIO/index.html",
     "main.20a5c714.css.map": "/UXPORTFOLIO/static/css/main.20a5c714.css.map",
-    "main.45c1a6f8.js.map": "/UXPORTFOLIO/static/js/main.45c1a6f8.js.map",
+    "main.ffb78ab7.js.map": "/UXPORTFOLIO/static/js/main.ffb78ab7.js.map",
     "787.7efd31bd.chunk.js.map": "/UXPORTFOLIO/static/js/787.7efd31bd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.20a5c714.css",
-    "static/js/main.45c1a6f8.js"
+    "static/js/main.ffb78ab7.js"
   ]
 }
