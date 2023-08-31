@@ -21,7 +21,6 @@ import {
 } from "../../theme";
 import FooterComponent from "../../Components/Footer";
 import FadeOverlay from "../../Components/FadeOverlay";
-import { Heading } from "../Projects/elements";
 
 const AboutController = () => {
   return (

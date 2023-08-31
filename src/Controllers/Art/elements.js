@@ -23,16 +23,19 @@ export const Column = styled.div({
 export const ProjectImage = styled.img((props) => ({
   width: props.width || "60vw",
   margin: "10% 0 0 0",
-  filter: "grayscale(100%)",
-  "&:hover": {
-    filter: "none",
+  // filter: "grayscale(100%)",
+  // "&:hover": {
+  //   filter: "none",
+  // },
+  "@media(max-width: 900)": {
+    width: "80%",
   },
 }));
 
 export const ProjectLoadingImage = styled.img((props) => ({
   width: props.width || "60vw",
   margin: "10% 0 0 0",
-  filter: "grayscale(100%)",
+  // filter: "grayscale(100%)",
 }));
 
 const loaderAnimation = keyframes({
@@ -49,7 +52,7 @@ export const ProjectLoadingImageWrapper = styled.div((props) => ({
   width: props.width || "60vw",
   margin: "5% 0 0 0",
   img: {
-    filter: "grayscale(100%) brightness(25%)",
+    filter: "brightness(25%)",
   },
   "&::after": {
     content: '""',
@@ -88,6 +91,9 @@ export const Description = styled.div({
   textAlign: "left",
   fontSize: "1.5vw",
   color: "#fff",
+  "@media(max-width: 900)": {
+    width: "80%",
+  },
 });
 
 export const Year = styled.div({

@@ -8,8 +8,8 @@ const ProjectsController = () => {
   return (
     <>
       <Background />
+      <FadeOverlay />
       <ProjectsContainer>
-        <FadeOverlay />
         {/* <Project
         link="/level"
         image={LevelImage}
