@@ -96,7 +96,7 @@ export const Heading1 = styled.div({
   color: "#fff",
   fontWeight: 600,
   textAlign: "left",
-  margin: "0 0 0 25%",
+  margin: "0 0 0 20%",
 });
 export const Heading2 = styled.text({
   fontSize: "4vw",
