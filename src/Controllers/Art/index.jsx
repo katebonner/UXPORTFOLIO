@@ -18,11 +18,13 @@ import Danny from "../../assets/danny.png";
 import Kate from "../../assets/kate.png";
 import Kyle from "../../assets/kyle.png";
 import FooterComponent from "../../Components/Footer";
+import FadeOverlay from "../../Components/FadeOverlay";
 
 const Art = () => {
   return (
     <>
       <Background />
+      <FadeOverlay />
       <Column>
         <ProjectImage src={Clara} width="50vw" />
         <DescriptionContainer width="50vw">
