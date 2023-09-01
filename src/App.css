@@ -16,6 +16,7 @@
   margin-top: 24px;
   margin-left: 24px;
   margin-right: 24px;
+  z-index: 5;
 }
 
 .Nav-grouping {
@@ -33,6 +34,7 @@
   padding-left: 0px;
   padding-right: 0px;
   margin-right: 16px;
+  z-index: 5;
 }
 
 .Nav-element:hover {
@@ -50,6 +52,7 @@
   line-height: 5vh;
   text-align: right;
   padding: 2% 0 0 0;
+  z-index: 5;
 }
 
 .Title {

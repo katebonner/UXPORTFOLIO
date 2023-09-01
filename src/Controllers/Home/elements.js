@@ -93,6 +93,7 @@ export const SourceCode = styled.div({
   position: "fixed",
   bottom: 10,
   right: 32,
+  zIndex: 5,
   alignItems: "right",
   "@media(max-width: 900px)": {
     right: 60,

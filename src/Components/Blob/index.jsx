@@ -78,9 +78,10 @@ const MyScene = forwardRef(({}, ref) => {
       if (isOver.current) {
         const x = (e.offsetX / width) * 2 - 1;
         const y = (e.offsetY / height) * -2 + 1;
+        console.log(e.offsetY);
 
         api.start({
-          position: [x * 5, y * 2],
+          position: [x * 5, y * 5],
         });
       }
     },
@@ -132,7 +133,7 @@ export default function MyComponent() {
   return (
     <Canvas
       style={{
-        zIndex: -3,
+        zIndex: 1,
         position: "fixed",
         bottom: 0,
         right: 0,
