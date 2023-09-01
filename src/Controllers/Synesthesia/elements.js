@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { keyframes } from "@emotion/react";
 
 export const Background = styled.div({
   position: "fixed",
@@ -36,9 +37,9 @@ export const Derivation = styled.img({
 
 export const ProjectImage = styled.img({
   display: "block",
-  width: "100%", // To take the full width of the parent (ImageWrapper)
-  borderRadius: 5,
-  margin: "5% 0 5% 0",
+  width: "75%", // To take the full width of the parent (ImageWrapper)
+  filter: "brightness(90%)",
+  margin: "0 0 0 25%",
 });
 
 export const ProjectDescriptionContainer = styled.div({
@@ -98,6 +99,14 @@ export const Heading1 = styled.div({
   textAlign: "left",
   margin: "0 0 0 20%",
 });
+
+export const Heading = styled.div({
+  fontSize: "5vw",
+  color: "#fff",
+  fontWeight: 600,
+  textAlign: "left",
+  margin: "0 0 0 5%",
+});
 export const Heading2 = styled.text({
   fontSize: "4vw",
 });
@@ -140,5 +149,35 @@ export const PlayerWrapper = styled.div({
 });
 
 export const Spacer = styled.div({
-  margin: "20% 0 0 0",
+  margin: "10% 0 0 0",
 });
+
+const loaderAnimation = keyframes({
+  "0%": {
+    transform: "rotate(0deg)",
+  },
+  "100%": {
+    transform: "rotate(360deg)",
+  },
+});
+
+export const ProjectLoadingImageWrapper = styled.div((props) => ({
+  position: "relative",
+  width: props.width || "60vw",
+  margin: "5% 0 0 0",
+  "&::after": {
+    content: '""',
+    position: "relative",
+    top: "50%",
+    left: "50%",
+    width: "50px",
+    height: "50px",
+    marginTop: "-25px",
+    marginLeft: "-25px",
+    borderRadius: "50%",
+    border: "10px solid rgba(255,255,255,0.7)",
+    borderTopColor: "transparent",
+    animation: `${loaderAnimation} 1s linear infinite`,
+    display: "block",
+  },
+}));

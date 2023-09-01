@@ -39,27 +39,27 @@ export const MobileImage = styled.img({
   display: "none",
 });
 
-export const ProjectText = styled.text({
+export const ProjectText = styled.div((props) => ({
   fontSize: "3vw",
   fontWeight: 600,
-  color: "#fff",
+  textAlign: "left",
+  width: "35%",
+  color: !props.hovered ? "rgba(255,255,255,0.5)" : "#fff",
+}));
+
+export const ProjectDescription = styled.div((props) => ({
+  fontSize: "2vw",
   textAlign: "left",
   width: "39%",
-});
+  color: !props.hovered ? "rgba(255,255,255,0.5)" : "#fff",
+}));
 
-export const ProjectDescription = styled.text({
+export const ProjectYear = styled.div((props) => ({
   fontSize: "2vw",
-  color: "#fff",
-  textAlign: "left",
-  width: "39%",
-});
-
-export const ProjectYear = styled.text({
-  fontSize: "2vw",
-  color: "#fff",
   textAlign: "right",
   width: "19%",
-});
+  color: !props.hovered ? "rgba(255,255,255,0.5)" : "#fff",
+}));
 
 export const ProjectDescriptionContainer = styled.div({
   display: "flex",
@@ -67,7 +67,5 @@ export const ProjectDescriptionContainer = styled.div({
   justifyContent: "space-between",
   alignItems: "flex-start",
   width: "80%",
-  margin: "5% 10%",
-  paddingBottom: "3%",
-  borderBottom: "1px solid rgba(255,255,255,0.3)",
+  margin: "3% 10%",
 });

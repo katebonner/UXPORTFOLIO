@@ -36,6 +36,15 @@ export const ProjectDescriptionContainer = styled.div({
 
 export const Heading = styled.div({
   fontWeight: 600,
-  fontSize: "10vw",
-  color: theme.colors.violet[200],
+  fontSize: "8vw",
+  color: "#fff",
+  textAlign: "left",
+  margin: "5% 10% -5% 10%",
+});
+
+export const Divider = styled.div({
+  height: 1,
+  width: "80%",
+  backgroundColor: "rgba(255,255,255,0.3)",
+  margin: "0 10%",
 });

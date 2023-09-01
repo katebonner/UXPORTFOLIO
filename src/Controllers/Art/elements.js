@@ -23,10 +23,6 @@ export const Column = styled.div({
 export const ProjectImage = styled.img((props) => ({
   width: props.width || "60vw",
   margin: "10% 0 0 0",
-  // filter: "grayscale(100%)",
-  // "&:hover": {
-  //   filter: "none",
-  // },
   "@media(max-width: 900)": {
     width: "80%",
   },

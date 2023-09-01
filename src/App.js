@@ -3,7 +3,7 @@ import { HashRouter as Router, Route, Link, Routes } from "react-router-dom";
 import About from "./Controllers/About";
 import Home from "./Controllers/Home";
 import Projects from "./Controllers/Projects";
-import Level from "./Controllers/Level";
+import Synesthesia from "./Controllers/Synesthesia";
 import WaveFunction from "./Controllers/WaveFunction";
 import Art from "./Controllers/Art";
 import "./App.css";
@@ -124,6 +124,23 @@ const Navigation = () => {
           </div>
         );
 
+      case "/synesthesia":
+        return (
+          <div className="Nav-grouping">
+            <Link className={`Nav-element ${navColor}`} to="/">
+              KA+iE
+            </Link>
+            <div className={`Nav-element ${navColor}`}>/</div>
+            <Link className={`Nav-element ${navColor}`} to="/projects">
+              PROJECTS
+            </Link>
+            <div className={`Nav-element ${navColor}`}>/</div>
+            <Link className={`Nav-element ${navColor}`} to="/level">
+              LEVEL
+            </Link>
+          </div>
+        );
+
       default:
         return null;
     }
@@ -238,6 +255,21 @@ const MobileNavBar = () => {
           </div>
         );
 
+      case "/synesthesia":
+        return (
+          <div className="Nav-element-mobile">
+            <Link className={`Nav-element-mobile ${navColor}`} to="/">
+              KA+iE /
+            </Link>
+            <Link className={`Nav-element-mobile ${navColor}`} to="/projects">
+              PROJECTS /
+            </Link>
+            <Link className={`Nav-element-mobile ${navColor}`} to="/level">
+              LEVEL
+            </Link>
+          </div>
+        );
+
       default:
         return null;
     }
@@ -257,7 +289,7 @@ export const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/art" element={<Art />} />
-          <Route path="/level" element={<Level />} />
+          <Route path="/synesthesia" element={<Synesthesia />} />
           <Route path="/wavefunction" element={<WaveFunction />} />
           <Route path="/electronicportrait" element={<ElectronicPortrait />} />
           <Route path="/" element={<Home />} />
