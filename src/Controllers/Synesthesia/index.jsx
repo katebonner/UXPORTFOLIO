@@ -7,12 +7,14 @@ import {
   Text1,
   Text2,
 } from "./elements";
+import Knot from "../../Components/Knot";
 
 const Synesthesia = () => {
   return (
     <>
       <Background />
       <Spacer />
+      <Knot />
       <ProjectDescriptionContainer>
         <Description>Synesthesia: Spotify Sound and Color</Description>
         <Description>Role: Designer, Developer</Description>

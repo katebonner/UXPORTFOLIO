@@ -27,7 +27,6 @@ const ProjectsController = () => {
         <Divider />
         <Project
           link="/wavefunction"
-          image={WaveFunctionImage}
           title="schrödinger's dance"
           description="computational physics & 3D animation"
           year="2019"

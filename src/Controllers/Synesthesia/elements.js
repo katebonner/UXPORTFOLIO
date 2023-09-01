@@ -7,7 +7,7 @@ export const Background = styled.div({
   right: 0,
   width: "100vw",
   height: "100vh",
-  backgroundColor: "#191919",
+  backgroundColor: "#ab577e",
   zIndex: -999,
 });
 
