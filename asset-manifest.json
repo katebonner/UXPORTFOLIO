@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/UXPORTFOLIO/static/css/main.dad69995.css",
-    "main.js": "/UXPORTFOLIO/static/js/main.521b3f15.js",
+    "main.js": "/UXPORTFOLIO/static/js/main.f9ec704a.js",
     "static/js/787.7efd31bd.chunk.js": "/UXPORTFOLIO/static/js/787.7efd31bd.chunk.js",
     "static/media/Arduino_Test2.png": "/UXPORTFOLIO/static/media/Arduino_Test2.d13213883e22c3205aa6.png",
     "static/media/Arduino_Test3.png": "/UXPORTFOLIO/static/media/Arduino_Test3.a7fcfdfa901f469f8a6d.png",
@@ -25,11 +25,11 @@
     "static/media/sara.jpeg": "/UXPORTFOLIO/static/media/sara.16b5c1ffad71c181da01.jpeg",
     "index.html": "/UXPORTFOLIO/index.html",
     "main.dad69995.css.map": "/UXPORTFOLIO/static/css/main.dad69995.css.map",
-    "main.521b3f15.js.map": "/UXPORTFOLIO/static/js/main.521b3f15.js.map",
+    "main.f9ec704a.js.map": "/UXPORTFOLIO/static/js/main.f9ec704a.js.map",
     "787.7efd31bd.chunk.js.map": "/UXPORTFOLIO/static/js/787.7efd31bd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dad69995.css",
-    "static/js/main.521b3f15.js"
+    "static/js/main.f9ec704a.js"
   ]
 }
