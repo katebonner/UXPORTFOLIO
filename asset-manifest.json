@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/UXPORTFOLIO/static/css/main.dad69995.css",
-    "main.js": "/UXPORTFOLIO/static/js/main.7632e84a.js",
+    "main.js": "/UXPORTFOLIO/static/js/main.ff25a056.js",
     "static/js/787.7efd31bd.chunk.js": "/UXPORTFOLIO/static/js/787.7efd31bd.chunk.js",
     "static/media/Arduino_Test2.png": "/UXPORTFOLIO/static/media/Arduino_Test2.d13213883e22c3205aa6.png",
     "static/media/Arduino_Test3.png": "/UXPORTFOLIO/static/media/Arduino_Test3.a7fcfdfa901f469f8a6d.png",
@@ -12,6 +12,7 @@
     "static/media/kate.png": "/UXPORTFOLIO/static/media/kate.6b24bec3067fac3da8ea.png",
     "static/media/isolatedWave1.png": "/UXPORTFOLIO/static/media/isolatedWave1.6cec1d6226640343ad52.png",
     "static/media/waveCode.png": "/UXPORTFOLIO/static/media/waveCode.0865d93c99ad89e03914.png",
+    "static/media/wavefunction.png": "/UXPORTFOLIO/static/media/wavefunction.82493b828582e3569e72.png",
     "static/media/transparentWave3.png": "/UXPORTFOLIO/static/media/transparentWave3.3c70fe31ef3e28c6f756.png",
     "static/media/sideWave.png": "/UXPORTFOLIO/static/media/sideWave.426f0b7577742121c1d5.png",
     "static/media/danny.png": "/UXPORTFOLIO/static/media/danny.12e83e12aff96a5e21f3.png",
@@ -29,11 +30,11 @@
     "static/media/sara.jpeg": "/UXPORTFOLIO/static/media/sara.16b5c1ffad71c181da01.jpeg",
     "index.html": "/UXPORTFOLIO/index.html",
     "main.dad69995.css.map": "/UXPORTFOLIO/static/css/main.dad69995.css.map",
-    "main.7632e84a.js.map": "/UXPORTFOLIO/static/js/main.7632e84a.js.map",
+    "main.ff25a056.js.map": "/UXPORTFOLIO/static/js/main.ff25a056.js.map",
     "787.7efd31bd.chunk.js.map": "/UXPORTFOLIO/static/js/787.7efd31bd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dad69995.css",
-    "static/js/main.7632e84a.js"
+    "static/js/main.ff25a056.js"
   ]
 }
