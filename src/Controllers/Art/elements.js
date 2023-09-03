@@ -31,7 +31,7 @@ export const ProjectImage = styled.img((props) => ({
   width: props.width || "60vw",
   margin: "10% 2% 0 2%",
   // filter: "grayscale(100%)",
-  "@media(max-width: 900)": {
+  "@media(max-width: 900px)": {
     width: "80%",
   },
 }));
@@ -94,7 +94,7 @@ export const Description = styled.div({
   textAlign: "left",
   fontSize: "1.5vw",
   color: "#fff",
-  "@media(max-width: 900)": {
+  "@media(max-width: 900px)": {
     width: "80%",
   },
 });

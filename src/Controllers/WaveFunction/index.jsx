@@ -11,10 +11,13 @@ import {
   Code,
   Text3,
   Spacer,
-  PlayerWrapper,
   Row,
+  ProjectImageHeader,
+  MobileSpacer,
 } from "./elements";
 import DerivationImage from "../../assets/derivation.png";
+import WavefunctionImageTransparent from "../../assets/transparentWave3.png";
+import WavefunctionImage from "../../assets/wavefunction.png";
 import Blender from "../../assets/waveCode.png";
 import Blender4 from "../../assets/isolatedWave1.png";
 import SideWave from "../../assets/sideWave.png";
@@ -35,15 +38,8 @@ const WaveFunctionController = () => {
     <>
       <Background />
       <FadeOverlay />
-      <ReactPlayer
-        className="react-player"
-        url="https://player.vimeo.com/video/858681236?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-        playing
-        muted
-        loop
-        width="100%"
-        playsinline
-      />
+      <ProjectImageHeader src={WavefunctionImage} />
+      <MobileSpacer src={WavefunctionImageTransparent} />
       <ProjectDescriptionContainer>
         <Description>
           3D Visualization of the One-Dimensional, Time-Dependent Shrödinger

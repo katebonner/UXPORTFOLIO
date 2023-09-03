@@ -34,6 +34,24 @@ export const Derivation = styled.img({
   width: "80vw",
 });
 
+export const ProjectImageHeader = styled.img({
+  display: "block",
+  width: "100%",
+  margin: "-10% 0 0 0",
+  "@media(max-width: 768px)": {
+    display: "none",
+  },
+});
+
+export const MobileSpacer = styled.img({
+  display: "none",
+  "@media(max-width: 768px)": {
+    display: "block",
+    width: "100%",
+    margin: "0 0 0 0",
+  },
+});
+
 export const ProjectImage = styled.img({
   display: "block",
   width: "100%", // To take the full width of the parent (ImageWrapper)
