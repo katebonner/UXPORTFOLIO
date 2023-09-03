@@ -1,35 +1,39 @@
 {
   "files": {
     "main.css": "/UXPORTFOLIO/static/css/main.dad69995.css",
-    "main.js": "/UXPORTFOLIO/static/js/main.769ad15d.js",
+    "main.js": "/UXPORTFOLIO/static/js/main.7632e84a.js",
     "static/js/787.7efd31bd.chunk.js": "/UXPORTFOLIO/static/js/787.7efd31bd.chunk.js",
     "static/media/Arduino_Test2.png": "/UXPORTFOLIO/static/media/Arduino_Test2.d13213883e22c3205aa6.png",
     "static/media/Arduino_Test3.png": "/UXPORTFOLIO/static/media/Arduino_Test3.a7fcfdfa901f469f8a6d.png",
     "static/media/Arduino_Test1.png": "/UXPORTFOLIO/static/media/Arduino_Test1.11dd29261367a9133e30.png",
     "static/media/Arduino_Circuit.png": "/UXPORTFOLIO/static/media/Arduino_Circuit.3b805f4fdb57e543f32b.png",
     "static/media/WaveShading.png": "/UXPORTFOLIO/static/media/WaveShading.8e87e9f185eea27e1403.png",
-    "static/media/capi.png": "/UXPORTFOLIO/static/media/capi.a38f06dc0b7629b94b22.png",
+    "static/media/capi.png": "/UXPORTFOLIO/static/media/capi.5fff5d931eca9c0f1bca.png",
     "static/media/kate.png": "/UXPORTFOLIO/static/media/kate.6b24bec3067fac3da8ea.png",
-    "static/media/clara.png": "/UXPORTFOLIO/static/media/clara.7b62bb79f32bcc2bddda.png",
     "static/media/isolatedWave1.png": "/UXPORTFOLIO/static/media/isolatedWave1.6cec1d6226640343ad52.png",
     "static/media/waveCode.png": "/UXPORTFOLIO/static/media/waveCode.0865d93c99ad89e03914.png",
     "static/media/transparentWave3.png": "/UXPORTFOLIO/static/media/transparentWave3.3c70fe31ef3e28c6f756.png",
     "static/media/sideWave.png": "/UXPORTFOLIO/static/media/sideWave.426f0b7577742121c1d5.png",
     "static/media/danny.png": "/UXPORTFOLIO/static/media/danny.12e83e12aff96a5e21f3.png",
+    "static/media/claraa.png": "/UXPORTFOLIO/static/media/claraa.9c910dbd393326a731a6.png",
     "static/media/Kate_Bonner_CV_2023.png": "/UXPORTFOLIO/static/media/Kate_Bonner_CV_2023.cec78351a43aa87beb78.png",
+    "static/media/cosima.png": "/UXPORTFOLIO/static/media/cosima.6afbd685128eba843094.png",
     "static/media/gabi.png": "/UXPORTFOLIO/static/media/gabi.6c3fa7b97235423588d0.png",
+    "static/media/kate2.png": "/UXPORTFOLIO/static/media/kate2.61aca52044987a925e32.png",
     "static/media/kyle.png": "/UXPORTFOLIO/static/media/kyle.6d3e83de3993e213037c.png",
+    "static/media/snake.png": "/UXPORTFOLIO/static/media/snake.f6cdef6d42b8fea1c797.png",
     "static/media/derivation.png": "/UXPORTFOLIO/static/media/derivation.e17aa54fd0dea030fc0b.png",
+    "static/media/kyle2.png": "/UXPORTFOLIO/static/media/kyle2.fda121eda276e9944550.png",
     "static/media/Poppins-Light.ttf": "/UXPORTFOLIO/static/media/Poppins-Light.7641a0f76ca9ef6c252c.ttf",
     "static/media/Poppins-SemiBold.ttf": "/UXPORTFOLIO/static/media/Poppins-SemiBold.ac8d04b620e54be9b0f0.ttf",
     "static/media/sara.jpeg": "/UXPORTFOLIO/static/media/sara.16b5c1ffad71c181da01.jpeg",
     "index.html": "/UXPORTFOLIO/index.html",
     "main.dad69995.css.map": "/UXPORTFOLIO/static/css/main.dad69995.css.map",
-    "main.769ad15d.js.map": "/UXPORTFOLIO/static/js/main.769ad15d.js.map",
+    "main.7632e84a.js.map": "/UXPORTFOLIO/static/js/main.7632e84a.js.map",
     "787.7efd31bd.chunk.js.map": "/UXPORTFOLIO/static/js/787.7efd31bd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dad69995.css",
-    "static/js/main.769ad15d.js"
+    "static/js/main.7632e84a.js"
   ]
 }
