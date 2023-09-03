@@ -20,9 +20,17 @@ export const Column = styled.div({
   margin: "0 0 20% 0",
 });
 
+export const Row = styled.div({
+  display: "flex",
+  flexDirection: "row",
+  justifyContent: "center",
+  alignItems: "center",
+});
+
 export const ProjectImage = styled.img((props) => ({
   width: props.width || "60vw",
-  margin: "10% 0 0 0",
+  margin: "10% 2% 0 2%",
+  // filter: "grayscale(100%)",
   "@media(max-width: 900)": {
     width: "80%",
   },
@@ -31,7 +39,6 @@ export const ProjectImage = styled.img((props) => ({
 export const ProjectLoadingImage = styled.img((props) => ({
   width: props.width || "60vw",
   margin: "10% 0 0 0",
-  // filter: "grayscale(100%)",
 }));
 
 const loaderAnimation = keyframes({
@@ -68,10 +75,10 @@ export const ProjectLoadingImageWrapper = styled.div((props) => ({
 }));
 
 export const SectionHeader = styled.div({
-  fontSize: "8vw",
-  fontWeight: 600,
+  fontSize: "4vw",
+  fontWeight: 400,
   color: "#fff",
-  margin: "20% 0 0 0",
+  margin: "10% 0 0 0",
 });
 
 export const DescriptionContainer = styled.div((props) => ({

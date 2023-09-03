@@ -17,7 +17,11 @@ const Knot = () => {
     });
 
     const handleCubeClick = () => {
-      window.location.href = `https://katebonner.github.io/level/#`;
+      let newWindow = window.open(
+        "https://katebonner.github.io/level/#",
+        "_blank"
+      );
+      if (newWindow) newWindow.opener = null;
     };
 
     return (

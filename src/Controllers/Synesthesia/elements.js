@@ -181,3 +181,18 @@ export const ProjectLoadingImageWrapper = styled.div((props) => ({
     display: "block",
   },
 }));
+
+export const ClickText = styled.div({
+  fontSize: "2vw",
+  fontWeight: 600,
+  position: "absolute",
+  color: "#fff",
+  opacity: 0.2,
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -200%)",
+  "@media (max-width: 900px)": {
+    fontSize: "4vw",
+    textAlign: "center",
+  },
+});

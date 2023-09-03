@@ -1,5 +1,5 @@
 import React from "react";
-import { Background, Heading1, Row, Spacer } from "./elements";
+import { Background, ClickText, Heading1, Row, Spacer } from "./elements";
 import {
   ProjectDescriptionContainer,
   Description,
@@ -15,6 +15,7 @@ const Synesthesia = () => {
       <Background />
       <Spacer />
       <Knot />
+      <ClickText>TAP THE SPIRAL TO VISIT THE WEBSITE</ClickText>
       <ProjectDescriptionContainer>
         <Description>Synesthesia: Spotify Sound and Color</Description>
         <Description>Role: Designer, Developer</Description>
