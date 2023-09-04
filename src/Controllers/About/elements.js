@@ -27,7 +27,6 @@ export const TextContainer = styled.div({
   "@media(max-width: 1280px)": {
     textAlign: "left",
     width: "100%",
-
     margin: "2% 0 0 0",
   },
 });
