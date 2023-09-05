@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/UXPORTFOLIO/static/css/main.4db30ec3.css",
-    "main.js": "/UXPORTFOLIO/static/js/main.336dbb27.js",
+    "main.js": "/UXPORTFOLIO/static/js/main.b3565a6a.js",
     "static/js/787.7efd31bd.chunk.js": "/UXPORTFOLIO/static/js/787.7efd31bd.chunk.js",
     "static/media/Arduino_Test2.png": "/UXPORTFOLIO/static/media/Arduino_Test2.d13213883e22c3205aa6.png",
     "static/media/Arduino_Test3.png": "/UXPORTFOLIO/static/media/Arduino_Test3.a7fcfdfa901f469f8a6d.png",
@@ -30,11 +30,11 @@
     "static/media/sara.jpeg": "/UXPORTFOLIO/static/media/sara.16b5c1ffad71c181da01.jpeg",
     "index.html": "/UXPORTFOLIO/index.html",
     "main.4db30ec3.css.map": "/UXPORTFOLIO/static/css/main.4db30ec3.css.map",
-    "main.336dbb27.js.map": "/UXPORTFOLIO/static/js/main.336dbb27.js.map",
+    "main.b3565a6a.js.map": "/UXPORTFOLIO/static/js/main.b3565a6a.js.map",
     "787.7efd31bd.chunk.js.map": "/UXPORTFOLIO/static/js/787.7efd31bd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4db30ec3.css",
-    "static/js/main.336dbb27.js"
+    "static/js/main.b3565a6a.js"
   ]
 }
