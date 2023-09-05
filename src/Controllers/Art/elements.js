@@ -29,7 +29,7 @@ export const Row = styled.div({
 
 export const ProjectImage = styled.img((props) => ({
   width: props.width || "60vw",
-  margin: "10% 2% 0 2%",
+  margin: "2% 2% 0 2%",
   // filter: "grayscale(100%)",
   "@media(max-width: 900px)": {
     width: "80%",
