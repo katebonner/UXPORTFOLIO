@@ -119,6 +119,42 @@ export const Heading2 = styled.text({
   fontSize: "4vw",
 });
 
+export const SyneBold = styled.div({
+  fontSize: "4vw",
+  fontFamily: "Syne",
+  fontWeight: 700,
+  textAlign: "left",
+  margin: "0 0 0 25%",
+  color: "#fff",
+});
+
+export const SyneExtraBold = styled.div({
+  fontFamily: "Syne",
+  fontSize: "4vw",
+  fontWeight: 800,
+  textAlign: "left",
+  margin: "0 0 0 25%",
+  color: "#fff",
+});
+
+export const SyneRegular = styled.div({
+  fontFamily: "Syne",
+  fontSize: "4vw",
+  fontWeight: 400,
+  textAlign: "left",
+  margin: "0 0 0 25%",
+  color: "#fff",
+});
+
+export const SyneSemiBold = styled.div({
+  fontFamily: "Syne",
+  fontWeight: 600,
+  fontSize: "4vw",
+  textAlign: "left",
+  margin: "0 0 0 25%",
+  color: "#fff",
+});
+
 export const Text1 = styled.div({
   fontSize: "2vw",
   lineHeight: "3vw",

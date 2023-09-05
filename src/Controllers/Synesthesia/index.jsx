@@ -1,5 +1,15 @@
 import React from "react";
-import { Background, ClickText, Heading1, Row, Spacer } from "./elements";
+import {
+  Background,
+  ClickText,
+  Heading1,
+  Row,
+  Spacer,
+  SyneBold,
+  SyneExtraBold,
+  SyneSemiBold,
+  SyneRegular,
+} from "./elements";
 import {
   ProjectDescriptionContainer,
   Description,
@@ -78,6 +88,16 @@ const Synesthesia = () => {
           tracks: happiness, danceability, energy, loudness, liveness, and
           instrumentalness.
         </Text1>
+        <Text1>
+          Drawing from spotify's typeface, I wanted to use a sans-serif font to
+          excude a mature confidence. Simultanously, I wanted to add some degree
+          of novetly and playfulness.
+        </Text1>
+        <SyneRegular>Syne Regular</SyneRegular>
+        <SyneSemiBold>Syne Semi Bold</SyneSemiBold>
+        <SyneBold>Syne Bold</SyneBold>
+        <SyneExtraBold>Syne Extra Bold</SyneExtraBold>
+
         <Text1>
           I decided to create a 3D roatating spiral with attributes assigned by
           a users spotify data.
