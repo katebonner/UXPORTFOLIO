@@ -14,6 +14,7 @@ import {
   Row,
   ProjectImageHeader,
   MobileSpacer,
+  StyledPlayer2,
 } from "./elements";
 import DerivationImage from "../../assets/derivation.png";
 import WavefunctionImageTransparent from "../../assets/transparentWave3.png";
@@ -38,8 +39,16 @@ const WaveFunctionController = () => {
     <>
       <Background />
       <FadeOverlay />
-      <ProjectImageHeader src={WavefunctionImage} />
-      <MobileSpacer src={WavefunctionImageTransparent} />
+      <StyledPlayer2
+        url="https://player.vimeo.com/video/858681236?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+        playing
+        muted
+        loop
+        width="100%"
+        playsinline
+      />
+      {/* <ProjectImageHeader src={WavefunctionImage} />
+      <MobileSpacer src={WavefunctionImageTransparent} /> */}
       <ProjectDescriptionContainer>
         <Description>
           3D Visualization of the One-Dimensional, Time-Dependent Shrödinger
@@ -126,7 +135,7 @@ const WaveFunctionController = () => {
           <Heading1>Final Product</Heading1>
         </Row>
         <Text3>[ angled ]</Text3>
-        <ReactPlayer
+        <StyledPlayer2
           url="https://player.vimeo.com/video/858681236?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
           playing
           muted
@@ -135,7 +144,7 @@ const WaveFunctionController = () => {
           playsinline
         />
         <Text3>[ y axis ]</Text3>
-        <ReactPlayer
+        <StyledPlayer2
           url="https://player.vimeo.com/video/858727921?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
           playing
           muted
@@ -144,7 +153,7 @@ const WaveFunctionController = () => {
           playsinline
         />
         <Text3>[ x axis ]</Text3>
-        <ReactPlayer
+        <StyledPlayer2
           url="https://player.vimeo.com/video/858726202?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
           playing
           muted

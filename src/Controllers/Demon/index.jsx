@@ -32,7 +32,7 @@ const DemonController = () => {
       <ProjectDescriptionContainer>
         <Description>Inner Demon</Description>
         <Description>Role: Design Technologist </Description>
-        <Description>[2023]</Description>
+        <Description>[2021]</Description>
       </ProjectDescriptionContainer>
       <CaseContainer>
         <Row>

@@ -12,13 +12,6 @@ const ProjectsController = () => {
       <FadeOverlay />
       <ProjectsContainer>
         <Project
-          link="/electronicportrait"
-          title="portrait of an electric pulse"
-          description="electronics & fine art"
-          year="2023"
-        />
-        <Divider />
-        <Project
           link="/synesthesia"
           title="synesthesia: spotify sound and color"
           description="web design & development"
@@ -26,17 +19,24 @@ const ProjectsController = () => {
         />
         <Divider />
         <Project
-          link="/innerdemon"
-          title="inner demon"
-          description="interactive & augmented reality design"
-          year="2021"
-        />
-        <Divider />
-        <Project
           link="/wavefunction"
           title="schrödinger's dance"
           description="computational physics & 3D animation"
           year="2019"
+        />
+        <Divider />
+        <Project
+          link="/electronicportrait"
+          title="portrait of an electric pulse"
+          description="electronics & fine art"
+          year="2023"
+        />
+        <Divider />
+        <Project
+          link="/innerdemon"
+          title="inner demon"
+          description="interactive & augmented reality design"
+          year="2021"
         />
         <Spacer />
         <Spacer />

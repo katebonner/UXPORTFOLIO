@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import ReactPlayer from "react-player";
 
 export const Background = styled.div({
   position: "fixed",
@@ -151,12 +152,25 @@ export const Code = styled.div({
   fontSize: "1.5vw",
 });
 
-export const PlayerWrapper = styled.div({
-  padding: "56.25% 0 5% 0",
-
-  position: "relative",
-});
-
 export const Spacer = styled.div({
   margin: "20% 0 0 0",
+});
+
+export const StyledPlayer2 = styled(ReactPlayer)({
+  transform: "scale(1.8)",
+  margin: "10% 0",
+  height: 400,
+  "@media(max-width: 1450px)": {
+    transform: "scale(1.4)",
+    margin: "10% 0",
+    height: 300,
+  },
+  "@media(max-width: 1100px)": {
+    transform: "scale(1.4)",
+    margin: "15% 0",
+  },
+  "@media(max-width: 900px)": {
+    transform: "scale(1)",
+    margin: "5% 0",
+  },
 });
