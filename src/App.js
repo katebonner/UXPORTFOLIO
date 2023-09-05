@@ -10,6 +10,7 @@ import "./App.css";
 import { useLocation } from "react-router-dom";
 import RefreshAnimation from "./Components/RefreshAnimation";
 import ElectronicPortrait from "./Controllers/ElectricPortrait";
+import Demon from "./Controllers/Demon";
 
 const Navigation = () => {
   const getNavColor = (pathname) => {
@@ -137,6 +138,23 @@ const Navigation = () => {
             <div className={`Nav-element ${navColor}`}>/</div>
             <Link className={`Nav-element ${navColor}`} to="/level">
               LEVEL
+            </Link>
+          </div>
+        );
+
+      case "/innerdemon":
+        return (
+          <div className="Nav-grouping">
+            <Link className={`Nav-element ${navColor}`} to="/">
+              KA+iE
+            </Link>
+            <div className={`Nav-element ${navColor}`}>/</div>
+            <Link className={`Nav-element ${navColor}`} to="/projects">
+              PROJECTS
+            </Link>
+            <div className={`Nav-element ${navColor}`}>/</div>
+            <Link className={`Nav-element ${navColor}`} to="/innerdemon">
+              INNER DEMON
             </Link>
           </div>
         );
@@ -270,6 +288,21 @@ const MobileNavBar = () => {
           </div>
         );
 
+      case "/innerdemon":
+        return (
+          <div className="Nav-element-mobile">
+            <Link className={`Nav-element-mobile ${navColor}`} to="/">
+              KA+iE /
+            </Link>
+            <Link className={`Nav-element-mobile ${navColor}`} to="/projects">
+              PROJECTS /
+            </Link>
+            <Link className={`Nav-element-mobile ${navColor}`} to="/innerdemon">
+              INNER DEMON
+            </Link>
+          </div>
+        );
+
       default:
         return null;
     }
@@ -292,6 +325,7 @@ export const App = () => {
           <Route path="/synesthesia" element={<Synesthesia />} />
           <Route path="/wavefunction" element={<WaveFunction />} />
           <Route path="/electronicportrait" element={<ElectronicPortrait />} />
+          <Route path="/innerdemon" element={<Demon />} />
           <Route path="/" element={<Home />} />
         </Routes>
       </div>

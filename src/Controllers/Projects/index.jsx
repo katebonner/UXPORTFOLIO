@@ -26,6 +26,13 @@ const ProjectsController = () => {
         />
         <Divider />
         <Project
+          link="/innerdemon"
+          title="inner demon"
+          description="interactive & augmented reality design"
+          year="2021"
+        />
+        <Divider />
+        <Project
           link="/wavefunction"
           title="schrödinger's dance"
           description="computational physics & 3D animation"

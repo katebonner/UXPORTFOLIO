@@ -35,11 +35,11 @@ const AboutController = () => {
         </ShrinkColumn>
         <GrowColumn>
           <Text3>
-            As an engineer and a designer, I see beauty in the dance between
+            As an engineer and a designer, I see beauty in the interplay between
             form and function, and my passion lies in creating digital solutions
-            where every pixel, every line of code contributes to a product of
-            fractal quality — a product where each detail, no matter how minute,
-            echoes the cohesive harmony and thoughtful design of the whole.
+            where every pixel and line of code contributes to a product of
+            fractal quality: a product where every detail echoes the harmony and
+            thoughtful design of the whole.
           </Text3>
         </GrowColumn>
       </Row>
@@ -57,11 +57,10 @@ const AboutController = () => {
         </SplitShrinkColumn>
         <SplitGrowColumn>
           <SecondaryText6>
-            My bachelor's degree in physics provided me with an education that
-            encompasses the mathematical disciplines of multivariable calculus,
-            linear algebra, and differential equations. I've leveraged
-            programming languages such as C++ and Python to analyze complex data
-            sets and perform intricate simulations.
+            My bachelor's in physics encompassed the mathematical disciplines of
+            multivariable calculus, linear algebra, and differential equations.
+            I leveraged programming languages like C++ and Python to analyze
+            complex data sets and perform intricate simulations.
           </SecondaryText6>
         </SplitGrowColumn>
       </Row>
@@ -76,8 +75,8 @@ const AboutController = () => {
         <SplitGrowColumn>
           <SecondaryText6>
             As Creative Director of The Corp, the world's largest student-run
-            corporation, I refined my graphic and motion design skills. I worked
-            in Adobe Illustrator, Adobe After Effects, and Cinema4D.
+            corporation, I refined my graphic and motion design skills, working
+            with Adobe Illustrator, Adobe After Effects, and Cinema4D.
           </SecondaryText6>
         </SplitGrowColumn>
       </Row>
@@ -91,10 +90,10 @@ const AboutController = () => {
         </SplitShrinkColumn>
         <SplitGrowColumn>
           <SecondaryText6>
-            My master's degree in Trasdisciplinary New Media provided me with an
-            education at the nexus of design principles and emerging
-            technologies. I've acquired skills in 3D Modeling, Animation,
-            Augmented Reality (AR) and Virtual Reality (VR).
+            My master's degree in Trasdisciplinary New Media focused on the
+            intersection of design principles and emerging technologies. I
+            acquired skills in 3D Modeling, Animation, Augmented Reality (AR)
+            and Virtual Reality (VR).
           </SecondaryText6>
         </SplitGrowColumn>
       </Row>
@@ -108,11 +107,10 @@ const AboutController = () => {
         </SplitShrinkColumn>
         <SplitGrowColumn>
           <SecondaryText6>
-            My Full Stack Web Development bootcamp provided me with an education
-            in both frontend and backend web technologies, from crafting
-            engaging user interfaces with HTML, CSS, and JavaScript to managing
-            servers and databases with Node.js, Express.js, SQL, noSQL and
-            MongoDB.
+            My Full Stack Web Development bootcamp focused on frontend and
+            backend web technologies: from crafting engaging user interfaces
+            with HTML, CSS, and JavaScript to managing servers and databases
+            with Node.js, Express.js, SQL, noSQL and MongoDB.
           </SecondaryText6>
         </SplitGrowColumn>
       </Row>
@@ -126,10 +124,10 @@ const AboutController = () => {
         </SplitShrinkColumn>
         <SplitGrowColumn>
           <SecondaryText6>
-            As a Front-end Mobile App Developer for a fast-paced, seed-stage
+            As a Front-end Mobile App Developer at a fast-paced, seed-stage
             fintech startup, I liaised between engineering and design teams,
             ensuring the viability and implementation of design systems and UI
-            animations. I worked in TypeScript and React Native.
+            animations, working in TypeScript and React Native.
           </SecondaryText6>
         </SplitGrowColumn>
       </Row>
