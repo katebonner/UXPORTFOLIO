@@ -126,10 +126,6 @@ export const Heading = styled.div({
   color: "#fff",
   fontWeight: 600,
   textAlign: "left",
-  margin: "0 0 0 5%",
-});
-export const Heading2 = styled.text({
-  fontSize: "4vw",
 });
 
 export const SyneBold = styled.div({
@@ -174,6 +170,15 @@ export const Text1 = styled.div({
   color: "#fff",
   textAlign: "left",
   margin: "2% 0 5% 25%",
+});
+
+export const Text0 = styled.div({
+  fontSize: "3vw",
+  lineHeight: "3vw",
+  fontWeight: 600,
+  color: "#fff",
+  textAlign: "left",
+  margin: "10% 0 0% 25%",
 });
 export const Text2 = styled.div({
   fontSize: "1.5vw",

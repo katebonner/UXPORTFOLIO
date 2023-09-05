@@ -15,6 +15,7 @@ import {
   RedBlock,
   Colors,
   Icon,
+  Text0,
 } from "./elements";
 import {
   ProjectDescriptionContainer,
@@ -94,6 +95,7 @@ const Synesthesia = () => {
           tracks: happiness, danceability, energy, loudness, liveness, and
           instrumentalness.
         </Text1>
+        <Text0>Typography</Text0>
         <Text1>
           Drawing from spotify's typeface, I wanted to use a sans-serif font to
           excude a mature confidence. Simultanously, I wanted to add some degree
@@ -103,6 +105,7 @@ const Synesthesia = () => {
         <SyneSemiBold>Syne Semi Bold</SyneSemiBold>
         <SyneBold>Syne Bold</SyneBold>
         <SyneExtraBold>Syne Extra Bold</SyneExtraBold>
+        <Text0>Color</Text0>
         <Text1>
           Playing with the notion of synesthesia, I displayed a wide spectrum of
           color. To acheive this, I accentuated the dominant shade of Pink
@@ -115,6 +118,7 @@ const Synesthesia = () => {
           <RedBlock />
           <YellowBlock />
         </Colors>
+        <Text0>Iconography</Text0>
         <Text1>
           I used emojis as icons on my website because they're universally
           recognized, adding a modern and playful touch. Their visual appeal
@@ -129,10 +133,12 @@ const Synesthesia = () => {
           <Icon>🎙️</Icon>
           <Icon>🎹</Icon>
         </Colors>
+        <Text0>Animation</Text0>
         <Text1>
           For the focal point of this website, I leveraged the three.js
           javascript library to create a 3D roatating spiral with attributes
-          assigned by a users spotify data.
+          assigned by a user's spotify data. I also created a 3D particle system
+          out of the user's top album covers.
         </Text1>
         <div
           style={{
