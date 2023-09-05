@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/UXPORTFOLIO/static/css/main.4db30ec3.css",
-    "main.js": "/UXPORTFOLIO/static/js/main.b3565a6a.js",
+    "main.css": "/UXPORTFOLIO/static/css/main.fa521797.css",
+    "main.js": "/UXPORTFOLIO/static/js/main.198ed4d0.js",
     "static/js/787.7efd31bd.chunk.js": "/UXPORTFOLIO/static/js/787.7efd31bd.chunk.js",
     "static/media/Arduino_Test2.png": "/UXPORTFOLIO/static/media/Arduino_Test2.d13213883e22c3205aa6.png",
     "static/media/Arduino_Test3.png": "/UXPORTFOLIO/static/media/Arduino_Test3.a7fcfdfa901f469f8a6d.png",
@@ -28,13 +28,17 @@
     "static/media/Poppins-Light.ttf": "/UXPORTFOLIO/static/media/Poppins-Light.7641a0f76ca9ef6c252c.ttf",
     "static/media/Poppins-SemiBold.ttf": "/UXPORTFOLIO/static/media/Poppins-SemiBold.ac8d04b620e54be9b0f0.ttf",
     "static/media/sara.jpeg": "/UXPORTFOLIO/static/media/sara.16b5c1ffad71c181da01.jpeg",
+    "static/media/Syne-ExtraBold.ttf": "/UXPORTFOLIO/static/media/Syne-ExtraBold.99cf775aa2fb7d59d2da.ttf",
+    "static/media/Syne-Bold.ttf": "/UXPORTFOLIO/static/media/Syne-Bold.4f7a3ab12ddb09781520.ttf",
+    "static/media/Syne-SemiBold.ttf": "/UXPORTFOLIO/static/media/Syne-SemiBold.a85e1a91be6d9b17d84e.ttf",
+    "static/media/Syne-Regular.ttf": "/UXPORTFOLIO/static/media/Syne-Regular.edc4ef9dce61eb376e9b.ttf",
     "index.html": "/UXPORTFOLIO/index.html",
-    "main.4db30ec3.css.map": "/UXPORTFOLIO/static/css/main.4db30ec3.css.map",
-    "main.b3565a6a.js.map": "/UXPORTFOLIO/static/js/main.b3565a6a.js.map",
+    "main.fa521797.css.map": "/UXPORTFOLIO/static/css/main.fa521797.css.map",
+    "main.198ed4d0.js.map": "/UXPORTFOLIO/static/js/main.198ed4d0.js.map",
     "787.7efd31bd.chunk.js.map": "/UXPORTFOLIO/static/js/787.7efd31bd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4db30ec3.css",
-    "static/js/main.b3565a6a.js"
+    "static/css/main.fa521797.css",
+    "static/js/main.198ed4d0.js"
   ]
 }
