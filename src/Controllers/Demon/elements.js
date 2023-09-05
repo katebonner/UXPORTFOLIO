@@ -190,13 +190,13 @@ export const ProjectLoadingImageWrapper = styled.div((props) => ({
 }));
 
 export const StyledPlayer = styled(ReactPlayer)({
-  transform: "scale(1.8) translate(0%, -23%)",
-  "@media(max-width: 768px)": {
-    transform: "scale(2.5) translate(0%, -20%)",
+  transform: "scale(1.8)",
+  margin: "10% 0",
+  "@media(max-width: 1500px)": {
+    margin: "15% 0",
   },
-  "@media(max-width: 600px)": {
-    transform: "scale(3) translate(0%, 0%)",
-    margin: "25% 0",
+  "@media(max-width: 769px)": {
+    margin: "12% 0",
   },
 });
 
