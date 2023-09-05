@@ -195,7 +195,8 @@ export const StyledPlayer = styled(ReactPlayer)({
     transform: "scale(2.5) translate(0%, -20%)",
   },
   "@media(max-width: 600px)": {
-    transform: "scale(3) translate(0%, -15%)",
+    transform: "scale(3) translate(0%, 0%)",
+    margin: "25% 0",
   },
 });
 
