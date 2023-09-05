@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/UXPORTFOLIO/static/css/main.dad69995.css",
-    "main.js": "/UXPORTFOLIO/static/js/main.fbf1fb8f.js",
+    "main.css": "/UXPORTFOLIO/static/css/main.4db30ec3.css",
+    "main.js": "/UXPORTFOLIO/static/js/main.f4fc84a4.js",
     "static/js/787.7efd31bd.chunk.js": "/UXPORTFOLIO/static/js/787.7efd31bd.chunk.js",
     "static/media/Arduino_Test2.png": "/UXPORTFOLIO/static/media/Arduino_Test2.d13213883e22c3205aa6.png",
     "static/media/Arduino_Test3.png": "/UXPORTFOLIO/static/media/Arduino_Test3.a7fcfdfa901f469f8a6d.png",
@@ -29,12 +29,12 @@
     "static/media/Poppins-SemiBold.ttf": "/UXPORTFOLIO/static/media/Poppins-SemiBold.ac8d04b620e54be9b0f0.ttf",
     "static/media/sara.jpeg": "/UXPORTFOLIO/static/media/sara.16b5c1ffad71c181da01.jpeg",
     "index.html": "/UXPORTFOLIO/index.html",
-    "main.dad69995.css.map": "/UXPORTFOLIO/static/css/main.dad69995.css.map",
-    "main.fbf1fb8f.js.map": "/UXPORTFOLIO/static/js/main.fbf1fb8f.js.map",
+    "main.4db30ec3.css.map": "/UXPORTFOLIO/static/css/main.4db30ec3.css.map",
+    "main.f4fc84a4.js.map": "/UXPORTFOLIO/static/js/main.f4fc84a4.js.map",
     "787.7efd31bd.chunk.js.map": "/UXPORTFOLIO/static/js/787.7efd31bd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dad69995.css",
-    "static/js/main.fbf1fb8f.js"
+    "static/css/main.4db30ec3.css",
+    "static/js/main.f4fc84a4.js"
   ]
 }
