@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/UXPORTFOLIO/static/css/main.fa521797.css",
-    "main.js": "/UXPORTFOLIO/static/js/main.43e6a0a7.js",
+    "main.js": "/UXPORTFOLIO/static/js/main.8de3ee34.js",
     "static/js/787.7efd31bd.chunk.js": "/UXPORTFOLIO/static/js/787.7efd31bd.chunk.js",
     "static/media/Arduino_Test2.png": "/UXPORTFOLIO/static/media/Arduino_Test2.d13213883e22c3205aa6.png",
     "static/media/Arduino_Test3.png": "/UXPORTFOLIO/static/media/Arduino_Test3.a7fcfdfa901f469f8a6d.png",
@@ -24,6 +24,8 @@
     "static/media/kyle.png": "/UXPORTFOLIO/static/media/kyle.6d3e83de3993e213037c.png",
     "static/media/snake.png": "/UXPORTFOLIO/static/media/snake.f6cdef6d42b8fea1c797.png",
     "static/media/derivation.png": "/UXPORTFOLIO/static/media/derivation.e17aa54fd0dea030fc0b.png",
+    "static/media/danny2.png": "/UXPORTFOLIO/static/media/danny2.47819b4019cadd1f9467.png",
+    "static/media/gabi2.png": "/UXPORTFOLIO/static/media/gabi2.d617f98ae5918f894e03.png",
     "static/media/kyle2.png": "/UXPORTFOLIO/static/media/kyle2.fda121eda276e9944550.png",
     "static/media/Poppins-Light.ttf": "/UXPORTFOLIO/static/media/Poppins-Light.7641a0f76ca9ef6c252c.ttf",
     "static/media/Poppins-SemiBold.ttf": "/UXPORTFOLIO/static/media/Poppins-SemiBold.ac8d04b620e54be9b0f0.ttf",
@@ -34,11 +36,11 @@
     "static/media/Syne-Regular.ttf": "/UXPORTFOLIO/static/media/Syne-Regular.edc4ef9dce61eb376e9b.ttf",
     "index.html": "/UXPORTFOLIO/index.html",
     "main.fa521797.css.map": "/UXPORTFOLIO/static/css/main.fa521797.css.map",
-    "main.43e6a0a7.js.map": "/UXPORTFOLIO/static/js/main.43e6a0a7.js.map",
+    "main.8de3ee34.js.map": "/UXPORTFOLIO/static/js/main.8de3ee34.js.map",
     "787.7efd31bd.chunk.js.map": "/UXPORTFOLIO/static/js/787.7efd31bd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fa521797.css",
-    "static/js/main.43e6a0a7.js"
+    "static/js/main.8de3ee34.js"
   ]
 }
