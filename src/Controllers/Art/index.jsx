@@ -92,7 +92,11 @@ const Art = () => {
           <Description>sara | oil paint</Description>
           <Year>[2019]</Year>
         </DescriptionContainer>
-        <ProjectImage src={Capi} width="62vw" />
+        <ProjectImage
+          src={Capi}
+          width="62vw"
+          style={{ filter: "saturate(120%)" }}
+        />
         <DescriptionContainer width="62vw">
           <Description>capucine | oil paint</Description>
           <Year>[2023]</Year>
