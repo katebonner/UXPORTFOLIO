@@ -9,6 +9,12 @@ import {
   SyneExtraBold,
   SyneSemiBold,
   SyneRegular,
+  BlueBlock,
+  PinkBlock,
+  YellowBlock,
+  RedBlock,
+  Colors,
+  Icon,
 } from "./elements";
 import {
   ProjectDescriptionContainer,
@@ -97,10 +103,36 @@ const Synesthesia = () => {
         <SyneSemiBold>Syne Semi Bold</SyneSemiBold>
         <SyneBold>Syne Bold</SyneBold>
         <SyneExtraBold>Syne Extra Bold</SyneExtraBold>
-
         <Text1>
-          I decided to create a 3D roatating spiral with attributes assigned by
-          a users spotify data.
+          Playing with the notion of synesthesia, I displayed a wide spectrum of
+          color. To acheive this, I accentuated the dominant shade of Pink
+          #ab577e with a Gaussian blur and 3D lighting in primary blue, red, and
+          yellow.
+        </Text1>
+        <Colors>
+          <PinkBlock />
+          <BlueBlock />
+          <RedBlock />
+          <YellowBlock />
+        </Colors>
+        <Text1>
+          I used emojis as icons on my website because they're universally
+          recognized, adding a modern and playful touch. Their visual appeal
+          enhances user interaction and efficiently communicates
+          functionalities, making the site more user-friendly and relatable.
+        </Text1>
+        <Colors>
+          <Icon>😊</Icon>
+          <Icon>🕺🏾</Icon>
+          <Icon>⚡</Icon>
+          <Icon>🔊</Icon>
+          <Icon>🎙️</Icon>
+          <Icon>🎹</Icon>
+        </Colors>
+        <Text1>
+          For the focal point of this website, I leveraged the three.js
+          javascript library to create a 3D roatating spiral with attributes
+          assigned by a users spotify data.
         </Text1>
         <div
           style={{

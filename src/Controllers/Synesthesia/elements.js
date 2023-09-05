@@ -69,6 +69,19 @@ export const RowColum = styled.div({
   },
 });
 
+export const Colors = styled.div({
+  display: "flex",
+  flexDirection: "row",
+  justifyContent: "center",
+  alignItems: "center",
+  opacity: 1,
+
+  margin: "5%",
+  "@media (max-width: 900px)": {
+    flexDirection: "column",
+  },
+});
+
 export const Overlay = styled.div({
   position: "absolute",
   top: "50%",
@@ -295,4 +308,45 @@ export const Result = styled.div({
   "@media (max-width: 700px)": {
     fontSize: "10vw",
   },
+});
+
+export const BlueBlock = styled.div({
+  height: 100,
+  width: 100,
+  borderRadius: 100,
+  backgroundColor: "blue",
+  border: "1px solid #fff",
+  margin: "2%",
+});
+
+export const RedBlock = styled.div({
+  height: 100,
+  width: 100,
+  borderRadius: 100,
+  backgroundColor: "red",
+  border: "1px solid #fff",
+  margin: "2%",
+});
+
+export const YellowBlock = styled.div({
+  height: 100,
+  width: 100,
+  borderRadius: 100,
+  backgroundColor: "yellow",
+  border: "1px solid #fff",
+  margin: "2%",
+});
+
+export const PinkBlock = styled.div({
+  height: 100,
+  width: 100,
+  borderRadius: 100,
+  backgroundColor: "#ab577e",
+  border: "1px solid #fff",
+  margin: "2%",
+});
+
+export const Icon = styled.div({
+  fontSize: "4vw",
+  margin: "2%",
 });
