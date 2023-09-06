@@ -14,8 +14,11 @@ import {
   YellowBlock,
   RedBlock,
   Colors,
-  Icon,
   Text0,
+  ScoreContainer,
+  RowFixed,
+  SectionContainer,
+  SectionText,
 } from "./elements";
 import {
   ProjectDescriptionContainer,
@@ -23,11 +26,7 @@ import {
   CaseContainer,
   Text1,
   Text2,
-  SectionContainer,
   Section,
-  Result,
-  SectionText,
-  RowColum,
 } from "./elements";
 import ProgressBar from "../../Components/Bar";
 import Knot from "../../Components/Knot";
@@ -118,21 +117,6 @@ const Synesthesia = () => {
           <RedBlock />
           <YellowBlock />
         </Colors>
-        <Text0>Iconography</Text0>
-        <Text1>
-          I used emojis as icons on my website because they're universally
-          recognized, adding a modern and playful touch. Their visual appeal
-          enhances user interaction and efficiently communicates
-          functionalities, making the site more user-friendly and relatable.
-        </Text1>
-        <Colors>
-          <Icon>😊</Icon>
-          <Icon>🕺🏾</Icon>
-          <Icon>⚡</Icon>
-          <Icon>🔊</Icon>
-          <Icon>🎙️</Icon>
-          <Icon>🎹</Icon>
-        </Colors>
         <Text0>Animation</Text0>
         <Text1>
           For the focal point of this website, I leveraged the three.js
@@ -148,73 +132,115 @@ const Synesthesia = () => {
           <SpotifyVisualiser data={USER_DATA} />
         </div>
         <div style={{ width: "100%" }}>
-          <RowColum>
+          <ScoreContainer>
+            <RowFixed>
+              <Section>HAPPINESS: {USER_DATA.valence}% </Section>
+              <div style={{ width: "40%" }}>
+                <ProgressBar progress={USER_DATA.valence} />
+              </div>
+            </RowFixed>
+            <RowFixed>
+              <Section>DANCEABILITY: {USER_DATA.danceability}%</Section>
+              <div style={{ width: "40%" }}>
+                <ProgressBar progress={USER_DATA.danceability} />
+              </div>
+            </RowFixed>
+            <RowFixed>
+              <Section>ENERGY: {USER_DATA.energy}%</Section>
+              <div style={{ width: "40%" }}>
+                <ProgressBar progress={USER_DATA.energy} />
+              </div>
+            </RowFixed>
+            <RowFixed>
+              <Section>LOUDNESS: {USER_DATA.loudness}%</Section>
+              <div style={{ width: "40%" }}>
+                <ProgressBar progress={USER_DATA.loudness} />
+              </div>
+            </RowFixed>
+            <RowFixed>
+              <Section>LIVENESS: {USER_DATA.liveness}%</Section>
+              <div style={{ width: "40%" }}>
+                <ProgressBar progress={USER_DATA.liveness} />
+              </div>
+            </RowFixed>
+            <RowFixed>
+              <Section>INSTRUMENTALNESS: {USER_DATA.instrumentalness}%</Section>
+              <div style={{ width: "40%" }}>
+                <ProgressBar progress={USER_DATA.instrumentalness} />
+              </div>
+            </RowFixed>
+          </ScoreContainer>
+        </div>
+        <div style={{ margin: "5% 0" }}>
+          <Row>
             <SectionContainer>
-              <Section>😊 HAPPINESS</Section>
-              <Result>{USER_DATA.valence}%</Result>
-              <ProgressBar progress={USER_DATA.valence} />
+              <RowFixed>
+                <Section>HAPPINESS</Section>
+              </RowFixed>
               <SectionText>
-                happiness gives the sprial its color. the more positive the
-                user's top spotify track, the more yellow. the more negative the
+                happiness gives your sprial its color. the more positive your
+                top spotify track, the more yellow. the more negative the
                 tracks, the more pink.
               </SectionText>
             </SectionContainer>
             <SectionContainer>
-              <Section>🕺🏾 DANCEABILITY</Section>
-              <Result>{USER_DATA.danceability}%</Result>
-              <ProgressBar progress={USER_DATA.danceability} />
+              <RowFixed>
+                <Section>DANCEABILITY</Section>
+              </RowFixed>
+
               <SectionText>
-                danceability gives the spiral its thickness. the dancibility of
-                the user's tracks is determined by tempo, rhythm stability, beat
+                danceability gives your spiral its thickness. the dancibility of
+                your tracks is determined by tempo, rhythm stability, beat
                 strength, and overall regularity.
               </SectionText>
             </SectionContainer>
-          </RowColum>
-          <RowColum>
+          </Row>
+          <Row>
             <SectionContainer>
-              <Section>⚡ ENERGY</Section>
-              <Result>{USER_DATA.energy}%</Result>
-              <ProgressBar progress={USER_DATA.energy} />
+              <RowFixed>
+                <Section>ENERGY</Section>
+              </RowFixed>
+
               <SectionText>
-                energy gives the spiral its rotation speed. energy represents a
+                energy gives your spiral its rotation speed. energy represents a
                 perceptual measure of intensity and activity.
               </SectionText>
             </SectionContainer>
             <SectionContainer>
-              <Section>🔊 LOUDNESS</Section>
-              <Result>{USER_DATA.loudness}%</Result>
-              <ProgressBar progress={USER_DATA.loudness} />
+              <RowFixed>
+                <Section>LOUDNESS</Section>
+              </RowFixed>
               <SectionText>
-                loudness gives the spiral its size. loudness is the quality of a
-                sound that is the primary psychological correlate of strength
+                loudness gives your spiral its size. loudness is the quality of
+                a sound that is the primary psychological correlate of strength
                 (amplitude).
               </SectionText>
             </SectionContainer>
-          </RowColum>
-          <RowColum>
+          </Row>
+          <Row>
             <SectionContainer>
-              <Section>🎙️LIVENESS</Section>
-              <Result>{USER_DATA.liveness}%</Result>
-              <ProgressBar progress={USER_DATA.liveness} />
+              <RowFixed>
+                <Section>LIVENESS</Section>
+              </RowFixed>
               <SectionText>
-                liveness gives the spiral its degree of reduced rotation speed
+                liveness gives your spiral its degree of reduced rotation speed
                 (how much it slows down) on hover. liveness detects the presence
-                of an audience in the user's top tracks (that the recording was
+                of an audience in your top tracks (that the recording was
                 performed live).
               </SectionText>
             </SectionContainer>
             <SectionContainer>
-              <Section>🎹 INSTRUMENTALNESS</Section>
-              <Result>{USER_DATA.instrumentalness}%</Result>
-              <ProgressBar progress={USER_DATA.instrumentalness} />
+              <RowFixed>
+                <Section>INSTRUMENTALNESS</Section>
+              </RowFixed>
               <SectionText>
-                instrumentalness gives the spiral its shine. instrumentalness
-                predicts whether the tracks contains no vocals. "ooh" and "ahh"
+                instrumentalness gives your spiral its shine. instrumentalness
+                predicts whether your tracks contains no vocals. "ooh" and "ahh"
                 sounds are treated as instrumental in this context. rap or
                 spoken word tracks are vocal.
               </SectionText>
             </SectionContainer>
-          </RowColum>
+          </Row>
         </div>
         <Row>
           <Text2>(003)</Text2>

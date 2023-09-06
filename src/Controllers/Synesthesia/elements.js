@@ -55,12 +55,6 @@ export const ProjectDescriptionContainer = styled.div({
   zIndex: 5,
 });
 
-export const Row = styled.div({
-  display: "flex",
-  flexDirection: "row",
-  justifyContent: "flex-start",
-});
-
 export const RowColum = styled.div({
   display: "flex",
   flexDirection: "row",
@@ -75,7 +69,6 @@ export const Colors = styled.div({
   justifyContent: "center",
   alignItems: "center",
   opacity: 1,
-
   margin: "5%",
   "@media (max-width: 900px)": {
     flexDirection: "column",
@@ -100,13 +93,6 @@ export const Overlay = styled.div({
   fontSize: 30,
   fontWeight: "bold",
   textAlign: "center",
-});
-
-export const Description = styled.div({
-  fontSize: "1.5vw",
-  color: "#fff",
-  textAlign: "left",
-  width: "25%",
 });
 
 export const CaseContainer = styled.div({
@@ -259,47 +245,6 @@ export const ClickText = styled.div({
   },
 });
 
-export const SectionContainer = styled.div({
-  backgroundColor: "rgb(255,255,255,0.2)",
-  padding: "2% 5%",
-  margin: "2% 2%",
-  borderRadius: 10,
-  flex: 1,
-  "@media (max-width: 900px)": {
-    padding: "2% 5% 5% 5%",
-  },
-});
-
-export const Section = styled.div({
-  fontSize: "2.2vw",
-  fontWeight: 600,
-  textAlign: "center",
-  margin: "4% 0 2% 0",
-  color: "#fff",
-  "@media (max-width: 900px)": {
-    fontSize: "4vw",
-    textAlign: "left",
-  },
-  "@media (max-width: 700px)": {
-    fontSize: "5vw",
-  },
-});
-
-export const SectionText = styled.div({
-  fontSize: "1.5vw",
-  color: "#fff",
-  fontWeight: 400,
-  textAlign: "center",
-  margin: "5% 0 0 0",
-  "@media (max-width: 900px)": {
-    fontSize: "2vw",
-    textAlign: "left",
-  },
-  "@media (max-width: 700px)": {
-    fontSize: "2.5vw",
-  },
-});
-
 export const Result = styled.div({
   fontSize: "8vw",
   fontWeight: 600,
@@ -318,34 +263,27 @@ export const Result = styled.div({
 export const BlueBlock = styled.div({
   height: 100,
   width: 100,
-  borderRadius: 100,
   backgroundColor: "blue",
-  border: "1px solid #fff",
   margin: "2%",
 });
 
 export const RedBlock = styled.div({
   height: 100,
   width: 100,
-  borderRadius: 100,
   backgroundColor: "red",
-  border: "1px solid #fff",
   margin: "2%",
 });
 
 export const YellowBlock = styled.div({
   height: 100,
   width: 100,
-  borderRadius: 100,
   backgroundColor: "yellow",
-  border: "1px solid #fff",
   margin: "2%",
 });
 
 export const PinkBlock = styled.div({
   height: 100,
   width: 100,
-  borderRadius: 100,
   backgroundColor: "#ab577e",
   border: "1px solid #fff",
   margin: "2%",
@@ -354,4 +292,86 @@ export const PinkBlock = styled.div({
 export const Icon = styled.div({
   fontSize: "4vw",
   margin: "2%",
+});
+
+export const Row = styled.div({
+  display: "flex",
+  flexDirection: "row",
+  "@media (max-width: 900px)": {
+    flexDirection: "column",
+  },
+});
+
+export const RowFixed = styled.div({
+  display: "flex",
+  flexDirection: "row",
+  alignItems: "center",
+  justifyContent: "flex-end",
+});
+
+export const AbsolutePosition = styled.div({
+  position: "absolute",
+  top: "80%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  height: "130vh",
+});
+
+export const ScoreContainer = styled.div({
+  width: "50vw",
+  marginTop: "20vh",
+  marginLeft: "30vw",
+
+  "@media (max-width: 900px)": {
+    width: "80vw",
+    marginLeft: 0,
+  },
+});
+
+export const Name = styled.div({
+  fontSize: "4vw",
+  fontWeight: 800,
+  textAlign: "center",
+  opacity: 0.6,
+});
+
+export const Description = styled.div({
+  fontSize: "2vw",
+  fontWeight: 400,
+  opacity: 0.6,
+  textAlign: "center",
+});
+
+export const SectionContainer = styled.div({
+  backgroundColor: "rgb(255,255,255,0.2)",
+  padding: "2% 5% 3% 5%",
+  margin: "2% 2%",
+  borderRadius: 0,
+  flex: 1,
+  "@media (max-width: 900px)": {
+    padding: "2% 5% 5% 5%",
+  },
+});
+
+export const Section = styled.div({
+  fontSize: "1.5vw",
+  fontWeight: 700,
+  textAlign: "center",
+  margin: "1% 1%",
+  color: "#fff",
+});
+
+export const SectionText = styled.div({
+  fontSize: "1.5vw",
+  fontWeight: 400,
+  textAlign: "left",
+  margin: "5% 0 0 0",
+  color: "#fff",
+  "@media (max-width: 900px)": {
+    fontSize: "2vw",
+    textAlign: "left",
+  },
+  "@media (max-width: 700px)": {
+    fontSize: "3vw",
+  },
 });

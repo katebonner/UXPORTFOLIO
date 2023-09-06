@@ -12,18 +12,17 @@ const ProgressBar = ({ progress }) => {
 
 const containerStyles = css`
   width: 100%;
-  border: 1px solid rgba(255, 255, 255, 0.6);
+  border: 1px solid #fff;
+  opacity: 0.3;
   border-radius: 100px;
   overflow: hidden;
-  height: 50px;
-  z-index: 10;
-  margin: 2% 0 2% 0;
+  height: 1vw;
+  margin: 0 2% 0 2%;
 `;
 
 const barStyles = (progress) => css`
   width: ${progress}%;
   height: 100%;
-  opacity: 0.3;
   background-color: #fff;
   transition: width 1s;
 `;
