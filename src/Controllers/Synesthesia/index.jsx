@@ -127,11 +127,7 @@ const Synesthesia = () => {
           assigned by a user's spotify data. I also created a 3D particle system
           out of the user's top album covers.
         </Text1>
-        <div
-          style={{
-            margin: "-10% 0",
-          }}
-        >
+        <div>
           <SpotifyVisualiser data={USER_DATA} />
         </div>
         <div style={{ width: "100%" }}>
