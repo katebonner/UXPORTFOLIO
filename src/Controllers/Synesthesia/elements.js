@@ -11,6 +11,13 @@ export const Background = styled.div({
   zIndex: -999,
 });
 
+export const DescriptionTitle = styled.div({
+  fontSize: "1.5vw",
+  color: "#fff",
+  textAlign: "left",
+  width: "25%",
+});
+
 export const Column = styled.div({
   display: "flex",
   flexDirection: "column",

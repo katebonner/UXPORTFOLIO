@@ -19,6 +19,7 @@ import {
   RowFixed,
   SectionContainer,
   SectionText,
+  DescriptionTitle,
 } from "./elements";
 import {
   ProjectDescriptionContainer,
@@ -65,9 +66,11 @@ const Synesthesia = () => {
       <Knot />
       <ClickText>TAP THE SPIRAL TO VISIT THE WEBSITE</ClickText>
       <ProjectDescriptionContainer>
-        <Description>Synesthesia: Spotify Sound and Color</Description>
-        <Description>Role: Designer, Developer</Description>
-        <Description>[2022]</Description>
+        <DescriptionTitle>
+          Synesthesia: Spotify Sound and Color
+        </DescriptionTitle>
+        <DescriptionTitle>Role: Designer, Developer</DescriptionTitle>
+        <DescriptionTitle>[2022]</DescriptionTitle>
       </ProjectDescriptionContainer>
       <CaseContainer>
         <Row>
