@@ -326,9 +326,7 @@ export const AbsolutePosition = styled.div({
 
 export const ScoreContainer = styled.div({
   width: "50vw",
-  marginTop: "20vh",
   marginLeft: "30vw",
-
   "@media (max-width: 900px)": {
     width: "80vw",
     marginLeft: 0,

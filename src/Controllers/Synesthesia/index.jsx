@@ -129,7 +129,7 @@ const Synesthesia = () => {
         </Text1>
         <div
           style={{
-            margin: "-17% 0",
+            margin: "-10% 0",
           }}
         >
           <SpotifyVisualiser data={USER_DATA} />
