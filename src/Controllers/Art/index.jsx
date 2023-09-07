@@ -11,7 +11,9 @@ import {
   ProjectLoadingImage,
 } from "./elements";
 import Capi from "../../assets/capi.png";
-import Sara from "../../assets/sara.jpeg";
+import Capi2 from "../../assets/capi2.png";
+import Sara from "../../assets/sara.png";
+import Sara2 from "../../assets/sara2.png";
 import Clara from "../../assets/claraa.png";
 import Snake from "../../assets/snake.png";
 import Cosima from "../../assets/cosima.png";
@@ -36,71 +38,38 @@ const Art = () => {
       <Background />
       <FadeOverlay />
       <Column>
-        <Spacer />
-        <Row>
-          <ProjectImage src={Kate} width="30vw" />
-          <ProjectImage src={Kate2} width="30vw" />
-        </Row>
-        <DescriptionContainer width="62vw">
-          <Description>self portrait | charcoal</Description>
-          <Year>[2021]</Year>
-        </DescriptionContainer>
-
-        <Row>
-          <ProjectImage src={Kyle} width="30vw" />
-          <ProjectImage src={Kyle2} width="30vw" />
-        </Row>
-        <DescriptionContainer width="62vw">
-          <Description>kyle | charcoal</Description>
-          <Year>[2022]</Year>
-        </DescriptionContainer>
-
-        <Row>
-          <ProjectImage src={Danny2} width="30vw" />
-          <ProjectImage src={Danny} width="30vw" />
-        </Row>
-        <DescriptionContainer width="62vw">
-          <Description>danny | charcoal</Description>
-          <Year>[2023]</Year>
-        </DescriptionContainer>
-
-        <Row>
-          <ProjectImage src={Gabi2} width="30vw" />
-          <ProjectImage src={Gabi} width="30vw" />
-        </Row>
-
-        <DescriptionContainer width="62vw">
-          <Description>gabi | oil paint [ in progress ]</Description>
-          <Year>[2023]</Year>
-        </DescriptionContainer>
-        <Row>
-          <ProjectImage src={Clara} width="30vw" />
-          <ProjectImage src={Cosima} width="30vw" />
-        </Row>
-        <ProjectImage src={Snake} width="62vw" />
-        <DescriptionContainer width="62vw">
-          <Description>clara & cosima | oil paint</Description>
-          <Year>[2021]</Year>
-        </DescriptionContainer>
-
+        <ProjectImage src={Kate} width="50vw" />
+        <ProjectImage src={Kate2} width="50vw" />
+        <ProjectImage src={Kyle} width="50vw" />
+        <ProjectImage src={Kyle2} width="50vw" />
+        <ProjectImage src={Danny2} width="50vw" />
+        <ProjectImage src={Danny} width="50vw" />
+        <ProjectImage src={Gabi2} width="50vw" />
+        <ProjectImage src={Gabi} width="50vw" />
+        <ProjectImage src={Clara} width="50vw" />
+        <ProjectImage src={Cosima} width="50vw" />
+        <ProjectImage src={Snake} width="50vw" />
+        <ProjectImage src={Snake} width="50vw" />
         <ProjectImage
           src={Sara}
-          width="62vw"
+          width="50vw"
           style={{ filter: "saturate(120%)" }}
         />
-        <DescriptionContainer width="62vw">
-          <Description>sara | oil paint</Description>
-          <Year>[2019]</Year>
-        </DescriptionContainer>
+        <ProjectImage
+          src={Sara2}
+          width="50vw"
+          style={{ filter: "saturate(120%)" }}
+        />
+        <ProjectImage
+          src={Capi2}
+          width="50vw"
+          style={{ filter: "saturate(120%)" }}
+        />
         <ProjectImage
           src={Capi}
-          width="62vw"
+          width="50vw"
           style={{ filter: "saturate(120%)" }}
         />
-        <DescriptionContainer width="62vw">
-          <Description>capucine | oil paint</Description>
-          <Year>[2023]</Year>
-        </DescriptionContainer>
       </Column>
       <FooterComponent
         linkedInURL="https://www.linkedin.com/in/kate-bonner/"

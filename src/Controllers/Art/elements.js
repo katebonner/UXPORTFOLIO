@@ -14,8 +14,9 @@ export const Background = styled.div({
 export const Column = styled.div({
   width: "100%",
   display: "flex",
-  flexDirection: "column",
+  flexDirection: "row",
   justifyContent: "center",
+  flexWrap: "wrap",
   alignItems: "center",
   margin: "0 0 20% 0",
 });
@@ -29,7 +30,6 @@ export const Row = styled.div({
 
 export const ProjectImage = styled.img((props) => ({
   width: props.width || "60vw",
-  margin: "2% 2% 0 2%",
   // filter: "grayscale(100%)",
   "@media(max-width: 900px)": {
     width: "80%",

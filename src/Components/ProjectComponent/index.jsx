@@ -1,13 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import Image from "../../assets/capi.png";
-import Image2 from "../../assets/WaveShading.png";
-import Image3 from "../../assets/gabi.png";
-import Image4 from "../../assets/danny2.png";
 
-// Note: Adjust your styled component imports here
 import {
-  ProjectImage,
   ProjectText,
   ProjectDescription,
   ProjectDescriptionContainer,
@@ -15,6 +9,7 @@ import {
   MobileImage,
   Row,
   GalleryContainer,
+  ImageContainer,
 } from "./elements";
 
 const Gallery = ({ hoveredIndex, projects }) => {
@@ -63,11 +58,7 @@ const Project = ({
   }, [index, setHoveredIndex]);
 
   return (
-    <Link
-      to={link}
-      ref={hoverElementRef}
-      style={{ border: "none", padding: "0 2%" }}
-    >
+    <Link to={link} ref={hoverElementRef} style={{ border: "none" }}>
       {image && <MobileImage src={image} />}
       <ProjectDescriptionContainer
         style={{
@@ -92,19 +83,13 @@ const ProjectsList = ({ projects }) => {
       style={{
         display: "flex",
         justifyContent: "center",
-        width: "90%",
-        margin: " 5% 5%",
+        alignItems: "flex-end",
+        width: "100%",
+        margin: "5% 0",
       }}
     >
       <Gallery hoveredIndex={hoveredIndex} projects={projects} />
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          width: "50%",
-          justifyContent: "flex-start",
-        }}
-      >
+      <ImageContainer>
         {projects.map((project, index) => (
           <Project
             key={project.link}
@@ -115,7 +100,7 @@ const ProjectsList = ({ projects }) => {
             projects={projects}
           />
         ))}
-      </div>
+      </ImageContainer>
     </div>
   );
 };

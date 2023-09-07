@@ -39,13 +39,15 @@ export const MobileImage = styled.img({
 });
 
 export const GalleryContainer = styled.div({
-  "@media(max-width: 900px)": {
-    display: "none",
-  },
   display: "flex",
   flexDirection: "row",
   flexWrap: "wrap",
   width: "50%",
+  marginRight: "-15%",
+  "@media(max-width: 900px)": {
+    display: "none",
+    marginRight: 0,
+  },
 });
 
 export const ProjectText = styled.div({
@@ -73,6 +75,10 @@ export const ProjectDescriptionContainer = styled.div({
   justifyContent: "space-between",
   alignItems: "flex-start",
   width: "100%",
+  marginLeft: "-15%",
+  "@media(max-width: 900px)": {
+    marginLeft: 0,
+  },
 });
 
 export const Row = styled.div({
@@ -81,4 +87,14 @@ export const Row = styled.div({
   justifyContent: "space-between",
   alignItems: "flex-start",
   width: "100%",
+});
+
+export const ImageContainer = styled.div({
+  display: "flex",
+  flexDirection: "column",
+  width: "50%",
+  justifyContent: "flex-start",
+  "@media(max-width: 900px)": {
+    width: "100%",
+  },
 });

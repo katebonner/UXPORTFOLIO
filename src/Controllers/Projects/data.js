@@ -2,6 +2,7 @@ import SpotifyProject from "../../assets/SpotifyProject.png";
 import ArduinoProject from "../../assets/ArduinoProject.png";
 import SchrodingerProject from "../../assets/SchrodingerProject.png";
 import DemonProject from "../../assets/DemonProject.png";
+import ART from "../../assets/ART.png";
 
 export const projectsData = [
   {
@@ -22,14 +23,15 @@ export const projectsData = [
     link: "/electronicportrait",
     image: ArduinoProject,
     title: "portrait of an electric pulse",
-    description: "celectronics & fine art",
+    description: "electronics & fine art",
     year: 2023,
   },
-  {
-    link: "/innerdemon",
-    image: DemonProject,
-    title: "inner demon",
-    description: "interactive & augmented reality design",
-    year: 2021,
-  },
+
+  //   {
+  //     link: "/innerdemon",
+  //     image: DemonProject,
+  //     title: "inner demon",
+  //     description: "interactive & augmented reality design",
+  //     year: 2021,
+  //   },
 ];
