@@ -6,7 +6,7 @@ export const ProjectContainer = styled.div((props) => ({
   flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
-  margin: "20% 0 10% 0",
+  // margin: "20% 0 10% 0",
 }));
 
 const fadeIn = keyframes`
@@ -30,42 +30,55 @@ export const ProjectImage = styled.img({
 });
 
 export const MobileImage = styled.img({
-  "@media(max-width: 1100px)": {
+  "@media(max-width: 900px)": {
     display: "block",
-    width: "80%",
-    borderRadius: 5,
-    margin: "5% 10%",
+    width: "100%",
+    margin: "10% 0 2% 0",
   },
   display: "none",
 });
 
-export const ProjectText = styled.div((props) => ({
-  fontSize: "3vw",
+export const GalleryContainer = styled.div({
+  "@media(max-width: 900px)": {
+    display: "none",
+  },
+  display: "flex",
+  flexDirection: "row",
+  flexWrap: "wrap",
+  width: "50%",
+});
+
+export const ProjectText = styled.div({
+  fontSize: "2vw",
   fontWeight: 600,
   textAlign: "left",
-  width: "35%",
-  color: !props.hovered ? "rgba(255,255,255,0.5)" : "#fff",
-}));
+  color: "#fff",
+});
 
-export const ProjectDescription = styled.div((props) => ({
-  fontSize: "2vw",
+export const ProjectDescription = styled.div({
+  fontSize: "1.5vw",
   textAlign: "left",
-  width: "39%",
-  color: !props.hovered ? "rgba(255,255,255,0.5)" : "#fff",
-}));
+  color: "#fff",
+});
 
-export const ProjectYear = styled.div((props) => ({
-  fontSize: "2vw",
+export const ProjectYear = styled.div({
+  fontSize: "1.5vw",
   textAlign: "right",
-  width: "19%",
-  color: !props.hovered ? "rgba(255,255,255,0.5)" : "#fff",
-}));
+  color: "#fff",
+});
 
 export const ProjectDescriptionContainer = styled.div({
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "space-between",
+  alignItems: "flex-start",
+  width: "100%",
+});
+
+export const Row = styled.div({
   display: "flex",
   flexDirection: "row",
   justifyContent: "space-between",
   alignItems: "flex-start",
-  width: "80%",
-  margin: "3% 10%",
+  width: "100%",
 });

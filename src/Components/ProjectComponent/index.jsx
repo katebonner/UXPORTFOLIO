@@ -1,4 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
+import Image from "../../assets/capi.png";
+import Image2 from "../../assets/WaveShading.png";
+import Image3 from "../../assets/gabi.png";
+import Image4 from "../../assets/danny2.png";
+
+// Note: Adjust your styled component imports here
 import {
   ProjectImage,
   ProjectText,
@@ -6,68 +13,111 @@ import {
   ProjectDescriptionContainer,
   ProjectYear,
   MobileImage,
+  Row,
+  GalleryContainer,
 } from "./elements";
-import { Link } from "react-router-dom";
 
-const Project = ({ link, image, title, description, year }) => {
+const Gallery = ({ hoveredIndex, projects }) => {
+  return (
+    <GalleryContainer>
+      {projects.map((project, index) => (
+        <img
+          key={index}
+          src={project.image}
+          alt={project.title}
+          style={{
+            opacity: index === hoveredIndex ? 1 : 0.3,
+            transition: "opacity 0.3s",
+            width: "50%",
+          }}
+        />
+      ))}
+    </GalleryContainer>
+  );
+};
+
+const Project = ({
+  link,
+  image,
+  title,
+  description,
+  year,
+  index,
+  setHoveredIndex,
+  hoveredIndex,
+}) => {
   const hoverElementRef = useRef(null);
-  const cursorImageRef = useRef(null);
-  const [isHovered, setIsHovered] = useState(false);
 
   useEffect(() => {
-    const handleMouseMove = (e) => {
-      if (image) {
-        const imageDiv = cursorImageRef.current;
-        imageDiv.style.left = `${e.pageX - 400}px`;
-        imageDiv.style.top = `${e.pageY - 200}px`;
-      }
-    };
-
-    const handleMouseEnter = () => {
-      setIsHovered(true);
-      if (image) {
-        if (window.innerWidth > 1100) {
-          const imageDiv = cursorImageRef.current;
-          imageDiv.style.display = "block";
-        }
-      }
-    };
-
-    const handleMouseLeave = () => {
-      setIsHovered(false);
-      if (image) {
-        if (window.innerWidth > 1100) {
-          const imageDiv = cursorImageRef.current;
-          imageDiv.style.display = "none";
-        }
-      }
-    };
+    const handleMouseEnter = () => setHoveredIndex(index);
+    const handleMouseLeave = () => setHoveredIndex(null);
 
     const containerDiv = hoverElementRef.current;
-    containerDiv.addEventListener("mousemove", handleMouseMove);
     containerDiv.addEventListener("mouseenter", handleMouseEnter);
     containerDiv.addEventListener("mouseleave", handleMouseLeave);
 
     return () => {
-      containerDiv.removeEventListener("mousemove", handleMouseMove);
       containerDiv.removeEventListener("mouseenter", handleMouseEnter);
       containerDiv.removeEventListener("mouseleave", handleMouseLeave);
     };
-  }, []);
+  }, [index, setHoveredIndex]);
 
   return (
-    <Link to={link} ref={hoverElementRef} style={{ border: "none" }}>
+    <Link
+      to={link}
+      ref={hoverElementRef}
+      style={{ border: "none", padding: "0 2%" }}
+    >
       {image && <MobileImage src={image} />}
-      <ProjectDescriptionContainer>
-        <ProjectText hovered={isHovered}>{title}</ProjectText>
-        <ProjectDescription hovered={isHovered}>
-          {description}
-        </ProjectDescription>
-        <ProjectYear hovered={isHovered}>[{year}] </ProjectYear>
+      <ProjectDescriptionContainer
+        style={{
+          opacity: index === hoveredIndex ? 1 : 0.3,
+        }}
+      >
+        <ProjectText>{title}</ProjectText>
+        <Row>
+          <ProjectDescription>{description}</ProjectDescription>
+          <ProjectYear>[{year}]</ProjectYear>
+        </Row>
       </ProjectDescriptionContainer>
-      {image && <ProjectImage ref={cursorImageRef} src={image} />}
     </Link>
   );
 };
 
-export default Project;
+const ProjectsList = ({ projects }) => {
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+
+  return (
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        width: "90%",
+        margin: " 5% 5%",
+      }}
+    >
+      <Gallery hoveredIndex={hoveredIndex} projects={projects} />
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          width: "50%",
+          justifyContent: "flex-start",
+        }}
+      >
+        {projects.map((project, index) => (
+          <Project
+            key={project.link}
+            {...project}
+            index={index}
+            setHoveredIndex={setHoveredIndex}
+            hoveredIndex={hoveredIndex}
+            projects={projects}
+          />
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default ProjectsList;
