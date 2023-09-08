@@ -71,7 +71,7 @@ const MyScene = forwardRef(({}, ref) => {
     api.start({
       position: [0, 0],
     });
-  }, []);
+  }, [api]);
 
   const handlePointerMove = useCallback(
     (e) => {

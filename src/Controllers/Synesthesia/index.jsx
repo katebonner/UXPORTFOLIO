@@ -23,7 +23,6 @@ import {
 } from "./elements";
 import {
   ProjectDescriptionContainer,
-  Description,
   CaseContainer,
   Text1,
   Text2,

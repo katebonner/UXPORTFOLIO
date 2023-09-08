@@ -1,14 +1,15 @@
 import React from "react";
+import LazyLoad from "react-lazyload";
 import {
   Background,
   Column,
   ProjectImage,
-  Description,
-  DescriptionContainer,
-  Year,
-  SectionHeader,
-  ProjectLoadingImageWrapper,
-  ProjectLoadingImage,
+  // Description,
+  // DescriptionContainer,
+  // Year,
+  // SectionHeader,
+  // ProjectLoadingImageWrapper,
+  // ProjectLoadingImage,
 } from "./elements";
 import Capi from "../../assets/capi.png";
 import Capi2 from "../../assets/capi2.png";
@@ -25,12 +26,15 @@ import Kate2 from "../../assets/kate2.png";
 import Kyle from "../../assets/kyle.png";
 import Kyle2 from "../../assets/kyle2.png";
 import Danny2 from "../../assets/danny2.png";
-
 import FooterComponent from "../../Components/Footer";
 import FadeOverlay from "../../Components/FadeOverlay";
 import CV from "../../assets/Kate_Bonner_CV_2023.png";
-import { Row } from "./elements";
-import { Spacer } from "../ElectricPortrait/elements";
+
+const Placeholder = () => (
+  <div
+    style={{ width: "50vw", height: "auto", backgroundColor: "#333333" }}
+  ></div>
+);
 
 const Art = () => {
   return (
@@ -38,38 +42,70 @@ const Art = () => {
       <Background />
       <FadeOverlay />
       <Column>
-        <ProjectImage src={Kate} width="50vw" />
-        <ProjectImage src={Kate2} width="50vw" />
-        <ProjectImage src={Kyle} width="50vw" />
-        <ProjectImage src={Kyle2} width="50vw" />
-        <ProjectImage src={Danny2} width="50vw" />
-        <ProjectImage src={Danny} width="50vw" />
-        <ProjectImage src={Gabi2} width="50vw" />
-        <ProjectImage src={Gabi} width="50vw" />
-        <ProjectImage src={Clara} width="50vw" />
-        <ProjectImage src={Cosima} width="50vw" />
-        <ProjectImage src={Snake} width="50vw" />
-        <ProjectImage src={Snake} width="50vw" />
-        <ProjectImage
-          src={Sara}
-          width="50vw"
-          style={{ filter: "saturate(120%)" }}
-        />
-        <ProjectImage
-          src={Sara2}
-          width="50vw"
-          style={{ filter: "saturate(120%)" }}
-        />
-        <ProjectImage
-          src={Capi2}
-          width="50vw"
-          style={{ filter: "saturate(120%)" }}
-        />
-        <ProjectImage
-          src={Capi}
-          width="50vw"
-          style={{ filter: "saturate(120%)" }}
-        />
+        <LazyLoad placeholder={<Placeholder />}>
+          <ProjectImage src={Kate} width="50vw" />
+        </LazyLoad>
+        <LazyLoad placeholder={<Placeholder />}>
+          <ProjectImage src={Kate2} width="50vw" />
+        </LazyLoad>
+        <LazyLoad placeholder={<Placeholder />}>
+          <ProjectImage src={Kyle} width="50vw" />
+        </LazyLoad>
+        <LazyLoad placeholder={<Placeholder />}>
+          <ProjectImage src={Kyle2} width="50vw" />
+        </LazyLoad>
+        <LazyLoad placeholder={<Placeholder />}>
+          <ProjectImage src={Danny2} width="50vw" />
+        </LazyLoad>
+        <LazyLoad placeholder={<Placeholder />}>
+          <ProjectImage src={Danny} width="50vw" />
+        </LazyLoad>
+        <LazyLoad placeholder={<Placeholder />}>
+          <ProjectImage src={Gabi2} width="50vw" />
+        </LazyLoad>
+        <LazyLoad placeholder={<Placeholder />}>
+          <ProjectImage src={Gabi} width="50vw" />
+        </LazyLoad>
+        <LazyLoad placeholder={<Placeholder />}>
+          <ProjectImage src={Clara} width="50vw" />
+        </LazyLoad>
+        <LazyLoad placeholder={<Placeholder />}>
+          <ProjectImage src={Cosima} width="50vw" />
+        </LazyLoad>
+        <LazyLoad placeholder={<Placeholder />}>
+          <ProjectImage src={Snake} width="50vw" />
+        </LazyLoad>
+        <LazyLoad placeholder={<Placeholder />}>
+          <ProjectImage src={Snake} width="50vw" />
+        </LazyLoad>
+        <LazyLoad placeholder={<Placeholder />}>
+          <ProjectImage
+            src={Sara}
+            width="50vw"
+            style={{ filter: "saturate(120%)" }}
+          />
+        </LazyLoad>
+        <LazyLoad placeholder={<Placeholder />}>
+          <ProjectImage
+            src={Sara2}
+            width="50vw"
+            style={{ filter: "saturate(120%)" }}
+          />
+        </LazyLoad>
+        <LazyLoad placeholder={<Placeholder />}>
+          <ProjectImage
+            src={Capi2}
+            width="50vw"
+            style={{ filter: "saturate(120%)" }}
+          />
+        </LazyLoad>
+        <LazyLoad placeholder={<Placeholder />}>
+          <ProjectImage
+            src={Capi}
+            width="50vw"
+            style={{ filter: "saturate(120%)" }}
+          />
+        </LazyLoad>
       </Column>
       <FooterComponent
         linkedInURL="https://www.linkedin.com/in/kate-bonner/"

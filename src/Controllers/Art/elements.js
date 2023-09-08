@@ -30,7 +30,7 @@ export const Row = styled.div({
 
 export const ProjectImage = styled.img((props) => ({
   width: props.width || "60vw",
-  // filter: "grayscale(100%)",
+  display: "block",
   "@media(max-width: 900px)": {
     width: "80%",
   },

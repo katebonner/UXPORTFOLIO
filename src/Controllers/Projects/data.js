@@ -1,8 +1,8 @@
 import SpotifyProject from "../../assets/SpotifyProject.png";
 import ArduinoProject from "../../assets/ArduinoProject.png";
 import SchrodingerProject from "../../assets/SchrodingerProject.png";
-import DemonProject from "../../assets/DemonProject.png";
-import ART from "../../assets/ART.png";
+// import DemonProject from "../../assets/DemonProject.png";
+// import ART from "../../assets/ART.png";
 
 export const projectsData = [
   {

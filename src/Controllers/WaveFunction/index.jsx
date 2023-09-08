@@ -12,13 +12,9 @@ import {
   Text3,
   Spacer,
   Row,
-  ProjectImageHeader,
-  MobileSpacer,
   StyledPlayer2,
 } from "./elements";
 import DerivationImage from "../../assets/derivation.png";
-import WavefunctionImageTransparent from "../../assets/transparentWave3.png";
-import WavefunctionImage from "../../assets/wavefunction.png";
 import Blender from "../../assets/waveCode.png";
 import Blender4 from "../../assets/isolatedWave1.png";
 import SideWave from "../../assets/sideWave.png";
@@ -26,6 +22,11 @@ import ShadeWave from "../../assets/WaveShading.png";
 import { derivationCodeString } from "./schrodinger";
 import FadeOverlay from "../../Components/FadeOverlay";
 import ReactPlayer from "react-player";
+import LazyLoad from "react-lazyload";
+
+const Placeholder = () => (
+  <div style={{ width: "100%", backgroundColor: "#333333" }}></div>
+);
 
 const WaveFunctionController = () => {
   const formatCode = (codeString) =>
@@ -89,7 +90,9 @@ const WaveFunctionController = () => {
           <Text2>(002)</Text2>
           <Heading1>Derivation</Heading1>
         </Row>
-        <Derivation src={DerivationImage} />
+        <LazyLoad placeholder={<Placeholder />}>
+          <Derivation src={DerivationImage} />
+        </LazyLoad>
         <Text1></Text1>
         <Row>
           <Text2>(003)</Text2>
@@ -114,9 +117,15 @@ const WaveFunctionController = () => {
           function's imaginary component, we need to work in three dimensions.
           So, I generated a 3D mesh for each time step.
         </Text1>
-        <ProjectImage src={Blender}></ProjectImage>
-        <ProjectImage src={Blender4}></ProjectImage>
-        <ProjectImage src={SideWave}></ProjectImage>
+        <LazyLoad placeholder={<Placeholder />}>
+          <ProjectImage src={Blender}></ProjectImage>
+        </LazyLoad>
+        <LazyLoad placeholder={<Placeholder />}>
+          <ProjectImage src={Blender4}></ProjectImage>
+        </LazyLoad>
+        <LazyLoad placeholder={<Placeholder />}>
+          <ProjectImage src={SideWave}></ProjectImage>
+        </LazyLoad>
         <Row>
           <Text2>(004)</Text2>
           <Heading1>Animation</Heading1>

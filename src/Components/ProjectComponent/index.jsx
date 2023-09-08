@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
+import LazyLoad from "react-lazyload";
 
 import {
   ProjectText,
@@ -12,20 +13,28 @@ import {
   ImageContainer,
 } from "./elements";
 
+const Placeholder = () => (
+  <div style={{ width: "100%", backgroundColor: "#333333" }}></div>
+);
+
 const Gallery = ({ hoveredIndex, projects }) => {
   return (
     <GalleryContainer>
       {projects.map((project, index) => (
-        <img
-          key={index}
-          src={project.image}
-          alt={project.title}
-          style={{
-            opacity: index === hoveredIndex ? 1 : 0.3,
-            transition: "opacity 0.3s",
-            width: "50%",
-          }}
-        />
+        <LazyLoad key={index} placeholder={<Placeholder />}>
+          <img
+            src={project.image}
+            alt={project.title}
+            style={{
+              position: "absolute",
+              bottom: 0,
+              left: 0,
+              opacity: index === hoveredIndex ? 1 : 0,
+              transition: "opacity 0.3s",
+              width: "100%",
+            }}
+          />
+        </LazyLoad>
       ))}
     </GalleryContainer>
   );
@@ -45,7 +54,7 @@ const Project = ({
 
   useEffect(() => {
     const handleMouseEnter = () => setHoveredIndex(index);
-    const handleMouseLeave = () => setHoveredIndex(null);
+    const handleMouseLeave = () => setHoveredIndex(0);
 
     const containerDiv = hoverElementRef.current;
     containerDiv.addEventListener("mouseenter", handleMouseEnter);
@@ -59,7 +68,11 @@ const Project = ({
 
   return (
     <Link to={link} ref={hoverElementRef} style={{ border: "none" }}>
-      {image && <MobileImage src={image} />}
+      {image && (
+        <LazyLoad placeholder={<Placeholder />}>
+          <MobileImage src={image} />
+        </LazyLoad>
+      )}
       <ProjectDescriptionContainer
         style={{
           opacity: index === hoveredIndex ? 1 : 0.3,
@@ -76,16 +89,17 @@ const Project = ({
 };
 
 const ProjectsList = ({ projects }) => {
-  const [hoveredIndex, setHoveredIndex] = useState(null);
-
+  const [hoveredIndex, setHoveredIndex] = useState(0);
+  console.log(hoveredIndex);
   return (
     <div
       style={{
         display: "flex",
+        flexDirection: "row",
         justifyContent: "center",
         alignItems: "flex-end",
         width: "100%",
-        margin: "5% 0",
+        margin: "25% 8% 0 0",
       }}
     >
       <Gallery hoveredIndex={hoveredIndex} projects={projects} />

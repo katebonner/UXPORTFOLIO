@@ -41,9 +41,9 @@ export const MobileImage = styled.img({
 export const GalleryContainer = styled.div({
   display: "flex",
   flexDirection: "row",
+  position: "relative",
   flexWrap: "wrap",
-  width: "50%",
-  marginRight: "-15%",
+  width: "40%",
   "@media(max-width: 900px)": {
     display: "none",
     marginRight: 0,
@@ -75,7 +75,6 @@ export const ProjectDescriptionContainer = styled.div({
   justifyContent: "space-between",
   alignItems: "flex-start",
   width: "100%",
-  marginLeft: "-15%",
   "@media(max-width: 900px)": {
     marginLeft: 0,
   },

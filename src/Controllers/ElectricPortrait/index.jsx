@@ -19,6 +19,11 @@ import ArduinoTest1 from "../../assets/Arduino_Test1.png";
 import ArduinoTest2 from "../../assets/Arduino_Test2.png";
 import ArduinoTest3 from "../../assets/Arduino_Test3.png";
 import { arduinoCodeString } from "./arduino";
+import LazyLoad from "react-lazyload";
+
+const Placeholder = () => (
+  <div style={{ width: "100%", backgroundColor: "#333333" }}></div>
+);
 
 const ElectricPortraitController = () => {
   const formatCode = (codeString) =>
@@ -61,18 +66,24 @@ const ElectricPortraitController = () => {
           touch as input to generate sound. I began by building the base
           circuit:
         </Text1>
-        <ProjectImage src={ArduinoCircuit} />
+        <LazyLoad placeholder={<Placeholder />}>
+          <ProjectImage src={ArduinoCircuit} />
+        </LazyLoad>
         <Code>{formatCode(arduinoCodeString)}</Code>
         <Text1>
           I tested its functionality by collecting the change in electric
           potential via copper tape:
         </Text1>
-        <ProjectImage src={ArduinoTest1} />
+        <LazyLoad placeholder={<Placeholder />}>
+          <ProjectImage src={ArduinoTest1} />
+        </LazyLoad>
         <Text1>
           I then exchanged the copper tape for SKU-0209 - Bare Conductive
           Electric Paint:
         </Text1>
-        <ProjectImage src={ArduinoTest2} />
+        <LazyLoad placeholder={<Placeholder />}>
+          <ProjectImage src={ArduinoTest2} />
+        </LazyLoad>
         <Spacer />
         <Row>
           <Text2>(002)</Text2>
@@ -83,8 +94,9 @@ const ElectricPortraitController = () => {
           precision in interactions. I continued testing by investigating
           different insulating materials:
         </Text1>
-
-        <ProjectImage src={ArduinoTest3} />
+        <LazyLoad placeholder={<Placeholder />}>
+          <ProjectImage src={ArduinoTest3} />
+        </LazyLoad>
         <Text1>
           I found acrylic paint (blue) acts as a sufficient conductor and
           acrylic polymer varnish (white/clear) acts as a sufficient insulator.
