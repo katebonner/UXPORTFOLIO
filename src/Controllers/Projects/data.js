@@ -1,8 +1,7 @@
 import SpotifyProject from "../../assets/SpotifyProject.png";
 import ArduinoProject from "../../assets/ArduinoProject.png";
 import SchrodingerProject from "../../assets/SchrodingerProject.png";
-// import DemonProject from "../../assets/DemonProject.png";
-// import ART from "../../assets/ART.png";
+import Junctions from "../../assets/junctions.png";
 
 export const projectsData = [
   {
@@ -27,11 +26,11 @@ export const projectsData = [
     year: 2023,
   },
 
-  //   {
-  //     link: "/innerdemon",
-  //     image: DemonProject,
-  //     title: "inner demon",
-  //     description: "interactive & augmented reality design",
-  //     year: 2021,
-  //   },
+  {
+    link: "/silversiliconjunctions",
+    image: Junctions,
+    title: "fabricating silver-silicon junctions",
+    description: "experimental physics & materials science",
+    year: 2020,
+  },
 ];

@@ -1,16 +1,6 @@
 import React from "react";
 import LazyLoad from "react-lazyload";
-import {
-  Background,
-  Column,
-  ProjectImage,
-  // Description,
-  // DescriptionContainer,
-  // Year,
-  // SectionHeader,
-  // ProjectLoadingImageWrapper,
-  // ProjectLoadingImage,
-} from "./elements";
+import { Background, Column, ProjectImage } from "./elements";
 import Capi from "../../assets/capi.png";
 import Capi2 from "../../assets/capi2.png";
 import Sara from "../../assets/sara.png";
